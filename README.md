@@ -13,10 +13,10 @@ Vermutlich kann ich dir bei der Beantwortung deiner Fragen helfen, kontaktiere m
 
 #### Ausbildung
 
-Meinen Bachelor of Arts habe ich zwischen dem WS 2016/17 und dem WS 2019/20 an der Universität Duisburg-Essen in NRW, im Fachbereich Politologie (1,7) erfolgreich absolviert.
-Aktuell studiere ich Statistik als Master of Science an der Otto-Friedrich-Universität Bamberg, Bayern.
-Meine Kenntnisse umfassen das Verständnis, die Interpretation und Anwendung von Methoden empirischer Sozialforschung und Statistik.
-Gängig genutzte Programmpakete sind dabei: SPSS, Stata und R. Aber auch Excel, Jamovi, PSPP sind möglich, falls dir das lieber ist.
+Meinen **Bachelor of Arts** habe ich zwischen dem WS 2016/17 und dem WS 2019/20 an der **Universität Duisburg-Essen** in NRW, im Fachbereich **Politologie (1,7)** erfolgreich absolviert.
+Aktuell studiere ich Statistik als **Master of Science** an der **Otto-Friedrich-Universität** Bamberg, Bayern.
+Meine **Kenntnisse umfassen das Verständnis, die Interpretation und Anwendung von Methoden empirischer Sozialforschung und Statistik**.
+Gängig genutzte Programmpakete sind dabei: **SPSS, Stata und R**. Aber auch Excel, Jamovi, PSPP sind möglich, falls dir das lieber ist.
 
 #### Beruflich
 
