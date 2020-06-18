@@ -1,0 +1,30 @@
+/* CSS Document */                      
+body
+{
+/*
+ background-color: #f1f1f1;
+  */
+font-family: cambria; 
+font-size:100%; 
+display: inline-block; 
+text-align: center;
+margin-left:250px; 
+margin-right:150px;
+width: 1000px;
+color:#004c93; 
+text-align:center;
+line-height:50px; 
+text-decoration:none;
+}
+
+a
+{
+text-decoration: none;
+}
+
+
+
+nav
+{
+background-color: lightgrey;
+}
