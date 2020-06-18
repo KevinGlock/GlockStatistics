@@ -70,8 +70,7 @@ background-color: white;
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-Step 3) Add JavaScript:
-Example
+
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
