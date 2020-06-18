@@ -1,0 +1,49 @@
+<body>
+
+
+	<main>	
+
+<div id="seite">
+
+	<div id="kopfbereich">
+		<h1>
+		Curriculum Vitae
+		</h1>
+			<!--h2>
+			Diese Seite befindet sich im Umbau und wird auf einen aktuellen Stand gebracht. Ich bitte um Verständnis.
+			</h2-->
+	
+	</div>
+
+
+	<div id="steuerung">
+   		 <!--Bereich Steuerung-->
+ 	 </div>
+
+
+	<div id="inhalt">
+		<img src="PicturePeople-1.jpg" alt="Ein Bild von Kevin Glock" width="15%" height="auto" />
+
+		<p>	My name is Kevin Glock. I am a student at the University of Duisburg-Essen. <br>
+			I study political science in the fourth semester (SS 2018) of Bachelor's degree since WS 2016_17. <br>
+			Currently, I work as a tutor for "Methods of Empirical Social Science for Political Scientists" (WS 2017_18)
+			and "Introduction in Statistical Analysis for Political Scientists" (SS 2018) for the holder of the Professorship of Empirical Political Science Prof. Dr. Achim Goerres. <br/>
+			Furthermore, I work as a student assistant at the Institute of Political Science (since SS 2018). There I work within the "MigTex" project which is established at the Chair of Public Policy and State Policy and guided by the Executive Director of the Institute Prof. Dr. Andreas Blätte. <br/>
+			My professional interests are the interdependency within social systems and between national systems, policy implementation processes, as well as discourse theory, subjectivities and social conditions and rationalities.
+		</p>
+
+	</div>
+
+
+
+	<div id="fussbereich">
+
+	</div>
+
+</div>
+
+</main>
+</body>
+
+
+</html>
