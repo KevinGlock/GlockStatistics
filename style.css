@@ -5,10 +5,7 @@ body
 font-family: cambria; 
 font-size:100%; 
 display: inline-block; 
-text-align: center;
-margin-left:10px; 
-margin-right:10px;
-width: auto;
+text-align: justify;
 color:#004c93; 
 line-height:20px; 
 text-decoration:none;
