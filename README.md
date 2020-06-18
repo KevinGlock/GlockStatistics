@@ -8,7 +8,7 @@ Dann wird dir hier geholfen!
 ### Person
 
 Mein Name ist Kevin Glock. Aktuell absolviere ich einen Master of Science in Statistik.
-Meine Grundausbildung ist sozialwissenschaftlich geprägt, aber meine Interessen sind breit gefächert und decken Bildungsforschung, Psychologie, Ökonomie und Methodische Forschung ab.
+Meine Grundausbildung ist sozialwissenschaftlich geprägt, aber meine Interessen sind breit gefächert und decken Bildungsforschung, Psychologie, Ökonomie, komplexe Systeme und methodische Forschung ab.
 Vermutlich kann ich dir bei der Beantwortung deiner Fragen helfen, kontaktiere mich einfach unverbindlich.
 
 #### Ausbildung
