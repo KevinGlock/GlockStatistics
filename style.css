@@ -8,11 +8,10 @@ font-family: cambria;
 font-size:100%; 
 display: inline-block; 
 text-align: right;
-margin-left:50px; 
-margin-right:50px;
-width: 1000px;
+margin-left:10px; 
+margin-right:10px;
+width: auto;
 color:#004c93; 
-text-align:right;
 line-height:20px; 
 text-decoration:none;
 }
@@ -26,5 +25,5 @@ text-decoration: none;
 
 nav
 {
-background-color: lightgrey;
+background-color: white;
 }
