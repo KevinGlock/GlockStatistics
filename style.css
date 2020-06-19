@@ -5,57 +5,41 @@
 body {
   text-align: justify;
 }
-  /* The side navigation menu */
-
+ /* Style the navigation menu */
 .navbar {
-  margin: 0;
-  padding: 1px 12px;
-  background-color: white;
-  height: 100%;
-  position: relative;
-  text-align: center;
-  float: none;
+  width: 100%;
+  background-color: #175787;
+  overflow: auto;
 }
 
+/* Navigation links */
 .navbar a {
-  display: inline-block;
-  color: black;
-  padding: 10px 20px;
+  float: left;
+  padding: 12px;
+  color: white;
   text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
 }
- 
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #159957;
+}
+
+/* Style the current/active link */
 .navbar a.active {
   background-color: #155799;
-  color: white;
 }
 
-.navbar a:hover:not(.active) {
-  background-color: #159957;
-  color: white;
-}
-
-div.content {
-  margin-left: 0;
-  padding: 16px 50px;
-  height: 1000px;
-}
-
-/*MediaScreenChances*/
-
-@media screen and (max-width: 700px) {
-  .navbar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .navbar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
   .navbar a {
-    text-align: center;
     float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
   }
 }
 
