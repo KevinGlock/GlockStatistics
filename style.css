@@ -18,7 +18,7 @@ body {
 .sidebar a {
   display: inline-block;
   color: black;
-  padding: 1px 50px;
+  padding: 50px 16px;
   text-decoration: none;
 }
  
