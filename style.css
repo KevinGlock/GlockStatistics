@@ -13,29 +13,30 @@ body {
   position: relative;
   text-align: center;
   float: none;
-  border-radius:5;
 }
 
 .sidebar a {
   display: inline-block;
   color: black;
-  padding: 0;
+  padding: 1px 10px;
   text-decoration: none;
-  border-radius:5;
 }
  
 .sidebar a.active {
   background-color: #155799;
   color: white;
-  border-radius:5;
 }
 
 .sidebar a:hover:not(.active) {
   background-color: #159957;
   color: white;
-  border-radius:5;
 }
 
+div.content {
+  margin-left: 0;
+  padding: 10px 50px;
+  height: 1000px;
+}
 
 @media screen and (max-width: 700px) {
   .sidebar {
