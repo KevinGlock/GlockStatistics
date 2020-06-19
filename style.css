@@ -7,7 +7,7 @@ body {
 
 .sidebar {
   margin: 0;
-  padding: 6px 25px;
+  padding: 1px 25px;
   background-color: white;
   height: 100%;
   position: relative;
@@ -18,7 +18,7 @@ body {
 .sidebar a {
   display: inline-block;
   color: black;
-  padding: 20px 16px;
+  padding: 16px 30px;
   text-decoration: none;
 }
  
