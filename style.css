@@ -8,7 +8,7 @@ body {
  /* Style the navigation menu */
 .navbar {
   width: 100%;
-  background-color: #157999;
+  background-color: #158999;
   background-image: linear-gradient(to right, #155799, #159957);
   overflow: auto;
 }
