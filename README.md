@@ -1,3 +1,2 @@
 # GlockStatistics
-Statistische Beratung & Nachhilfe
-Meine Website
+Statistische Beratung und Nachhilfe
