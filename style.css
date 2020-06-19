@@ -7,7 +7,7 @@ body {
 }
   /* The side navigation menu */
 
-.sidebar {
+.navbar {
   margin: 0;
   padding: 1px 12px;
   background-color: white;
@@ -17,19 +17,19 @@ body {
   float: none;
 }
 
-.sidebar a {
+.navbar a {
   display: inline-block;
   color: black;
   padding: 10px 20px;
   text-decoration: none;
 }
  
-.sidebar a.active {
+.navbar a.active {
   background-color: #155799;
   color: white;
 }
 
-.sidebar a:hover:not(.active) {
+.navbar a:hover:not(.active) {
   background-color: #159957;
   color: white;
 }
@@ -40,20 +40,20 @@ div.content {
   height: 1000px;
 }
 
-/*MediaScreenChances for Sidebar*/
+/*MediaScreenChances*/
 
 @media screen and (max-width: 700px) {
-  .sidebar {
+  .navbar {
     width: 100%;
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
+  .navbar a {float: left;}
   div.content {margin-left: 0;}
 }
 
 @media screen and (max-width: 400px) {
-  .sidebar a {
+  .navbar a {
     text-align: center;
     float: none;
   }
