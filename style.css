@@ -30,7 +30,7 @@ body {
 
 /* Style the current/active link */
 .navbar a.active {
-  background-color: #155799;
+  background-color: linear-gradient(120deg, #155799, #159957);
 }
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
