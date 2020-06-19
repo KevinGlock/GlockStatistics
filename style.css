@@ -1,4 +1,9 @@
 /* CSS Document       */ 
+
+.body {
+  text-align: justify;
+  float: none;
+}
   /* The side navigation menu */
 
 .sidebar {
