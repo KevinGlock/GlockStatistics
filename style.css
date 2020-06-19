@@ -8,7 +8,8 @@ body {
  /* Style the navigation menu */
 .navbar {
   width: 100%;
-  background-color: linear-gradient(#155799, #159957);
+  background-color: #159957;
+  background-image: linear-gradient(#155799, #159957);
   overflow: auto;
 }
 
@@ -30,7 +31,7 @@ body {
 
 /* Style the current/active link */
 .navbar a.active {
-  background-color: #1b6dbf;
+  background-color: #155799;
 }
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
