@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="de">
+	<body>
+
+	<main>	
+		
+<div id="seite">
+
+<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../css/style.css" rel="stylesheet type="text/css">
+<div class="navbar">
+  <a class="active" href="../index.html">Home</a>
+  <a href="sites/person.html">Person</a>
+  <a href="sites/edu.html">Education</a>
+  <a href="sites/work.html">Work</a>
+  <a href="sites/examples.html">Examples</a>
+</div>
+</head>
+
+</div>
+						   
+	<div id="Parameters">
+<h1>Parameter</h1>
+		<p>	(diese Seite befindet sich noch im Aufbau)
+		Hier steht etwas zu Parametern
+
+
+		</p>
+
+	</div>
+
+	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
+	<a href="../sites/examples.html">Examples</a>
+	<a href="../index.html">Home</a>
+	</div>
+
+</div>
+
+
+ <button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</main>
+</body>
+</html>
