@@ -26,14 +26,18 @@ layout: default
 						   
 	<div id="Chars">
 <h1>Urlisten, Listen, Ränge, Kontingenztabellen</h1>
-		<h2>Was ist eine Urliste?</h2>
+		
 		<p>Ziehen wir eine Stichprobe aus einer Grundgesamtheit erhalten wir eine ungeordnete Liste von Elementen.
-		Diese ungeordnete Liste wird als Urliste bezeichnet.
-		Um dies zu verdeutlichen, ein <b>Beispiel:</b></br>
+		Diese ungeordnete Liste wird als Urliste bezeichnet.</p>
+		<p>Um dies zu verdeutlichen, ein <b>Beispiel:</b></br>
 		Wir genießen gerade ein paar Süßigkeiten und haben eine Tüte Gummibärchen. Deine kleine Schwester kommt und sagt ich möchte gerne auch welche.
-		Wir ziehen also 10 Gummibärchen aus der Tüte und erhalten: rot, rot, gelb, grün, rot, orange, rot, grün, orange, grün.
-		Dies sind nun 10 Gummibärchen auf 10 Rangplätzen.</p>
-<h1>Urliste</h1>
+		Wir ziehen also 10 Gummibärchen aus der Tüte und erhalten:</br>
+		<li>rot, rot, gelb, grün, rot, orange, rot, grün, orange, grün.</li>
+		<li>Dies sind nun n=10 Gummibärchen auf 10 Rangplätzen i.</li>
+		</p>
+		
+<h3>Urliste</h3>
+
 <p><table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
   <tr>
     <th>Rang 1</th> <th>Rang 2</th> <th>Rang 3</th> <th>Rang 4</th> <th>Rang 5</th> <th>Rang 6</th> <th>Rang 7</th> <th>Rang 8</th> <th>Rang 9</th> <th>Rang 10</th>
@@ -43,6 +47,48 @@ layout: default
 	</tr>
 </table></p>
 
+<p>Da diese Darstellungsweise keine adäquade Auswertungsgrundlage bildet und bei größeren Stichproben schnell unübersichtlich wird insbesondere,
+wenn man mehr als eine Eigenschaft (hier: Farbe) erhebt, erstellen wir im ersten Schritt eine geordnete Liste.</br>
+Dafür ist es nötig, die Ausprägungen der Eigenschaft Farbe (empirisches Relativ) in verschiedene Zahlenwerte zu überführen (numerisches Relativ).</p>
+
+<li>Diese Zuordnung nennt man fachsprachlich homomorphe Abbildung und stellt somit eine Messung dar.</li>
+<li><b>Sagen wir willkürlich:</b> rot sei gleich 1, gelb sei gleich 2 grün sei gleich 3 und orange sei gleich 4.</li>
+
+<p>Dein Bruder hat gesehen, dass du deiner Schwester die 10 Gummibärchen gibst und sagt dir:</br>
+"Typischerweise gibt es bei Gummibärchen 6 Farben. Somit können wir feststellen, dass weiß (=5) und dunkelrot (=6) nicht gezogen wurden,
+es liegen für diese Ausprägungen keine Beobachtungen in der Stichprobe vor".</p>
+
+<h3>Liste</h3>
+
+<p><table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
+  <tr>
+    <th>1</th> <th>1</th> <th>1</th> <th>1</th> <th>2</th> <th>3</th> <th>3</th> <th>3</th> <th>4</th> <th>4</th>
+  </tr>
+  <tr>
+    <td>rot</td> <td>rot</td> <td>rot</td> <td>rot</td> <td>gelb</td> <td>grün</td> <td>grün</td> <td>grün</td> <td>orange</td> <td>orange</td>
+	</tr>
+</table></p>
+
+<p>Wir haben also nun die Möglichkeit zu zählen und absolute, relative und prozentuale Anteile als Statistiken
+über die Häufigkeiten der Eigenschaft Farbe von Gummibärchen in einer Stichprobe zu erstellen.
+Somit erhalten wir die jeweiligen Kontingente der jeweiligen Ausprägungen in der Stichprobe.</p>
+<li><b>Deine Schwester stellt fest:</b> "Absolut habe ich 4 rote, 1 gelben, 3 grüne, 2 orangene, 0 weiße und 0 dunkelrote Gummibärchen bekommen".</li>
+
+<h3>Kontingenztabelle</h3>
+
+<p><table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
+  <tr>
+    <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+  </tr>
+  <tr>
+    <td>4</td> <td>1</td> <td>3</td> <td>2</td> <td>0</td> <td>0</td>
+	</tr>
+</table></p>
+
+<p><b>Fraglich bleibt:</b> Ist sie zufrieden oder möchte vielleicht doch noch mehr Gummibärchen? Wie werden die anderen Anteile berechnet?
+	Wie wird das ganze den formal mathematisch dargestellt? 
+	Welche weiteren Statistiken kann ich auf Grundlage von Listen und Kontingenztabellen berechnen? Was hat das mit Verteilung zu tun?</p>
+<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
 	</div>
 
 	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
