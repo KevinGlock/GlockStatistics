@@ -1,0 +1,121 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="de">
+	<body>
+
+	<main>	
+		
+<div id="seite">
+
+<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../css/style.css" rel="stylesheet type="text/css">
+<div class="navbar">
+  <a class="active" href="../index.html">Home</a>
+  <a href="../sites/person.html">Person</a>
+  <a href="../sites/edu.html">Education</a>
+  <a href="../sites/work.html">Work</a>
+  <a href="../sites/examples.html">Examples</a>
+</div>
+</head>
+
+</div>
+						   
+	<div id="dispersion">
+<h1>Was ist ein Streuungsmaß und welche gibt es?</h1>
+			
+		<h2>Was ist ein Streuungsmaß?</h2>
+		
+		<p>Streuungmaße sind ebenso wie Lagemaße Kennwert einer Verteilung einer beobachten Eigenschaft.
+		Um dies zu veranschaulichen, <b>ein Beispiel:</b></br>
+		Manche Menschen sind stets offen, andere tendenziell schüchtern. 
+		Sie besitzen also Dispositionen in ihrer Persönlichkeit, die ihr Verhalten beeinflusst und zu dieser Ausprägung führt.
+		Jedoch sind wir alle Menschen und nicht immer offen und auch nicht immer schüchtern. In manchen Situationen sind wir schüchterner oder offener als in anderen.
+		Es gibt also eine Streuung der eigenen Gemütslage, aber auch eine Streuung zwischen verschiedenen Personen, wenn man diese Eigenschaft erhebt.
+		</p>
+		
+		<li>Ein Streuungsmaß gibt folglich an, wie stark eine erhobene Eigenschaft in ihren Ausprägungen schwangt.</li>
+		<li>Es gibt verschiedenste Streuungsmaße, alle mit Vor- und Nachteilen</li>
+		
+		<p>
+		</p>
+		
+		<h2>Welche Streuungsmaße gibt es?</h2>
+		
+		<p>Es gibt viele verschiedene Parameter, die wir ermitteln können, um eine Verteilung einer Eigenschaft umfassend zu beschreiben.</br>
+		Typischerweise ermitteln wir neben den Lagemaßen auch Streuungsmaße der Verteilung.</br>
+		Vom Mittelwert als Zentrum und Schwerpunkt der Verteilung ausgehend wollen wir beschreiben wie breit die Werte jeweils nach rechts und links abweichen.
+		Dabei tritt ein mathematisches Problem auf.</p>
+		<li><b>Die mittlere Abweichung:</b> Die Summe aller Beobachtungen jeweils subtrahiert vom Mittelwert ergibt immer Null.</li>
+		<p><math>
+		<mstyle displaymode="true">
+		<munderover>
+		<mo>&sum;</mo>
+		<mn>i=1</mn>
+		<mn>n</mn>
+		</munderover>
+		<msub>
+		<mi>x</mi>
+		<mn>i</mn>
+		</msub>
+		<mo>-</mo>
+		<mover>
+		<mi>x</mi>
+		<mn>-</mn>
+		</mover>
+		<mo>=</mo>
+		<mi>0</mi>
+		</math></p>
+		<p>Häufig wird auch die so genannte <b>5-Punkte-Zusammenfassung</b> genutzt:</br></p>
+		<li><b>Das Minimum:</b> Der kleinste Wert einer geordneten Liste von Werten.</li>
+		<li><b>Das Maximum:</b> Der größte Wert einer geordneten Liste von Werten.</li>
+		<li><b>Der Median:</b> Der Wert, der die geordnete Liste von Werten in zwei gleich große Hälften teilt.</br>
+		Also der Wert auf dem mittleren Rangplatz einer ungeraden Liste.</br>
+		Bei geraden Listen ist der Median, das arithmetische Mittel, der beiden Werte auf den mittleren Rangplätzen.</li>
+		<li><b>Das 25%-Quartil:</b> Der Wert, auf dem bzw. bis zu dem das unterste Viertel an Werten liegt.</li>
+		<li><b>Das 75%-Quartil:</b> Der Wert, auf dem bzw. bis zu dem die untersten drei Viertel an Werten liegen.</li>
+		<p>Diese sind mit dem Mittelwert die gängigsten <b>Lagemaße</b> der beschreibenden (deskriptiven) Statistik,
+		da wir hiermit schon eine sehr gute Übersicht über eine Verteilung erhalten.
+		</p>
+		<p><b>Fraglich bleibt:</b> welche weiteren mathematischen Eigenschaften haben diese Kennwerte?
+		Was ist eigentlich eine Verteilung? Welche weiteren Parameterklassen gibt es, um eine Verteilung zu beschreiben?</p>
+		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
+	</div>
+
+	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
+	<a href="../sites/examples.html">Examples</a>
+	<a href="../index.html">Home</a>
+	</div>
+
+</div>
+
+
+ <button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</main>
+</body>
+</html>
