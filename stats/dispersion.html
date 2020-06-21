@@ -40,49 +40,103 @@ layout: default
 		<li>Ein Streuungsmaß gibt folglich an, wie stark eine erhobene Eigenschaft in ihren Ausprägungen schwangt.</li>
 		<li>Es gibt verschiedenste Streuungsmaße, alle mit Vor- und Nachteilen</li>
 		
-		<p>
-		</p>
-		
 		<h2>Welche Streuungsmaße gibt es?</h2>
 		
 		<p>Es gibt viele verschiedene Parameter, die wir ermitteln können, um eine Verteilung einer Eigenschaft umfassend zu beschreiben.</br>
 		Typischerweise ermitteln wir neben den Lagemaßen auch Streuungsmaße der Verteilung.</br>
 		Vom Mittelwert als Zentrum und Schwerpunkt der Verteilung ausgehend wollen wir beschreiben wie breit die Werte jeweils nach rechts und links abweichen.
 		Dabei tritt ein mathematisches Problem auf.</p>
-		<li><b>Die mittlere Abweichung:</b> Die Summe aller Beobachtungen jeweils subtrahiert vom Mittelwert ergibt immer Null.</li>
+		<li><b>Die mittlere Abweichungssumme:</b> Die Summe aller Beobachtungen jeweils subtrahiert vom Mittelwert ergibt immer Null.</li>
 		<p><math>
 		<mstyle displaymode="true">
-		<munderover>
-		<mo>&sum;</mo>
-		<mn>i=1</mn>
-		<mn>n</mn>
-		</munderover>
+			<munderover>
+				<mo>&sum;</mo>
+					<mn>i=1</mn>
+						<mn>n</mn>
+			</munderover>
 		<msub>
-		<mi>x</mi>
-		<mn>i</mn>
+			<mi>x</mi>
+				<mn>i</mn>
+		</msub>
+			<mo>-</mo>
+		<mover>
+			<mi>x</mi>
+				<mn>_</mn>
+		</mover>
+		<mo>=</mo>
+		<mo>(</mo>
+		<msub>
+			<mi>x</mi>
+				<mn>1</mn>
 		</msub>
 		<mo>-</mo>
 		<mover>
-		<mi>x</mi>
-		<mn>_</mn>
+			<mi>x</mi>
+				<mn>_</mn>
+		</mover>
+		<mo>)</mo>
+		<mo>+</mo>
+		<mo>(</mo>
+		<msub>
+			<mi>x</mi>
+				<mn>2</mn>
+		</msub>
+			<mo>-</mo>
+		<mover>
+			<mi>x</mi>
+				<mn>_</mn>
+		</mover>
+		<mo>)</mo>
+		<mo>+</mo>
+		<mo>...</mo>
+		<mo>+</mo>
+		<mo>(</mo>
+		<msub>
+			<mi>x</mi>
+				<mn>n</mn>
+		</msub>
+			<mo>-</mo>
+		<mover>
+			<mi>x</mi>
+				<mn>_</mn>
+		</mover>
+		<mo>)</mo>
+		<mo>=</mo>
+		<mi>0</mi>
+		</math></p>
+		<p>Dies zeigt uns lediglich, dass, wenn wir jeweils nach rechts und links vom Mittelwert abweichen und die einzelnen Terme wieder zusammen nehmen,
+		sich die rechts und linksseitigen Abweichungen gegenseitig aufheben. Betrachtet man das Zentrum als Schwerpunkt zeigt sich:</p>
+		<p><math>
+		<mo>(</mo>
+		<mover>
+			<mi>x</mi>
+				<mn>_</mn>
+		</mover>
+		<mo>-</mo>
+		<mover>
+			<mi>x</mi>
+				<mn>_</mn>
 		</mover>
 		<mo>=</mo>
 		<mi>0</mi>
 		</math></p>
-		<!--><p>Häufig wird auch die so genannte <b>5-Punkte-Zusammenfassung</b> genutzt:</br></p>
-		<li><b>Das Minimum:</b> Der kleinste Wert einer geordneten Liste von Werten.</li>
-		<li><b>Das Maximum:</b> Der größte Wert einer geordneten Liste von Werten.</li>
-		<li><b>Der Median:</b> Der Wert, der die geordnete Liste von Werten in zwei gleich große Hälften teilt.</br>
-		Also der Wert auf dem mittleren Rangplatz einer ungeraden Liste.</br>
-		Bei geraden Listen ist der Median, das arithmetische Mittel, der beiden Werte auf den mittleren Rangplätzen.</li>
-		<li><b>Das 25%-Quartil:</b> Der Wert, auf dem bzw. bis zu dem das unterste Viertel an Werten liegt.</li>
-		<li><b>Das 75%-Quartil:</b> Der Wert, auf dem bzw. bis zu dem die untersten drei Viertel an Werten liegen.</li>
-		<p>Diese sind mit dem Mittelwert die gängigsten <b>Lagemaße</b> der beschreibenden (deskriptiven) Statistik,
-		da wir hiermit schon eine sehr gute Übersicht über eine Verteilung erhalten.
+		<p>Da wir so keine Abweichungen betrachten können, sondern immer zum Ursprung zurückgelangen,
+		müssen wir uns mit mathematischen Tricks behelfen, um vom Zentrum einer Verteilung auf die "Breite" eine Verteilung zu gelangen.
+		Also anstatt den Mittelwert zu betrachten, die Streuung.</p>
+		<p>Es gibt verschiedene Tricks dies zu erreichen :</br></p>
+		<li><b>Die betagsmäßige (absolute) Abweichung:</b> Die Abweichungssumme wird gebildet, wobei Vorzeichen wegfallen.</li>
+		<li><b>Die betragsmäßige (absolute) <b>mittlere</b> Abweichung:</b> Die Abweichungssumme wird gebildet, wobei Vorzeichen wegfallen. Zudem wird eine Normierung auf die Anzahl der Beobachtungen n vorgenommen.</li>
+		<li><b>Die quadratische Abweichung ("Varaition"):</b> Die Abweichungssumme wird gebildet, wobei die Terme jeweils quadriert werden.</li>
+		<li><b>Die mittlere quadratische Abweichung (Varianz):</b> Die Abweichungssumme wird gebildet, wobei die Terme jeweils quadriert werden. Zudem wird eine Normierung auf die Anzahl der Beobachtungen n vorgenommen.</li>
+		<li><b>Die Wurzel der mittleren quadratischen Abweichung (Standardabweichung):</b> Die Abweichungssumme wird gebildet, wobei die Terme jeweils quadriert werden und die Quadratwurzel aus diesen gezogen wird. Zudem wird eine Normierung auf die Anzahl der Beobachtungen n vorgenommen.</li>
+		<li><b>Der Variationskoeffizient:</b> Die Relation aus Standardabweichung über dem arithmetischen Mittel.</li>
+		<p>Dies sind die gängisten <b>Streuungsmaße</b> der beschreibenden (deskriptiven) Statistik,
+		gemeinsam mit den Lagemaßen wissen wir nun schon sehr viel über das "Aussehen" eine Verteilung und können bald auch inferenzstatistische Schlüsse auf Populationen ziehen.
 		</p>
 		<p><b>Fraglich bleibt:</b> welche weiteren mathematischen Eigenschaften haben diese Kennwerte?
-		Was ist eigentlich eine Verteilung? Welche weiteren Parameterklassen gibt es, um eine Verteilung zu beschreiben?</p>
-		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p><!-->
+		Was ist eigentlich eine Verteilung? Welche weiteren Parameterklassen gibt es, um eine Verteilung zu beschreiben?
+		Wie werden die weiteren Formeln formuliert und welche anderen Maße gibt es um die "Breite" und das generellle Aussehen einer Verteilung zu beschreiben?</p>
+		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
 	</div>
 
 	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
