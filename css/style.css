@@ -4,7 +4,7 @@
 /* My picture */
 img {
 	float: right;
-	width: 100%;
+	width: 10%;
     height: auto;
 	border-radius: 100%; // full circular image
 }
