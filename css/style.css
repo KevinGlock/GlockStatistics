@@ -2,9 +2,16 @@
 
 
 /* My picture */
+
+.flex { 
+    display: flex; 
+    justify-content: right; 
+    align-items: right;
+}
+
 img {
 	width: 18%;
-    height: 14%;
+    height: 10%;
 	border-radius: 100%; // full circular image
 }
 
