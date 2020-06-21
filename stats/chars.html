@@ -33,14 +33,14 @@ layout: default
 		Wir genießen gerade ein paar Süßigkeiten und haben eine Tüte Gummibärchen. Deine kleine Schwester kommt und sagt ich möchte gerne auch welche.
 		Wir ziehen also 10 Gummibärchen aus der Tüte und erhalten:</br>
 		<li>rot, rot, gelb, grün, rot, orange, rot, grün, orange, grün.</li>
-		<li>Dies sind nun n=10 Gummibärchen auf 10 Rangplätzen i.</li>
+		<li>Dies sind nun i Beobachtungen einer Eigenschaft von n=10 Objekten (n für numerus, also die Anzahl).</li>
 		</p>
 		
-<h3>Urliste</h3>
+<h3>unsortierte Urliste</h3>
 
 <p><table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
   <tr>
-    <th>Rang 1</th> <th>Rang 2</th> <th>Rang 3</th> <th>Rang 4</th> <th>Rang 5</th> <th>Rang 6</th> <th>Rang 7</th> <th>Rang 8</th> <th>Rang 9</th> <th>Rang 10</th>
+    <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th> <th>7</th> <th>8</th> <th>9</th> <th>10</th>
   </tr>
   <tr>
     <td>rot</td> <td>rot</td> <td>gelb</td> <td>grün</td> <td>rot</td> <td>orange</td> <td>rot</td> <td>grün</td> <td>orange</td> <td>grün</td>
@@ -48,9 +48,39 @@ layout: default
 </table></p>
 
 <p>Da diese Darstellungsweise keine adäquade Auswertungsgrundlage bildet und bei größeren Stichproben schnell unübersichtlich wird insbesondere,
-wenn man mehr als eine Eigenschaft (hier: Farbe) erhebt, erstellen wir im ersten Schritt eine geordnete Liste.</br>
-Dafür ist es nötig, die Ausprägungen der Eigenschaft Farbe (empirisches Relativ) in verschiedene Zahlenwerte zu überführen (numerisches Relativ).</p>
+wenn man mehr als eine Eigenschaft (hier: Farbe) erhebt, erstellen wir im ersten Schritt eine geordnete Urliste oder eine Rangliste.</p>
 
+<h3>sortierte Urliste</h3>
+
+<p><table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
+  <tr>
+    <th>Rang 1</th> <th>Rang 2</th> <th>Rang 3</th> <th>Rang4 </th> <th>Rang 5</th> <th>Rang 6</th> <th>Rang 7</th> <th>Rang 8</th> <th>Rang 9</th> <th>Rang 10</th>
+  </tr>
+  <tr>
+    <td>rot</td> <td>rot</td> <td>rot</td> <td>rot</td> <td>gelb</td> <td>grün</td> <td>grün</td> <td>grün</td> <td>orange</td> <td>orange</td>
+	</tr>
+</table></p>
+
+<p>Hierbei kommt das Problem auf, dass Ränge keine wohldefinierten Statistiken sind, wie du sehen kannst gibt es Beobachtungen mit gleichen Asuprägungen der Farbe.
+Dies nennt man <b>Bindungen</b>. Strenggenommen müssten diese Bindungen, denselben Rang erhalten, da sie gleichweitig ausgeprägt sind.</br>
+Rot kommt viermal vor, also erhält rot die Listenränge 1-4 oder eine adäquate Statistik:</br></p>
+<li>Rangaumme dieser Ränge</li>
+<li>den Durchschnitt der zugewiesenen Ränge</li>
+<li>Zufällig einen Wert der zugewiesenen Ränge</li>
+
+<h3>Rangliste</h3>
+
+<p><table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
+  <tr>
+    <th>Rang 1-4 bzw.10 bzw. 2,5</th> <th>2,5</th> <th>2,5</th> <th>2,5</th> <th>5</th> <th>7</th> <th>7</th> <th>7</th> <th>9,5</th> <th>9,5</th>
+  </tr>
+  <tr>
+    <td>rot</td> <td>rot</td> <td>rot</td> <td>rot</td> <td>gelb</td> <td>grün</td> <td>grün</td> <td>grün</td> <td>orange</td> <td>orange</td>
+	</tr>
+</table></p>
+
+<p>Wollen wir aber weitergehende Auswertungen vornehmen, insbesondere mit einer Computersoftware, wird es nötig,
+die Ausprägungen der Eigenschaft Farbe (empirisches Relativ) in verschiedene Zahlenwerte zu überführen (numerisches Relativ).</p>
 <li>Diese Zuordnung nennt man fachsprachlich homomorphe Abbildung und stellt somit eine Messung dar.</li>
 <li><b>Sagen wir willkürlich:</b> rot sei gleich 1, gelb sei gleich 2 grün sei gleich 3 und orange sei gleich 4.</li>
 
@@ -58,7 +88,7 @@ Dafür ist es nötig, die Ausprägungen der Eigenschaft Farbe (empirisches Relat
 "Typischerweise gibt es bei Gummibärchen 6 Farben. Somit können wir feststellen, dass weiß (=5) und dunkelrot (=6) nicht gezogen wurden,
 es liegen für diese Ausprägungen keine Beobachtungen in der Stichprobe vor".</p>
 
-<h3>Liste</h3>
+<h3>Homomorphe Abbildung</h3>
 
 <p><table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
   <tr>
@@ -71,10 +101,10 @@ es liegen für diese Ausprägungen keine Beobachtungen in der Stichprobe vor".</
 
 <p>Wir haben also nun die Möglichkeit zu zählen und absolute, relative und prozentuale Anteile als Statistiken
 über die Häufigkeiten der Eigenschaft Farbe von Gummibärchen in einer Stichprobe zu erstellen.
-Somit erhalten wir die jeweiligen Kontingente der jeweiligen Ausprägungen in der Stichprobe.</p>
+Somit erhalten wir die jeweiligen Häufigkeiten der jeweiligen Ausprägungen in der Stichprobe.</p>
 <li><b>Deine Schwester stellt fest:</b> "Absolut habe ich 4 rote, 1 gelben, 3 grüne, 2 orangene, 0 weiße und 0 dunkelrote Gummibärchen bekommen".</li>
 
-<h3>Kontingenztabelle</h3>
+<h3>Häufigkeitstabelle</h3>
 
 <p><table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
   <tr>
@@ -84,6 +114,58 @@ Somit erhalten wir die jeweiligen Kontingente der jeweiligen Ausprägungen in de
     <td>4</td> <td>1</td> <td>3</td> <td>2</td> <td>0</td> <td>0</td>
 	</tr>
 </table></p>
+
+<p>Um nun die Kontingente zu erhalten benötigen wir eine zweite Variable. Im Moment sind die Beobachtungen ja konstant nur für deine Schwester vorhanden.
+Wir wollen jetzt aber wissen wie viele Gümmibärchen hattest du eigentlich im Vergleich?</p>
+
+<h3>Kontingenztabelle</h3>
+
+<table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
+  <thead>
+  <tr>
+    <th scope="col" >Farbe</th>
+	<th scope="col" >1</th>
+	<th scope="col" >2</th>
+	<th scope="col" >3</th>
+	<th scope="col" >4</th>
+	<th scope="col" >5</th>
+	<th scope="col" >6</th>
+	<th scope="col" >Zeilensumme</th>
+  </tr>
+  </thead>
+  <table>
+  <tfoot>
+  <tr>
+    <th scope="col" >Spaltensummen</td>
+	<th scope="col" >a</th>
+	<th scope="col" >b</th>
+	<th scope="col" >c</th>
+	<th scope="col" >d</th>
+	<th scope="col" >e</th>
+  </tr>
+  </tfoot>
+  <tbody>
+  <tr>
+   <th scope="row" >Person</th>
+   <td axis="Schwester-1" >4</th>
+   <td axis="Schwester-2" >1</th>
+   <td axis="Schwester-3" >3</th>
+   <td axis="Schwester-4" >2</th>
+   <td axis="Schwester-5" >0</th>
+   <td axis="Schwester-6" >0</th>
+   <td axis="Zeilensumme" >a</th>
+   <td axis="Zeilensumme" >b</th>
+  </tr>
+  <tr>
+   <th scope="row" >Person</th>
+   <td axis="Du-1" >6</th>
+   <td axis="Du-2" >4</th>
+   <td axis="Du-3" >7</th>
+   <td axis="Du-4" >3</th>
+   <td axis="Du-5" >6</th>
+   <td axis="Du-6" >2</th>
+  </tr>
+</table>
 
 <p><b>Fraglich bleibt:</b> Ist sie zufrieden oder möchte vielleicht doch noch mehr Gummibärchen? Wie werden die anderen Anteile berechnet?
 	Wie wird das ganze den formal mathematisch dargestellt? 
