@@ -1,5 +1,14 @@
 /* CSS Document       */ 
 
+
+/* My picture */
+img {
+	float: right;
+	width: 100%;
+    height: auto;
+	border-radius: 100%; // full circular image
+}
+
 /*body specifications*/
 
 body {
