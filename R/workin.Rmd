@@ -1,5 +1,5 @@
 ---
-title: "Preparing Data"
+title: "Arrr! als Programmiersprache"
 encoding: "UTF-8"
 author: "Kevin Glock"
 abstract: "Diese Dokument soll dir einen leichten Einstieg in die Programmierumgebung R bieten und einige wichtige Funktionsweisen erläutern."
