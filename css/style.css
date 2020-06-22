@@ -26,6 +26,7 @@ body {
   width: 100%;
   background-image: linear-gradient(to right, #155799, #159957);
   overflow: auto;
+  border-radius: 6px;
 }
 
 /* Navigation links */
