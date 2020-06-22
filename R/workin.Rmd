@@ -1,0 +1,146 @@
+---
+title: "Preparing Data"
+encoding: "UTF-8"
+author: "Kevin Glock"
+abstract: "Diese Dokument soll dir einen leichten Einstieg in die Programmierumgebung R bieten und einige wichtige Funktionsweisen erläutern."
+date: '`r format(Sys.Date(), "%d.%B %Y")`'
+lang: "de"
+output:
+  html_document:
+    theme: sandstone
+    highlight: textmate
+    code_folding: hide
+    fontsize: "12pt"
+    fontstyle: "Arial"
+    toc: TRUE
+    lot: TRUE
+    toc_depth: 3
+    toc_float:
+      collapsed: TRUE
+      smooth_scroll: TRUE
+      number_sections: TRUE
+---
+
+# Wie funktioniert R?
+
+Da du, wenn du dies liest bestimmt schon von R gehört hast und ein gewisses Grundwissen in der Logik von Programmierung hast, möchte ich hier nicht mehr auf die Geschichte und generelle Umgebung eingehen. Vielmehr möchte ich einen Überblick über die Methoden geben die in R in sogennanten "packages" implemenitert sind und wie diese nützlich eingesetzt werden können. Dieses Dokument ist übrigens auch mit R geschrieben, genauer gesagt mit R Markdown (document.Rmd). Dies ist eine Auszeichnungssprache die sehr simpel konzipiert ist und die nützlich für jegliche Dokumente (Worddokumente, Präsentationen, Internetseiten, ...) ist die du für die Universität oder den Arbeitgeber erstellen musst und viel Auswertungscode beinhalten. 
+
+## Daten einlesen
+
+Um Daten zur Auswertung einzulesen gibt es verschiedene Ansätze. Je nachdem, was für dich relevant ist kannst du einen der folgenden Wege auswählen:
+
++ selbstständig Daten einlesen, die bereits analog vorliegen (in eine Exceltabelle oder direkt in R)
++ auf Daten zurückgreifen, die bereits digital vorliegen (Bspw. eine Exceltabelle)
++ auf Daten aus einem R package zurückgreifen (Trainingsdaten)
++ Daten in R zufällig oder willkürlich erzeugen, die auf Startwerten beruhen (Simulationsdaten)
+
+Bereits dieser erste Schritt bevor wir überhaupt mit einem Forschungsprozess begonnen haben zeigt, wie mächtig solch eine Programmierumgebung sein kann.
+
+Aber nun zum eigentlich interessanten.
+
+### Selbstständig Daten einlesen
+
+Erstelle eine Datenmatrix in einem Tabellenkalkulationsprogramm wir Excel.
+Bedenke: Einzelne Beobachtungen in Zeilen untereinander, Variablen in Spalten nebeneinander. Wir können in R die Daten später immernoch leicht manipulieren und diese Logik ändern, es ist für uns aber langfristig einfacher immer eine menschlich leicht lesbare Logik in unseren Datenblättern beizubehalten, damit man nicht den Überblick verliert.
+
+Wenn du eine Tabelle als Datenmatrix erstellt hast (.xlsx, .csv, .sav, .dta) kannst du diese einfach in R einlesen. Nutze das Package "foreign", das leicht fremde Datentypen einliest. Für .xlsx benötigen wir "openxlsx".  Ich habe hier das gängigste Vorgehen aufgeführt. Es gibt noch andere Pakete, die diese Einlesefunktion abdecken, jedoch benötigen, diese wieder weitere Voraussetzungen zur Nutzung. Es gibt noch einige weitere Datentypen, die hiermit einlesbar sind, hier werden die gängisten aufgeführt.
+
+```{r,  echo=T, warning= F, eval = F, message = F}
+
+# install.packages("foreign")
+# install.packages("openxlsx")
+
+library("foreign")
+
+library("openxlsx")
+
+
+# ?read.xlsx
+
+data <-read.xlsx("C:/root/subfolder/data.xlsx", sheet = 1, colNames = TRUE or FALSE)
+
+# ?read.csv
+
+data <- read.csv("C:/.../daten.csv", header= T or F, sep="")
+
+# ?read.spss
+
+spss <- read.spss("daten.sav", use.value.labels = T/F)
+
+# ?read.dta
+
+stata <- read.dta("C:/admin/unterordner/daten.dta")
+```
+
+Wie man sieht haben wir eine ähnliche Struktur der Funktionen. Zuerst immer der Pfad. Dann einige Bedingungen, wie:
+
++ Welches Tabellenblatt?
++ Gibt es einen Header/Spaltennamen?
++ Wie sind die Beobachtungen sepperiert ("", ",", ";", ...)
++ Sollen die Wertebezeichungen genutzt werden, oder die numerischen Faktoren?
+
+Wollen wir Daten selber erzeugen können wir einem Objekt direkt Werte zuweisen. Diese können problemlos verscheidene Niveaus (nominal, ordinal/rang, metrisch/kardinal) besitzen und numerisch oder alphanumerisch sein. Daneben gibt es noch andere spezielle Möglichkeiten auf die ich hier nicht eingehen möchte.
+
+Ebenso können wir vorhandene Trainingsdatensätze in R nutzen. Cars ist dabei wohl der berühmteste.
+
+Oder wir kombinieren die eingelesenen Daten aus einem Ordner in einer anderen Datenmatrix neu.
+
+```{r,  echo=T, warning= F, eval = F, message = F}
+
+data <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+data <- c("nie", "selten", "teils/teils", "oft", "immer")
+
+data("cars")
+
+data <- read.csv("../data/data.csv", sep=";", header=T)
+
+x1 <-c(data[,1])
+x2 <-c(data[,2])
+x3 <-c(data[,3])
+x4 <-c(data[,4])
+X <- matrix(c(x0,x2,x3,x4), nrow=33, ncol=4)
+
+```
+
+
+## Daten sichten
+
+Nun haben wir einen Datensatz in unserer Umgebung (Global Environment) und können die uns die Daten anschauen und erste deskriptive Auswertungen vornehmen, um uns mit ihnen vertraut zu machen.
+
+```{r,  echo=T, warning= F, eval = F, message = F}
+
+data <- read.csv("../data/data.csv", sep=";", header=T)
+
+data
+
+View(data)
+
+head(data)
+
+tail(data)
+
+show(data[, "Preis"])
+
+View(data[, "Kilometer"])
+
+class(data)
+
+class(data[, "Preis"])
+
+print(data[, "Preis"])
+
+cat(data[, "Kilometer"])
+
+table(data[, "Preis"])
+
+attributes(data)
+
+names(data)
+
+names(cars)
+
+pairs(cars)
+
+pairs(data)
+```

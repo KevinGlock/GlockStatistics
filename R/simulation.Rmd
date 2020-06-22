@@ -1,0 +1,31 @@
+---
+title: "Preparing Data"
+encoding: "UTF-8"
+author: "Kevin Glock"
+abstract: "Diese Dokument soll eine einfache Simulationsstudie in der Programmierumgebung R bieten und einige wichtige Funktionsweisen erläutern. Im späteren Verlauf werden zudem komplexere Simulationen im Kontext von MCMC (Marcov Chain Monte Carlo Methoden) und Bayesianischer Statistik präsentiert."
+date: '`r format(Sys.Date(), "%d.%B %Y")`'
+lang: "de"
+output:
+  html_document:
+    theme: sandstone
+    highlight: textmate
+    code_folding: hide
+    fontsize: "12pt"
+    fontstyle: "Arial"
+    toc: TRUE
+    lot: TRUE
+    toc_depth: 3
+    toc_float:
+      collapsed: TRUE
+      smooth_scroll: TRUE
+      number_sections: TRUE
+---
+
+# Simulation
+
+Was ist eine Simulationsstudie?
+
+
+```{R, echo=T, warning=F, eval=F, message=F}
+code
+```
