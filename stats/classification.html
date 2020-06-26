@@ -1,0 +1,174 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="de">
+	<body>
+
+	<main>	
+		
+<div id="seite">
+
+<head>
+				<meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>GlockStatistics. Statistical Consulting and Tutoring</title>
+				<meta name="description" content="Website of GlockStatistics. Statistical Consulting and Tutoring">
+				<meta name="author" content="Kevin Glock">
+				<meta name="copyright" content="© Kevin Glock 2020">
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
+<div class="navbar">
+  <a class="active" href="../index.html">Home</a>
+  <a href="../sites/person.html">Person</a>
+  <a href="../sites/edu.html">Education</a>
+  <a href="../sites/work.html">Work</a>
+  <a href="../sites/examples.html">Examples</a>
+</div>
+</head>
+
+</div>
+						   
+	<div id="data">
+<h1>Was sind klassierte Daten?</h1>
+			
+		<h2>Wie bildet man Klassen?</h2>
+		
+		<p>Beispiel:
+		Wir betrachten das Alter von Schülerinnen und Schülern einer Mittelschule in Duisburg.
+		Im Regelfall wechseln Schülerinnen und Schüler im Alter von 9 oder 10 Jahren von der Grundschule in die 5. Jahrgangsstufe
+		auf einer Hauptschule, Realschule, Gymnasium oder Förderschule. Wenn sie nicht sitzen bleiben,
+		wechseln sie im Regelfall im Altern von 15 oder 16 Jahren von der 10. Jahrgangsstufe der Mittelschule
+		in die Oberschule ((Fach-)Abitur) oder in Ausbildung, Praktikum, Auslandsjahr, ... und ihnen steht die Welt offen.</p>
+		<p>Wir haben nun die Information, dass Schülerinnen und Schüler zwischen 9 und 16 Jahren in der Mittelschule sind und
+		wir wissen dass sie die 5.- 10. Jahrgangsstufe durchlaufen. Wir können also das Alter nach Jahrgangsstufe klassieren.</p>
+		<p>Es sind 6 Klassen gegeben. Im vorliegenden Beispiel befinden sich im Schnitt 148.8 Schülerinnen und Schüler in jeder der Jahrgangsstufen (N/Anzahl I).
+		Wenn man das Alter der Schülerinnen und Schüler in Klassen zusammenfasst (Aggregation) gehen Informationen über das exakte Alter verloren, daher gehen wir davon aus,
+		dass das Alter zwischen den Klassen gleichverteilt ist und in den Klassen normalverteilt. Deshalb bildet sich als Klassenmitte das mittlere Alter aus beiden Intervallsgrenzen.
+		Die Klassenbreite ergibt sich immer, wenn man von der oberen Intervallsgrenze die untere Intervallsgrenze subtrahiert.</p>
+		
+		<table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
+  <thead>
+  <tr>
+    <th scope="col" >Klasse</th>
+	<th scope="col" >Intervall</th>
+	<th scope="col" >Anzahl n</th>
+	<th scope="col" >Klassenmitte m</th>
+	<th scope="col" >relative Häufigkeit f</th>
+	<th scope="col" >kummulierte Häufigkeit F</th>
+	<th scope="col" >Klassenbreite d</th>
+  </tr>
+  </thead>
+
+  <tfoot>
+  <tr>
+    <th scope="col" ></td>
+	<th scope="col" ></th>
+	<th scope="col" >Gesamtanzahl</br>N=893</th>
+	<th scope="col" ></th>
+	<th scope="col" >Summe</br>relativer</br>Häufigkeiten</br>=893/893</th>
+	<th scope="col" >Summe</br>kummulierter</br>Häufigkeiten</br>=1</th>
+	<th scope="col" ></th>
+  </tr>
+  </tfoot>
+
+  <tbody>
+  <tr>
+   <th scope="row" >Klasse 5</th>
+   <td axis="Intervall" >I1=[9;10[</th>
+   <td axis="Anzahl" >132</th>
+   <td axis="Klassenmitte" >9,5</th>
+   <td axis="relative" >132/893</th>
+   <td axis="kummulierte" >132/893</th>
+   <td axis="Klassenbreite" >1 (Lebensjahr)</th>
+  </tr>
+
+  <tr>
+   <th scope="row" >Klasse 6</th>
+   <td axis="Intervall" >I2=[10;11[</th>
+   <td axis="Anzahl" >133</th>
+   <td axis="Klassenmitte" >10,5</th>
+   <td axis="relative" >133/893</th>
+   <td axis="kummulierte" >265/893</th>
+   <td axis="Klassenbreite" >1</th>
+  </tr>
+  
+    <tr>
+   <th scope="row" >Klasse 7</th>
+   <td axis="Intervall" >I3=[11;12[</th>
+   <td axis="Anzahl" >155</th>
+   <td axis="Klassenmitte" >11,5</th>
+   <td axis="relative" >155/893</th>
+   <td axis="kummulierte" >420/893</th>
+   <td axis="Klassenbreite" >ai-ai-1</th>
+  </tr>
+  
+    <tr>
+   <th scope="row" >Klasse 8</th>
+   <td axis="Intervall" >I4=[12;13[</th>
+   <td axis="Anzahl" >163</th>
+   <td axis="Klassenmitte" >12,5</th>
+   <td axis="relative" >163/893</th>
+   <td axis="kummulierte" >Fi-1+Fi</th>
+   <td axis="Klassenbreite" >d</th>
+  </tr>
+  
+    <tr>
+   <th scope="row" >Klasse 9</th>
+   <td axis="Intervall" >I5=[13;14[</th>
+   <td axis="Anzahl" >154</th>
+   <td axis="Klassenmitte" >13,5</th>
+   <td axis="relative" >n/N</th>
+   <td axis="kummulierte" >F</th>
+   <td axis="Klassenbreite" >d</th>
+  </tr>
+  
+    <tr>
+   <th scope="row" >Klasse 10</th>
+   <td axis="Intervall" >I6=[15;16[</th>
+   <td axis="Anzahl" >156</th>
+   <td axis="Klassenmitte" >ai-1+ai/2</th>
+   <td axis="relative" >f</th>
+   <td axis="kummulierte" >F</th>
+   <td axis="Klassenbreite" >d</th>
+  </tr>
+</table>
+		<p><b>Fraglich bleibt:</b> Welche Werte müssten in die nicht ausgefüllten Felder eingetragen werden? Wie berechnet man nun ein Histogramm aus den klassierten Daten?
+		Wie zeichnet man ein Histogramm? Was war nochmal ein Histogramm? Wieso gehen Informationen bei diesem Verfahren verloren?</p>
+		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
+	</div>
+
+	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
+	<a href="../sites/examples.html">Examples</a>
+	<a href="../index.html">Home</a>
+	</div>
+
+</div>
+
+
+ <button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</main>
+</body>
+</html>
