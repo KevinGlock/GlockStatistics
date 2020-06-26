@@ -35,7 +35,8 @@ layout: default
 um sie auf dieser Grundlage vergleichend auswerten zu können. Klassierungen dienen zudem der Aggregation von Daten. Also der Hochskalierung in eine abstraktere Darstellung,
 dadurch erlangen wir übersichtlichere Daten und können Gemeinsamkeiten, Ähnlichkeiten sowie Unterschiede und Distanzen zwischen Gruppen oder Entitäten (einzelne Einheiten oder Beobachtungen) endecken und beschreiben.
 Zudem sind klassierte Daten als erster Schritt nötig, wenn man im zweiten Schritt ein Histogramm berechnen und zeichnen möchte.
-Diese Art der Darstellung wird sehr häufig in den Sozial- und Wirtschaftswissenschaften genutzt, aber auch in der Psychologie, Biologie und Textanalyse kommen klassierte Daten bzw. komplexere Klassierungsverfahren zur Anwendung.
+Diese Art der Darstellung wird sehr häufig in den Sozial- und Wirtschaftswissenschaften genutzt, aber auch in der Psychologie, Biologie und Textanalyse kommen klassierte Daten
+bzw. komplexere Klassierungsverfahren zur Anwendung.
 </p>
 			
 		<h2>Wie bildet man Klassen?</h2>
@@ -187,7 +188,11 @@ Diese Art der Darstellung wird sehr häufig in den Sozial- und Wirtschaftswissen
 	<mn>i</mn>
 	</msub>
 		</math></th>
-   <td axis="Klassenbreite">d</th>
+   <td axis="Klassenbreite"><math>
+	<msub>
+		<mi>d</mi>
+		<mn>i</mn>
+	</msub></math></th>
   </tr>
   
     <tr>
@@ -201,8 +206,16 @@ Diese Art der Darstellung wird sehr häufig in den Sozial- und Wirtschaftswissen
 		<mi>N</mi>
 		</mfrac>
 		</math></th>
-   <td axis="kummulierte">F</th>
-   <td axis="Klassenbreite">d</th>
+   <td axis="kummulierte"><math>
+	<msub>
+		<mi>F</mi>
+		<mn>i</mn>
+	</msub></math></th>
+   <td axis="Klassenbreite"><math>
+	<msub>
+		<mi>d</mi>
+		<mn>i</mn>
+	</msub></math></th>
   </tr>
   
     <tr>
@@ -226,9 +239,22 @@ Diese Art der Darstellung wird sehr häufig in den Sozial- und Wirtschaftswissen
 		<mi>2</mi>
 		</mfrac>
 		</math></th>
-   <td axis="relative" >f</th>
-   <td axis="kummulierte" >F</th>
-   <td axis="Klassenbreite" >d</th>
+   <td axis="relative" ><math>
+	<msub>
+		<mi>f</mi>
+		<mn>i</mn>
+	</msub></math></th>
+   <td axis="kummulierte" ><math>
+	<msub>
+		<mi>F</mi>
+		<mn>i</mn>
+	</msub></math>
+	</th>
+   <td axis="Klassenbreite" ><math>
+	<msub>
+		<mi>d</mi>
+		<mn>i</mn>
+	</msub></math></th>
   </tr>
 </table>
 		<p><b>Fraglich bleibt:</b> Welche Werte müssten in die nicht ausgefüllten Felder eingetragen werden? Wie berechnet man nun ein Histogramm aus den klassierten Daten?
