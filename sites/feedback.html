@@ -31,8 +31,6 @@ if(isset($_POST["q7"]))
 <!DOCTYPE html>
 <html lang="de">
 		
-
-
 <head>
 				<meta charset="utf-8">
 				<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,6 +40,7 @@ if(isset($_POST["q7"]))
 				<meta name="author" content="Kevin Glock">
 				<meta name="copyright" content="© Kevin Glock 2020">
 		<link href="../css/style.css" rel="stylesheet" type="text/css">
+
 <div class="navbar">
   <a class="active" href="../index.html">Home</a>
   <a href="person.html">Person</a>
@@ -49,64 +48,80 @@ if(isset($_POST["q7"]))
   <a href="work.html">Work</a>
   <a href="examples.html">Examples</a>
 </div>
+
 </head>
+
 <body id="Feedbackseite" onload="document.person.vorname.focus();">
 	<main style="margin-bottom: 60px;">
-	
 
-						   
-<h1>Persönliches Feedback</h1>
+		<div id="feedback">
 
-<p>Vielen Dank, dass du dich entschieden hast mir ein Feedback zugeben. Dies ist sehr wichtig für mich und meine weitere Arbeit.
-Feedback hilft bei der Motivation und sich auf kommende Situationen besser vorbereiten zu können. Zudem möchte ich dich um ein kurzes Statement von dir bitten,
-inwiefern ich dir helfen konnte. Dieses Statement erscheint dann in den folgenden Tagen öffentlich auf meinem Webauftritt,
-um anderen einen Eindruck zu vermitteln der von dir persönlich kommt, was an meiner Arbeit dir besonders hilfreich bei deinem Projekt war.</p>
-<p>Da deine Aussage auf meinem Webauftritt zitiert wird, bin ich verpflichtet dich aufzuklären, dass deine Daten im angegebenen Umfang verarbeitet und gespeichert werden müssen.
-Falls du ein Feedback gibst erklärst du dich also dieser Verarbeitung und Speicherung ein. Du kannst jedoch jederzeit grund- und fristlos widersprechen,
-wenn du dies nicht mehr möchtest. Deine Daten werden nicht an Dritte weitergegeben oder andersweitig genutzt.</p>
-<p>Um ein persönlichen Eindruck zu vermitteln, wäre es schön, wenn du deinen Vornamen angibst.
-Falls du dies nicht möchtest, kannst du auch anonymisiert antworten oder ein Pseudonym verwenden.</p>
+	<h1>Persönliches Feedback</h1>
 
-<!--form action="save.php" name="" id="person" enctype="text/plain" method="post">
-<input type="hidden" name="empfaenger" value="k_glock@web.de"-->
-<label class="h4" form="person">Wie ist dein Name?</label></br>
-    <input type="text" name="vorname" id="vorname" maxlength="30">
-	
-<h4>Was hat dir besonders gut gefallen?</h4>
-<textarea name="q1" cols="50" rows="10"></textarea>
+		<p>Vielen Dank, dass du dich entschieden hast mir ein Feedback zugeben. Dies ist sehr wichtig für mich und meine weitere Arbeit.
+		Feedback hilft bei der Motivation und sich auf kommende Situationen besser vorbereiten zu können. Zudem möchte ich dich um ein kurzes Statement von dir bitten,
+		inwiefern ich dir helfen konnte. Dieses Statement erscheint dann in den folgenden Tagen öffentlich auf meinem Webauftritt,
+		um anderen einen Eindruck zu vermitteln der von dir persönlich kommt, was an meiner Arbeit dir besonders hilfreich bei deinem Projekt war.</p>
 
-<h4>Was hat dir nicht so gut gefallen?</h4>
-<textarea name="q2" cols="50" rows="10"></textarea>
+		<p>Da deine Aussage auf meinem Webauftritt zitiert wird, bin ich verpflichtet dich aufzuklären, dass deine Daten im angegebenen Umfang verarbeitet und gespeichert werden müssen.
+		Falls du ein Feedback gibst erklärst du dich also dieser Verarbeitung und Speicherung ein. Du kannst jedoch jederzeit grund- und fristlos widersprechen,
+		wenn du dies nicht mehr möchtest. Deine Daten werden nicht an Dritte weitergegeben oder andersweitig genutzt.</p>
 
-<h4>Was sollte ich deiner Ansicht nach besser machen oder verändern?</h4>
-<textarea name="q3" cols="50" rows="10"></textarea>
+		<p>Um ein persönlichen Eindruck zu vermitteln, wäre es schön, wenn du deinen Vornamen angibst.
+		Falls du dies nicht möchtest, kannst du auch anonymisiert antworten oder ein Pseudonym verwenden.</p>
 
-<h4>Hat dir etwas gefehlt?</h4>
-<textarea name="q4" cols="50" rows="10"></textarea>
+		<!--form action="save.php" name="" id="person" enctype="text/plain" method="post">
+		<input type="hidden" name="empfaenger" value="k_glock@web.de"-->
 
-<h4>Würdest du mich und meine Leistungen anderen weiter empfehlen?</h4>
-<textarea name="q5" cols="50" rows="10"></textarea>
+		<label class="h4" form="person">Wie ist dein Name?</label></br>
+			<input type="text" name="vorname" id="vorname" maxlength="30">
+			
+	<h4>Was hat dir besonders gut gefallen?</h4>
 
-<h4>Möchtest du mir noch etwas anderes mitteilen?</h4>
-<textarea name="q7" cols="50" rows="10"></textarea>
+		<textarea name="q1" cols="50" rows="10"></textarea>
 
-<h4>Wenn du mich nun empfehlen würdest, was würdest du kurz und knapp anderen mitteilen wollen?</h4>
-<p>(dieses Feedback erscheint öffentlich auf meinem Webauftritt)</p>
-<textarea name="q6" cols="50" rows="10"></textarea>
+	<h4>Was hat dir nicht so gut gefallen?</h4>
+
+		<textarea name="q2" cols="50" rows="10"></textarea>
+
+	<h4>Was sollte ich deiner Ansicht nach besser machen oder verändern?</h4>
+
+		<textarea name="q3" cols="50" rows="10"></textarea>
+
+	<h4>Hat dir etwas gefehlt?</h4>
+
+		<textarea name="q4" cols="50" rows="10"></textarea>
+
+	<h4>Würdest du mich und meine Leistungen anderen weiter empfehlen?</h4>
+
+		<textarea name="q5" cols="50" rows="10"></textarea>
+
+	<h4>Möchtest du mir noch etwas anderes mitteilen?</h4>
+
+		<textarea name="q7" cols="50" rows="10"></textarea>
+
+	<h4>Wenn du mich nun empfehlen würdest, was würdest du kurz und knapp anderen mitteilen wollen?</h4>
+
+		<p>(dieses Feedback erscheint öffentlich auf meinem Webauftritt)</p>
+
+		<textarea name="q6" cols="50" rows="10"></textarea>
+
 
 <button type="reset" id="myFdb1" >Feedback verwerfen</button>
-    <button type="submit" class="save" id="myFdb2">Feedback abgeben</button>
-</form>
+<button type="submit" class="save" id="myFdb2">Feedback abgeben</button>
+		</form>
 
-</main>
+		</div>
+		
+	</main>
 
 	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
 	<a href="examples.html">Examples</a>
 	<a href="../index.html">Home</a>
 	</div>
 
- <button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
-<script>
+<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+	<script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
@@ -126,8 +141,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-</script>
+	</script>
 
-</div>
 </body>
+
 </html>

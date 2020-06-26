@@ -3,12 +3,7 @@ layout: default
 ---
 <!DOCTYPE html>
 <html lang="de">
-	<body>
-
-	<main>	
-		
-<div id="seite">
-
+	
 <head>
 				<meta charset="utf-8">
 				<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +13,7 @@ layout: default
 				<meta name="author" content="Kevin Glock">
 				<meta name="copyright" content="© Kevin Glock 2020">
 		<link href="../css/style.css" rel="stylesheet" type="text/css">
+
 <div class="navbar">
   <a class="active" href="../index.html">Home</a>
   <a href="../sites/person.html">Person</a>
@@ -25,15 +21,19 @@ layout: default
   <a href="../sites/work.html">Work</a>
   <a href="../sites/examples.html">Examples</a>
 </div>
+
 </head>
 
-</div>
-						   
-	<div id="dispersion">
-<h1>Was ist ein Streuungsmaß und welche gibt es?</h1>
-<h4>20. Juni 2020</h4>
+<body>
+	<main>
+  
+		<div id="dispersion">
+
+	<h1>Was ist ein Streuungsmaß und welche gibt es?</h1>
+
+	<h4>20. Juni 2020</h4>
 			
-		<h2>Was ist ein Streuungsmaß?</h2>
+	<h2>Was ist ein Streuungsmaß?</h2>
 		
 		<p>Streuungmaße sind ebenso wie Lagemaße Kennwert einer Verteilung einer beobachten Eigenschaft.
 		Um dies zu veranschaulichen, <b>ein Beispiel:</b></br>
@@ -42,16 +42,19 @@ layout: default
 		Jedoch sind wir alle Menschen und nicht immer offen und auch nicht immer schüchtern. In manchen Situationen sind wir schüchterner oder offener als in anderen.
 		Es gibt also eine Streuung der eigenen Gemütslage, aber auch eine Streuung zwischen verschiedenen Personen, wenn man diese Eigenschaft erhebt.
 		</p>
+
 		<ul>
 		<li>Ein Streuungsmaß gibt folglich an, wie stark eine erhobene Eigenschaft in ihren Ausprägungen schwangt.</li>
 		<li>Es gibt verschiedenste Streuungsmaße, alle mit Vor- und Nachteilen</li>
 		</ul>
-		<h2>Welche Streuungsmaße gibt es?</h2>
+
+	<h2>Welche Streuungsmaße gibt es?</h2>
 		
 		<p>Es gibt viele verschiedene Parameter, die wir ermitteln können, um eine Verteilung einer Eigenschaft umfassend zu beschreiben.</br>
 		Typischerweise ermitteln wir neben den Lagemaßen auch Streuungsmaße der Verteilung.</br>
 		Vom Mittelwert als Zentrum und Schwerpunkt der Verteilung ausgehend wollen wir beschreiben wie breit die Werte jeweils nach rechts und links abweichen.
 		Dabei tritt ein mathematisches Problem auf.</p>
+
 		<ul>
 		<li><b>Die mittlere Abweichungssumme:</b> Die Summe aller Beobachtungen jeweils subtrahiert vom Mittelwert ergibt immer Null.</li>
 		<p><math>
@@ -111,9 +114,12 @@ layout: default
 		<mo>=</mo>
 		<mi>0</mi>
 		</math><a id="fn3" title="MathML wird in Chrome und Edge nicht untersstützt. Ein Umstieg auf MathJax erfolgt bald." href="../sites/footnotes.html">[2.2]</a>
-		</ul></p>
+		</p>
+		</ul>
+
 		<p>Dies zeigt uns lediglich, dass, wenn wir jeweils nach rechts und links vom Mittelwert abweichen und die einzelnen Terme wieder zusammen nehmen,
 		sich die rechts und linksseitigen Abweichungen gegenseitig aufheben. Betrachtet man das Zentrum als Schwerpunkt zeigt sich:</p>
+
 		<p><math>
 		<mo>(</mo>
 		<mover>
@@ -129,10 +135,13 @@ layout: default
 		<mo>=</mo>
 		<mi>0</mi>
 		</math><a id="fn4" title="MathML wird in Chrome und Edge nicht untersstützt. Ein Umstieg auf MathJax erfolgt bald." href="../sites/footnotes.html">[2.3]</a></p>
+
 		<p>Da wir so keine Abweichungen betrachten können, sondern immer zum Ursprung zurückgelangen,
 		müssen wir uns mit mathematischen Tricks behelfen, um vom Zentrum einer Verteilung auf die "Breite" eine Verteilung zu gelangen.
 		Also anstatt den Mittelwert zu betrachten, die Streuung.</p>
+
 		<p>Es gibt verschiedene Tricks dies zu erreichen :</br></p>
+
 		<ul>
 		<li><b>Die betagsmäßige (absolute) Abweichung:</b> Die Abweichungssumme wird gebildet, wobei Vorzeichen wegfallen.</li>
 		<li><b>Die betragsmäßige (absolute) <b>mittlere</b> Abweichung:</b> Die Abweichungssumme wird gebildet, wobei Vorzeichen wegfallen. Zudem wird eine Normierung auf die Anzahl der Beobachtungen n vorgenommen.</li>
@@ -141,25 +150,28 @@ layout: default
 		<li><b>Die Wurzel der mittleren quadratischen Abweichung (Standardabweichung):</b> Die Abweichungssumme wird gebildet, wobei die Terme jeweils quadriert werden und die Quadratwurzel aus diesen gezogen wird. Zudem wird eine Normierung auf die Anzahl der Beobachtungen n vorgenommen.</li>
 		<li><b>Der Variationskoeffizient:</b> Die Relation aus Standardabweichung über dem arithmetischen Mittel.</li>
 		</ul>
+
 		<p>Dies sind die gängisten <b>Streuungsmaße</b> der beschreibenden (deskriptiven) Statistik,
 		gemeinsam mit den Lagemaßen wissen wir nun schon sehr viel über das "Aussehen" eine Verteilung und können bald auch inferenzstatistische Schlüsse auf Populationen ziehen.
 		</p>
+
 		<p><b>Fraglich bleibt:</b> welche weiteren mathematischen Eigenschaften haben diese Kennwerte?
 		Was ist eigentlich eine Verteilung? Welche weiteren Parameterklassen gibt es, um eine Verteilung zu beschreiben?
 		Wie werden die weiteren Formeln formuliert und welche anderen Maße gibt es um die "Breite" und das generellle Aussehen einer Verteilung zu beschreiben?</p>
-		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
-	</div>
 
+		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
+
+		</div>
+
+	</main>
+	
 	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
 	<a href="../sites/examples.html">Examples</a>
 	<a href="../index.html">Home</a>
 	</div>
 
-</div>
-
-
- <button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
-<script>
+<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+	<script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
@@ -179,8 +191,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-</script>
+	</script>
 
-</main>
 </body>
+
 </html>

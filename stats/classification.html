@@ -3,11 +3,6 @@ layout: default
 ---
 <!DOCTYPE html>
 <html lang="de">
-	<body>
-
-	<main>	
-		
-<div id="seite">
 
 <head>
 				<meta charset="utf-8">
@@ -18,6 +13,7 @@ layout: default
 				<meta name="author" content="Kevin Glock">
 				<meta name="copyright" content="© Kevin Glock 2020">
 		<link href="../css/style.css" rel="stylesheet" type="text/css">
+
 <div class="navbar">
   <a class="active" href="../index.html">Home</a>
   <a href="../sites/person.html">Person</a>
@@ -25,21 +21,24 @@ layout: default
   <a href="../sites/work.html">Work</a>
   <a href="../sites/examples.html">Examples</a>
 </div>
+
 </head>
 
-</div>
-						   
-	<div id="data">
-<h1>Was sind klassierte Daten?</h1>
-<p>Klassierte Daten sind solche die in Klassen/Intervallen/Gruppen auf Grundlage eines gemeinsamen Charakteristikums (Eigenschaft) zusammengefasst wurden,
-um sie auf dieser Grundlage vergleichend auswerten zu können. Klassierungen dienen zudem der Aggregation von Daten. Also der Hochskalierung in eine abstraktere Darstellung,
-dadurch erlangen wir übersichtlichere Daten und können Gemeinsamkeiten, Ähnlichkeiten sowie Unterschiede und Distanzen zwischen Gruppen oder Entitäten (einzelne Einheiten oder Beobachtungen) endecken und beschreiben.
-Zudem sind klassierte Daten als erster Schritt nötig, wenn man im zweiten Schritt ein Histogramm berechnen und zeichnen möchte.
-Diese Art der Darstellung wird sehr häufig in den Sozial- und Wirtschaftswissenschaften genutzt, aber auch in der Psychologie, Biologie und Textanalyse kommen klassierte Daten
-bzw. komplexere Klassierungsverfahren zur Anwendung.
-</p>
-			
-		<h2>Wie bildet man Klassen?</h2>
+<body>
+	<main>
+  
+		<div id="data">
+	<h1>Was sind klassierte Daten?</h1>
+
+		<p>Klassierte Daten sind solche die in Klassen/Intervallen/Gruppen auf Grundlage eines gemeinsamen Charakteristikums (Eigenschaft) zusammengefasst wurden,
+		um sie auf dieser Grundlage vergleichend auswerten zu können. Klassierungen dienen zudem der Aggregation von Daten. Also der Hochskalierung in eine abstraktere Darstellung,
+		dadurch erlangen wir übersichtlichere Daten und können Gemeinsamkeiten, Ähnlichkeiten sowie Unterschiede und Distanzen zwischen Gruppen oder Entitäten (einzelne Einheiten oder Beobachtungen) endecken und beschreiben.
+		Zudem sind klassierte Daten als erster Schritt nötig, wenn man im zweiten Schritt ein Histogramm berechnen und zeichnen möchte.
+		Diese Art der Darstellung wird sehr häufig in den Sozial- und Wirtschaftswissenschaften genutzt, aber auch in der Psychologie, Biologie und Textanalyse kommen klassierte Daten
+		bzw. komplexere Klassierungsverfahren zur Anwendung.
+		</p>
+	
+	<h2>Wie bildet man Klassen?</h2>
 		
 		<p>Dies möchte ich an einem sehr intuitiven Beispiel verdeutlichen, da jeder aus seiner eigenen Erfahrung Klassierungen kennt.</br>
 		<b>Beispiel:</b>
@@ -48,8 +47,10 @@ bzw. komplexere Klassierungsverfahren zur Anwendung.
 		auf einer Hauptschule, Realschule, Gymnasium oder Förderschule. Wenn sie nicht sitzen bleiben,
 		wechseln sie im Regelfall im Altern von 15 oder 16 Jahren von der 10. Jahrgangsstufe der Mittelschule
 		in die Oberschule ((Fach-)Abitur) oder in Ausbildung, Praktikum, Auslandsjahr, ... und ihnen steht die Welt offen.</p>
+
 		<p>Wir haben nun die Information, dass Schülerinnen und Schüler zwischen 9 und 16 Jahren in der Mittelschule sind und
 		wir wissen dass sie die 5.- 10. Jahrgangsstufe durchlaufen. Wir können also das Alter nach Jahrgangsstufe klassieren.</p>
+
 		<p>Es sind 6 Klassen gegeben. Im vorliegenden Beispiel befinden sich im Schnitt 148.8 Schülerinnen und Schüler in jeder der Jahrgangsstufen
 		<math>
 		<mo>(</mo>
@@ -64,227 +65,229 @@ bzw. komplexere Klassierungsverfahren zur Anwendung.
 		Die Klassenbreite ergibt sich immer, wenn man von der oberen Intervallsgrenze die untere Intervallsgrenze subtrahiert.</p>
 		
 		<table class="solid" border-width="2px" style="font-size: 10pt; text-align: center;">
-  <thead>
-  <tr>
-    <th scope="col" >Klasse k</th>
-	<th scope="col" >Intervall I</th>
-	<th scope="col" >Anzahl n</th>
-	<th scope="col" >Klassenmitte m</th>
-	<th scope="col" >relative Häufigkeit f</th>
-	<th scope="col" >kummulierte rel. Häufigkeit F</th>
-	<th scope="col" >Klassenbreite d</th>
-  </tr>
-  </thead>
+		  <thead>
+		  <tr>
+			<th scope="col" >Klasse k</th>
+			<th scope="col" >Intervall I</th>
+			<th scope="col" >Anzahl n</th>
+			<th scope="col" >Klassenmitte m</th>
+			<th scope="col" >relative Häufigkeit f</th>
+			<th scope="col" >kummulierte rel. Häufigkeit F</th>
+			<th scope="col" >Klassenbreite d</th>
+		  </tr>
+		  </thead>
 
-  <tfoot>
-  <tr>
-    <th scope="col"></td>
-	<th scope="col"></th>
-	<th scope="col">Gesamtanzahl</br>N=893</th>
-	<th scope="col"></th>
-	<th scope="col">Summe</br>relativer</br>Häufigkeiten</br><math><mo>=</mo>
-				<mfrac bevelled="false">
-		<mi>893</mi>
-		<mi>893</mi>
-		</mfrac>
-		</math></th>
-	<th scope="col">Summe</br>kummulierter</br>rel. Häufigkeiten</br><math><mo>=</mo><mn>1</mn></math></th>
-	<th scope="col"></th>
-  </tr>
-  </tfoot>
+		  <tfoot>
+		  <tr>
+			<th scope="col"></td>
+			<th scope="col"></th>
+			<th scope="col">Gesamtanzahl</br>N=893</th>
+			<th scope="col"></th>
+			<th scope="col">Summe</br>relativer</br>Häufigkeiten</br><math><mo>=</mo>
+						<mfrac bevelled="false">
+				<mi>893</mi>
+				<mi>893</mi>
+				</mfrac>
+				</math></th>
+			<th scope="col">Summe</br>kummulierter</br>rel. Häufigkeiten</br><math><mo>=</mo><mn>1</mn></math></th>
+			<th scope="col"></th>
+		  </tr>
+		  </tfoot>
 
-  <tbody>
-  <tr>
-   <th scope="row">5</th>
-   <td axis="Intervall">I1=[9;10[</th>
-   <td axis="Anzahl">132</th>
-   <td axis="Klassenmitte">9,5</th>
-   <td axis="relative"><math>
-				<mfrac bevelled="false">
-		<mi>132</mi>
-		<mi>893</mi>
-		</mfrac>
-		</math></th>
-   <td axis="kummulierte"><math>
-				<mfrac bevelled="false">
-		<mi>132</mi>
-		<mi>893</mi>
-		</mfrac>
-		</math></th>
-   <td axis="Klassenbreite">ein Lebensjahr</th>
-  </tr>
+		  <tbody>
+		  <tr>
+		   <th scope="row">5</th>
+		   <td axis="Intervall">I1=[9;10[</th>
+		   <td axis="Anzahl">132</th>
+		   <td axis="Klassenmitte">9,5</th>
+		   <td axis="relative"><math>
+						<mfrac bevelled="false">
+				<mi>132</mi>
+				<mi>893</mi>
+				</mfrac>
+				</math></th>
+		   <td axis="kummulierte"><math>
+						<mfrac bevelled="false">
+				<mi>132</mi>
+				<mi>893</mi>
+				</mfrac>
+				</math></th>
+		   <td axis="Klassenbreite">ein Lebensjahr</th>
+		  </tr>
 
-  <tr>
-   <th scope="row">6</th>
-   <td axis="Intervall">I2=[10;11[</th>
-   <td axis="Anzahl">133</th>
-   <td axis="Klassenmitte">10,5</th>
-   <td axis="relative"><math>
-				<mfrac bevelled="false">
-		<mi>133</mi>
-		<mi>893</mi>
-		</mfrac>
-		</math></th>
-   <td axis="kummulierte"><math>
-				<mfrac bevelled="false">
-		<mi>265</mi>
-		<mi>893</mi>
-		</mfrac>
-		</math></th>
-   <td axis="Klassenbreite">1</th>
-  </tr>
-  
-    <tr>
-   <th scope="row">7</th>
-   <td axis="Intervall">I3=[11;12[</th>
-   <td axis="Anzahl">155</th>
-   <td axis="Klassenmitte">11,5</th>
-   <td axis="relative"><math>
-				<mfrac bevelled="false">
-		<mi>155</mi>
-		<mi>893</mi>
-		</mfrac>
-		</math></th>
-   <td axis="kummulierte"><math>
-				<mfrac bevelled="false">
-		<mi>420</mi>
-		<mi>893</mi>
-		</mfrac>
-		</math></th>
-   <td axis="Klassenbreite"><math>
-	<msub>
-		<mi>a</mi>
-		<mn>i</mn>
-	</msub> 
-		<mo>-</mo>
-	<msub>
-	<mi>a</mi>
-	<mn>i-1</mn>
-	</msub>
-		</math><sup>
-	<a id="fn2" title="MathML wird in Chrome und Edge nicht untersstützt. Ein Umstieg auf MathJax erfolgt bald." href="../sites/footnotes.html">[2.1]</a>
-</sup></p></th>
-  </tr>
-  
-    <tr>
-   <th scope="row">8</th>
-   <td axis="Intervall">I4=[12;13[</th>
-   <td axis="Anzahl">163</th>
-   <td axis="Klassenmitte">12,5</th>
-   <td axis="relative"><math>
-				<mfrac bevelled="false">
-		<mi>163</mi>
-		<mi>893</mi>
-		</mfrac>
-		</math></th>
-   <td axis="kummulierte"><math>
-	<msub>
-	<mi>F</mi>
-	<mn>i</mn>
-	</msub>
-		<mo>+</mo>
-   <msub>
-		<mi>f</mi>
-		<mn>i+1</mn>
-	</msub> 
-		</math></th>
-   <td axis="Klassenbreite"><math>
-	<msub>
-		<mi>d</mi>
-		<mn>i</mn>
-	</msub></math></th>
-  </tr>
-  
-    <tr>
-   <th scope="row">9</th>
-   <td axis="Intervall">I5=[13;14[</th>
-   <td axis="Anzahl">154</th>
-   <td axis="Klassenmitte">13,5</th>
-   <td axis="relative"><math>
-   <mfrac bevelled="false">
-		<mi>n</mi>
-		<mi>N</mi>
-		</mfrac>
-		</math></th>
-   <td axis="kummulierte"><math>
-	<msub>
-		<mi>F</mi>
-		<mn>i</mn>
-	</msub></math></th>
-   <td axis="Klassenbreite"><math>
-	<msub>
-		<mi>d</mi>
-		<mn>i</mn>
-	</msub></math></th>
-  </tr>
-  
-    <tr>
-   <th scope="row" >10</th>
-   <td axis="Intervall" >I6=</br><math><mo>[</mo><msub>
-		<mi>a</mi>
-		<mn>i-1</mn>
-	</msub>
-	<mo>;</mo>
-	<msub>
-		<mi>a</mi>
-		<mn>i</mn>
-	</msub><mo>[</mo></math>
-	</th>
-   <td axis="Anzahl" ><math><msub>
-		<mi>n</mi>
-		<mn>i</mn>
-	</msub></math>
-	</th>
-   <td axis="Klassenmitte" ><math>
-				<mfrac bevelled="false">
-	
-		<mi>
-	<msub>
-		<mi>a</mi>
-		<mn>i-1</mn>
-	</msub> 
-		<mo>+</mo>
-	<msub>
-	<mi>a</mi>
-	<mn>i</mn>
-	</msub>
-		</mi>
-		<mi>2</mi>
-		</mfrac>
-		</math></th>
-   <td axis="relative" ><math>
-	<msub>
-		<mi>f</mi>
-		<mn>i</mn>
-	</msub></math></th>
-   <td axis="kummulierte" ><math>
-	<msub>
-		<mi>F</mi>
-		<mn>i</mn>
-	</msub></math>
-	</th>
-   <td axis="Klassenbreite" ><math>
-	<msub>
-		<mi>d</mi>
-		<mn>i</mn>
-	</msub></math></th>
-  </tr>
-</table>
+		  <tr>
+		   <th scope="row">6</th>
+		   <td axis="Intervall">I2=[10;11[</th>
+		   <td axis="Anzahl">133</th>
+		   <td axis="Klassenmitte">10,5</th>
+		   <td axis="relative"><math>
+						<mfrac bevelled="false">
+				<mi>133</mi>
+				<mi>893</mi>
+				</mfrac>
+				</math></th>
+		   <td axis="kummulierte"><math>
+						<mfrac bevelled="false">
+				<mi>265</mi>
+				<mi>893</mi>
+				</mfrac>
+				</math></th>
+		   <td axis="Klassenbreite">1</th>
+		  </tr>
+		  
+			<tr>
+		   <th scope="row">7</th>
+		   <td axis="Intervall">I3=[11;12[</th>
+		   <td axis="Anzahl">155</th>
+		   <td axis="Klassenmitte">11,5</th>
+		   <td axis="relative"><math>
+						<mfrac bevelled="false">
+				<mi>155</mi>
+				<mi>893</mi>
+				</mfrac>
+				</math></th>
+		   <td axis="kummulierte"><math>
+						<mfrac bevelled="false">
+				<mi>420</mi>
+				<mi>893</mi>
+				</mfrac>
+				</math></th>
+		   <td axis="Klassenbreite"><math>
+			<msub>
+				<mi>a</mi>
+				<mn>i</mn>
+			</msub> 
+				<mo>-</mo>
+			<msub>
+			<mi>a</mi>
+			<mn>i-1</mn>
+			</msub>
+				</math><sup>
+			<a id="fn2" title="MathML wird in Chrome und Edge nicht untersstützt. Ein Umstieg auf MathJax erfolgt bald." href="../sites/footnotes.html">[2.1]</a>
+		</sup></p></th>
+		  </tr>
+		  
+			<tr>
+		   <th scope="row">8</th>
+		   <td axis="Intervall">I4=[12;13[</th>
+		   <td axis="Anzahl">163</th>
+		   <td axis="Klassenmitte">12,5</th>
+		   <td axis="relative"><math>
+						<mfrac bevelled="false">
+				<mi>163</mi>
+				<mi>893</mi>
+				</mfrac>
+				</math></th>
+		   <td axis="kummulierte"><math>
+			<msub>
+			<mi>F</mi>
+			<mn>i</mn>
+			</msub>
+				<mo>+</mo>
+		   <msub>
+				<mi>f</mi>
+				<mn>i+1</mn>
+			</msub> 
+				</math></th>
+		   <td axis="Klassenbreite"><math>
+			<msub>
+				<mi>d</mi>
+				<mn>i</mn>
+			</msub></math></th>
+		  </tr>
+		  
+			<tr>
+		   <th scope="row">9</th>
+		   <td axis="Intervall">I5=[13;14[</th>
+		   <td axis="Anzahl">154</th>
+		   <td axis="Klassenmitte">13,5</th>
+		   <td axis="relative"><math>
+		   <mfrac bevelled="false">
+				<mi>n</mi>
+				<mi>N</mi>
+				</mfrac>
+				</math></th>
+		   <td axis="kummulierte"><math>
+			<msub>
+				<mi>F</mi>
+				<mn>i</mn>
+			</msub></math></th>
+		   <td axis="Klassenbreite"><math>
+			<msub>
+				<mi>d</mi>
+				<mn>i</mn>
+			</msub></math></th>
+		  </tr>
+		  
+			<tr>
+		   <th scope="row" >10</th>
+		   <td axis="Intervall" >I6=</br><math><mo>[</mo><msub>
+				<mi>a</mi>
+				<mn>i-1</mn>
+			</msub>
+			<mo>;</mo>
+			<msub>
+				<mi>a</mi>
+				<mn>i</mn>
+			</msub><mo>[</mo></math>
+			</th>
+		   <td axis="Anzahl" ><math><msub>
+				<mi>n</mi>
+				<mn>i</mn>
+			</msub></math>
+			</th>
+		   <td axis="Klassenmitte" ><math>
+						<mfrac bevelled="false">
+			
+				<mi>
+			<msub>
+				<mi>a</mi>
+				<mn>i-1</mn>
+			</msub> 
+				<mo>+</mo>
+			<msub>
+			<mi>a</mi>
+			<mn>i</mn>
+			</msub>
+				</mi>
+				<mi>2</mi>
+				</mfrac>
+				</math></th>
+		   <td axis="relative" ><math>
+			<msub>
+				<mi>f</mi>
+				<mn>i</mn>
+			</msub></math></th>
+		   <td axis="kummulierte" ><math>
+			<msub>
+				<mi>F</mi>
+				<mn>i</mn>
+			</msub></math>
+			</th>
+		   <td axis="Klassenbreite" ><math>
+			<msub>
+				<mi>d</mi>
+				<mn>i</mn>
+			</msub></math></th>
+		  </tr>
+		</table>
+
 		<p><b>Fraglich bleibt:</b> Welche Werte müssten in die nicht ausgefüllten Felder eingetragen werden? Wie berechnet man nun ein Histogramm aus den klassierten Daten?
 		Wie zeichnet man ein Histogramm? Was war nochmal ein Histogramm? Wieso gehen Informationen bei diesem Verfahren verloren?</p>
-		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
-	</div>
 
+		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
+
+		</div>
+
+	</main>
+	
 	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
 	<a href="../sites/examples.html">Examples</a>
 	<a href="../index.html">Home</a>
 	</div>
 
-</div>
-
-
- <button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
-<script>
+<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+	<script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
@@ -304,8 +307,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-</script>
+	</script>
 
-</main>
 </body>
+
 </html>
