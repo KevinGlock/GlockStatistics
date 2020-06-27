@@ -154,7 +154,7 @@ layout: default
 		
 		<p>Der Wert a bezeichnet dabei die Konstante bei der die Gerade die y-Achse (Ordinate) schneidet.
 		Der Faktor b bezeichnet die Effektstärke, der Variabeln x, oder auch die Steigung.
-		Sie ergbibt sich aus der Relation von Kovarianz und Varianz von x, also gemeinsame Streuung im Verhältnis zur Streuung von x.</p>
+		Sie ergbibt sich aus der Relation der Kovarianz beider Variablen und der Varianz von x, also gemeinsame Streuung im Verhältnis zur Marginalstreuung der unabhängigen Variablen x.</p>
 		
 		<p>Ein Regressionsmodell kann auch mehr als eine unabhängige Variable (multivariate Regression) umfassen.</p>
 		
@@ -202,9 +202,14 @@ layout: default
 		  
 		<p>Die Interpretation der Steigungskoeffizenten b (beta) bleibt in beiden Fällen gleich.
 		Steigt die unabhängige Variable um eine Skaleneinheit,
-		so steigt die abhängige Variabel durchschnittlich um die Effektstärke der jeweiligen unabhängigen Variabeln an.</p>
+		so steigt die abhängige Variabel durchschnittlich um die Effektstärke der jeweiligen unabhängigen Variabeln an.
+		Wir können also nur einen Teil der Streuung der abhängigen Variablen durch die unabhängige Variable erklären.
+		Das e am Ende des Terms steht für error und bezeichnet den Vorhersagefehler des Modells,
+		da ein Modell nicht perfekt ist, bleibt immer ein Rest Unsicherheit der Schätzung zurück,
+		der hier durch die Datengrundlage angebbar wird. Wir machen schließlich nur eine durchschnittliche Schätzung des Effektes.</p>
 		
 		<p><b>Fraglich bleibt:</b> Welche weiteren formalen Voraussetzung hat eine Regression für die Anwendung?
+		Was sind Residuuen und wie berechnet man sie?
 		Wie formuliert man eine nicht-lineare Regression und wie interpretiert man diese? Wie überprüfe ich weitere formale Voraussetzung für die Anwendung?
 		Wie überprüfe ich, die Stärke des Effekt der unabhängigen Variabeln auf die abhängige?
 		Wie vergleiche ich Modelle nach ihrer Anpassung?</p>
