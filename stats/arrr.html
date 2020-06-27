@@ -1692,44 +1692,62 @@ x4 &lt;-c(data[,4])
 X &lt;- matrix(c(x0,x2,x3,x4), nrow=33, ncol=4)</code></pre>
 </div>
 </div>
+
 <div id="daten-sichten" class="section level2">
 <h2>Daten sichten</h2>
-<p>Nun haben wir einen Datensatz in unserer Umgebung (Global Environment) und können die uns die Daten anschauen und erste deskriptive Auswertungen vornehmen, um uns mit ihnen vertraut zu machen.</p>
+<p>Nun haben wir einen Datensatz in unserer Umgebung (Global Environment) und können uns die Daten anschauen und erste Eigenschaften und mögliche Zusammenhänge sichten, um uns mit ihnen vertraut zu machen.</p>
 <pre class="r"><code>data &lt;- read.csv(&quot;../data/data.csv&quot;, sep=&quot;;&quot;, header=T)
 
 data
 
-View(data)
+View(data) # Zeige die Daten im Fenster
 
-head(data)
+head(data) # Ersten Zeilen der Daten
 
-tail(data)
+tail(data) # Letzten Zeilen der Daten
 
-show(data[, &quot;Preis&quot;])
+show(data[, &quot;Preis&quot;]) # Zeige eine spezifische Variable der Daten in der Ausgabe
 
-View(data[, &quot;Kilometer&quot;])
+View(data[, &quot;Kilometer&quot;]) # Zeige eine spezifische Variable der Daten im Fenster
 
-class(data)
+class(data) # Welche Klasse von Daten haben wir?
 
-class(data[, &quot;Preis&quot;])
+class(data[, &quot;Preis&quot;]) # spezifische für eine Variable, dieselbe Frage?
 
-print(data[, &quot;Preis&quot;])
+attributes(data) # Gibt aus welche Merkmale ein Objekt hat
 
-cat(data[, &quot;Kilometer&quot;])
-
-table(data[, &quot;Preis&quot;])
-
-attributes(data)
-
-names(data)
+names(data) # Gibt die Namen der Variablen aus
 
 names(cars)
-
-pairs(cars)
-
-pairs(data)</code></pre>
+</code></pre>
 </div>
 </div>
+
+<div id="daten-beschreiben" class="section level3">
+<h2>Daten beschreiben</h2>
+<p>Im zweiten Schritt nehmen wir erste deskriptive Auswertungen vornehmen.</p>
+<pre class="r"><code>data &lt;- read.csv(&quot;../data/data.csv&quot;, sep=&quot;;&quot;, header=T)
+
+View(data) # Zeige die Daten im Fenster
+
+print(data[, &quot;Preis&quot;]) # Gib alle Beobachtungen der Variablen aus.
+
+cat(data[, &quot;Kilometer&quot;]) # Macht dasselbe wie print(), aber verkettet vorher alle Beobachtungen (geht schneller)
+
+table(data[, &quot;Preis&quot;]) # Gibt eine Häufigkeitstabelle aus
+
+boxplot(data[, &quot;Preis&quot;]) # Zeichnet einen Boxplot
+
+barplot(data[, &quot;Kilometer&quot;], main = &quot;Kilometer&quot;) # Zeichnet ein Balkendiagramm mit Überschrift
+
+pairs(data) # Gibt eine Matrix von Streudiagrammen mit allen Variablen des Datensatzes aus (schnelle Übersicht über Korrelationen)
+
+plot(data[,&quot;Preis&quot;] ~ data[, &quot;Kilometer&quot;]) # Streudiagramm; ~ steht für &quot;folgt&quot;
+
+</code></pre>
+</div>
+</div>
+
 
 <p><b>Fraglich bleibt:</b> Vieles!</p>
 <p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
