@@ -90,6 +90,46 @@ layout: default
 		der verschiedene unabhängigen Variablen mittels Addition (und Subtraktion) kombiniert,
 		so dass sie einen positiven oder negativen Effekt der unabhängigen Variablen auf die abhängige Variable erklären können.</p>
 		
+		<p>Dieses Konzept ist sehr mächtig und wird in jeglichen Forschungsdisziplinen ausgiebig genutzt, um verschiedenste Fragen zu beantworten.</p>
+		
+		<p>Wenn man sich die verschiedenen Methoden genauer anschaut, stellt man fest,
+		dass eigentlich <b>fast ausschließlich Regressionsmodelle in der quantitativen empirischen Forschung</b> genutzt werden,
+		da das Konzept eines linearen Modells immer sehr einfach als Gerüst genutzt werden kann, um es mit verschiedensten Konzepten zu füllen.
+		Man kann dabei zwischen</p>
+		<ul>
+		<li>einfache (univariate) und</li>
+		<li>mehrdimensionale (multivariate) Erklärungen unterscheiden, die</li>
+		<li>Effekterklärungen (OLS-, Logit-, Probitmodellieren),</li>
+		<li>Gruppenvarianzeffekte (ANOVA, MANOVA),</li>
+		<li>Kovarianzen (ANCOVA, MANCOVA),</li>
+		<li>Eigenwerte und Hauptkomponeten (Hauptkompontenanalyse),</li>
+		<li>Faktoren (Faktorenanalyse) identifizieren sollen.</li>
+		<li>Aber auch Tailorreihen (Tailor Regression),</li>
+		<li>Vektorregression, beides im Kontext von Zeitreihenanalysen im Derivatehandel und anderen Wirtschaftsbereichen,</li>
+		<li>oder Neuronale Netze im Kontext von maschine learning basieren auf einem simplen linearen Modell als Gerüst.</li>
+		</ul>
+	<h2>Was ist also eine OLS-Regression?</h2>
+	
+		<p>Die OLS-Regression (Ordinary Least Squears) kombiniert, das Prinzip der Regression und kombiniert es mit dem Anzahl der kleinsten Fehlerquadrate.
+		Ziel ist es eine durchschnittliche Steigung einer Geraden zu formulieren,
+		die durch einen gemeinsamen Punkt
+		<math>
+		<mo>(</mo>
+			<mover>
+			<mi>x</mi>
+			<mn>_</mn>
+			</mover>
+		<mo>;</mo>
+			<mover>
+			<mi>y</mi>
+			<mn>_</mn>
+			</mover>
+		<mo>)</mo>
+		</math>
+		verläuft, der die Mittelwerte der abhängigen metrisch skalierten und der beliebig skalierten unabhängigen Variablen kombiniert.
+		Dabei wird für die Steigung der Geraden vorausgesetzt, dass die unerklärte Streuung (Residuuen) in Form der Fehlerquadrate minimiert werden soll.
+		Man kann daher ein durchschnittliches Modell wie folgt formulieren:</p>
+		
 		<table rules="none;" style="font-size: 12pt;">
 		  	  <tr>
 			<th>
@@ -110,8 +150,16 @@ layout: default
 		</math>
 			</th>
 		  </tr>
+		</table>
 		
-		  <tr>
+		<p>Der Wert a bezeichnet dabei die Konstante bei der die Gerade die y-Achse (Ordinate) schneidet.
+		Der Faktor b bezeichnet die Effektstärke, der Variabeln x, oder auch die Steigung.
+		Sie ergbibt sich aus der Relation von Kovarianz und Varianz von x, also gemeinsame Streuung im Verhältnis zur Streuung von x.</p>
+		
+		<p>Ein Regressionsmodell kann auch mehr als eine unabhängige Variable (multivariate Regression) umfassen.</p>
+		
+		<table rules="none;" style="font-size: 12pt;">
+		 <tr>
 			<th>
 				<math>
 		<msub>
@@ -150,48 +198,16 @@ layout: default
 		</math>
 			</th>
 		  </tr>
-		</table>
+		  </table>
+		  
+		<p>Die Interpretation der Steigungskoeffizenten b (beta) bleibt in beiden Fällen gleich.
+		Steigt die unabhängige Variable um eine Skaleneinheit,
+		so steigt die abhängige Variabel durchschnittlich um die Effektstärke der jeweiligen unabhängigen Variabeln an.</p>
 		
-		<p>Dieses Konzept ist sehr mächtig und wird in jeglichen Forschungsdisziplinen ausgiebig genutzt, um verschiedenste Fragen zu beantworten.</p>
-		
-		<p>Wenn man sich die verschiedenen Methoden genauer anschaut, stellt man fest,
-		dass eigentlich <b>fast ausschließlich Regressionsmodelle in der quantitativen empirischen Forschung</b> genutzt werden,
-		da das Konzept eines linearen Modells immer sehr einfach als Gerüst genutzt werden kann, um es mit verschiedensten Konzepten zu füllen.
-		Man kann dabei zwischen</p>
-		<ul>
-		<li>einfache (univariate) und</li>
-		<li>mehrdimensionale (multivariate) Erklärungen unterscheiden, die</li>
-		<li>Effekterklärungen (OLS-, Logit-, Probitmodellieren),</li>
-		<li>Gruppenvarianzeffekte (ANOVA, MANOVA),</li>
-		<li>Kovarianzen (ANCOVA, MANCOVA),</li>
-		<li>Eigenwerte und Hauptkomponeten (Hauptkompontenanalyse),</li>
-		<li>Faktoren (Faktorenanalyse) identifizieren sollen.</li>
-		<li>Aber auch Tailorreihen (Tailor Regression),</li>
-		<li>Vektorregression, beides im Kontext von Zeitreihenanalysen im Derivatehandel und anderen Wirtschaftsbereichen,</li>
-		<li>oder Neuronale Netze im Kontext von maschine learning basieren auf einem simplen linearen Modell als Gerüst.</li>
-		</ul>
-	<h2>Was ist also eine OLS-Regression?</h2>
-	
-		<p>Die OLS-Regression (Ordinary Least Squears) kombiniert, das Prinzip der Regression und kombiniert es mit dem Anzahl der kleinsten Fehlerquadrate.
-		Ziel ist es eine durchschnittliche Steigung einer Geraden zu formulieren,
-		die durch einen gemeinsamen Punkt
-		<math>
-		<mo>(</mo>
-			<mover>
-			<mi>x</mi>
-			<mn>_</mn>
-			</mover>
-		<mo>;</mo>
-			<mover>
-			<mi>y</mi>
-			<mn>_</mn>
-			</mover>
-		<mo>)</mo>
-		</math>
-		verläuft, der die Mittelwerte der abhängigen und der unabhängigen Variablen kombiniert.
-		Dabei wird für die Steigung der Geraden vorausgesetzt, dass die unerklärte Streuung (Residuuen) in Form der Fehlerquadrate minimal werden soll.</p>
-		
-		<p><b>Fraglich bleibt:</b> Vieles!</p>
+		<p><b>Fraglich bleibt:</b> Welche weiteren formalen Voraussetzung hat eine Regression für die Anwendung?
+		Wie formuliert man eine nicht-lineare Regression und wie interpretiert man diese? Wie überprüfe ich weitere formale Voraussetzung für die Anwendung?
+		Wie überprüfe ich, die Stärke des Effekt der unabhängigen Variabeln auf die abhängige?
+		Wie vergleiche ich Modelle nach ihrer Anpassung?</p>
 	
 		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
 	
