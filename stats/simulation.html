@@ -86,8 +86,9 @@ t.preventDefault(),a&&!i.collapsible||this._trigger("beforeActivate",t,l)===!1||
 width: 20%;
 max-height: 90%;
 overflow: auto;
-margin-left: 2%;
+margin-left: 0%;
 position: fixed;
+align: left;
 border: 1px solid #ccc;
 border-radius: 6px;
 }
@@ -1378,7 +1379,17 @@ if (window.hljs) {
 }
 </script>
 
-
+<style type="text/css">
+  p.abstract{
+    text-align: center;
+    font-weight: bold;
+  }
+  div.abstract{
+    margin: auto;
+    width: 90%;
+	font color: black;
+  }
+</style>
 
 <style type="text/css">
 h1 {
@@ -1417,7 +1428,7 @@ h6 {
   margin-right: auto;
 }
 code {
-  color: inherit;
+  color: black;
   background-color: rgba(0, 0, 0, 0.04);
 }
 img {
@@ -1450,6 +1461,7 @@ summary {
   background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
+  margin-right: 70px;
 }
 
 .tabset-dropdown > .nav-tabs > li.active:before {
@@ -1535,7 +1547,7 @@ summary {
 }
 
 div.main-container {
-  max-width: 1200px;
+  max-width: 100% !important;
 }
 
 div.tocify {
@@ -1591,23 +1603,12 @@ div.tocify {
 
 <div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
-
-
-
 <div class="fluid-row" id="header">
-
-<div class="btn-group pull-right">
-<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
-<ul class="dropdown-menu" style="min-width: 50px;">
-<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
-<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
-</ul>
 
 <div>
 <div id="simulation">
 <h1 class="title toc-ignore">Simulationen in R: Korrelation und Regression</h1>
 </div>
-
 <h4 class="date">22. Juni 2020</h4>
 
 <div class="abstract">
@@ -1615,13 +1616,8 @@ div.tocify {
 Diese Dokument soll dir einen leichten Überblick verschaffen,
 wie man eine simple Simulation durchführt und wie man Korrelations- und Regressionsanylsen durchführt und interpretiert.
 </div>
-</div>
-
-
-
 
 </div>
-
 <div id="Simulation in R" class="section level1">
 
 <div id="wie-erzeugt-man-zufallszahlen" class="section level2">
