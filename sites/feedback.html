@@ -70,8 +70,59 @@ if(isset($_POST["q7"]))
 		<p>Um ein persönlichen Eindruck zu vermitteln, wäre es schön, wenn du deinen Vornamen angibst.
 		Falls du dies nicht möchtest, kannst du auch anonymisiert antworten oder ein Pseudonym verwenden.</p>
 
-		<!--form action="save.php" name="" id="person" enctype="text/plain" method="post">
-		<input type="hidden" name="empfaenger" value="k_glock@web.de"-->
+<?php
+if ( empty ($_GET['vorname']) == TRUE )
+and
+if ( empty ($_GET['q1']) == TRUE )
+or
+if ( empty ($_GET['q2']) == TRUE )
+or
+if ( empty ($_GET['q3']) == TRUE )
+or
+if ( empty ($_GET['q4']) == TRUE )
+or
+if ( empty ($_GET['q5']) == TRUE )
+or
+if ( empty ($_GET['q6']) == TRUE )
+and
+if ( empty ($_GET['q7']) == TRUE )
+{
+    echo 'Bitte füllen sie fehlende Felder aus.
+		';
+}
+else
+{
+
+ $handle = fopen ( "feedback.txt", "w" );
+ 
+    // schreiben des Inhaltes von feedback
+    fwrite ( $handle, $_GET['vorname'] );
+	fwrite ( $handle, $_GET['q1'] );
+	fwrite ( $handle, $_GET['q2'] );
+	fwrite ( $handle, $_GET['q3'] );
+	fwrite ( $handle, $_GET['q4'] );
+	fwrite ( $handle, $_GET['q5'] );
+	fwrite ( $handle, $_GET['q6'] );
+ 	fwrite ( $handle, $_GET['q7'] );
+	
+    // Trennzeichen einfügen, damit Auswertung möglich wird
+    fwrite ( $handle, "|" );
+ 
+    // schreiben des Inhalts von name
+    fwrite ( $handle, $_GET['name'] );
+ 
+    // Datei schließen
+    fclose ( $handle );
+ 
+    echo "Danke - Ihre Daten wurden erfolgreich gespeichert";
+ 
+    // Datei wird nicht weiter ausgeführt
+    exit;
+}
+?>
+
+		<form action="feedbackside.html" name="feedback" id="person" enctype="text/plain" method="post">
+		<!--input type="hidden" name="empfaenger" value="k_glock@web.de"-->
 
 		<label class="h4" form="person">Wie ist dein Name?</label></br>
 			<input type="text" name="vorname" id="vorname" maxlength="30">
@@ -107,7 +158,6 @@ if(isset($_POST["q7"]))
 		<textarea name="q6" cols="50" rows="10"></textarea>
 
 
-<button type="reset" id="myFdb1" >Feedback verwerfen</button>
 <button type="submit" class="save" id="myFdb2">Feedback abgeben</button>
 		</form>
 
