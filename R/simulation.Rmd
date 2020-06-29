@@ -1,8 +1,9 @@
 ---
-title: "Preparing Data"
+title: "Simulationen in R: Korrelation und Regression"
 encoding: "UTF-8"
 author: "Kevin Glock"
-abstract: "Diese Dokument soll eine einfache Simulationsstudie in der Programmierumgebung R bieten und einige wichtige Funktionsweisen erläutern. Im späteren Verlauf werden zudem komplexere Simulationen im Kontext von MCMC (Marcov Chain Monte Carlo Methoden) und Bayesianischer Statistik präsentiert."
+abstract: "Diese Dokument soll dir einen leichten Überblick verschaffen,
+wie man eine simple Simulation durchführt und wie man Korrelations- und Regressionsanylsen durchführt und interpretiert."
 date: '`r format(Sys.Date(), "%d.%B %Y")`'
 lang: "de"
 output:
@@ -21,11 +22,102 @@ output:
       number_sections: TRUE
 ---
 
-# Simulation
-
-Was ist eine Simulationsstudie?
-
-
-```{R, echo=T, warning=F, eval=F, message=F}
-code
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
+
+## Wie erzeugt man Zufallszahlen?
+
+Um in R Zufallszahlen erzeugen zu können gibt es verschiedene Algorithmen, die alle gut dokumentiert sind.
+In diesem Schritt werden zufällige Werte für das Einkommen, Alter und die Kinderanzahl für 350 Beobachtungen aus Normalverteilungen gezogen. Dabei wird immer ein Mittelwert und eine Standardabweichung mitkodiert. Das Geschlecht wird aus einer Gleichverteilung für 350 Beobachtungen gezogen, da es hier binär mit Null und Eins kodiert wird (auch wenn es mehr gender Auspägungen gibt).
+
+```{r, echo= TRUE, eval= TRUE, message= FALSE}
+set.seed(54321) # Zufallszahlengenerator
+
+inc <- round(rnorm(350, mean=2800, sd=850)) #sample aus einer Normalverteilung
+# ein zufälliges Einkommen zwischen 450 und 8500 Euro, runde auf 2 Dezimalstellen
+
+sex <- round(runif(350, min=0, max=1)) # sample aus einer Gleichverteilung
+# das zufällige Geschlecht 0=Männlich 1=weiblich, runde auf integre Werte
+
+child <- round(rnorm(350, mean=0.8, sd=0.47)) # sample aus einer Normalverteilung
+# die zufällige Kinderanzahl,runde auf integre Werte
+
+age <- round(rnorm(350, mean = 47.7, sd=12.4)) # sample aus einer Normalverteilung
+# das zufällige Alter, runde auf integre Werte
+
+data <- data.frame(inc, sex, child, age) #Erzeuge einen data.frame mit allen Variablen
+
+X <- data.frame(sex, inc) # Um Cramer´s V Kontingenzkoeffizent zu berechnen benötigen wir einen eignen data.frame
+```
+
+## Korreliert das Einkommen mit den möglichen Einflussfaktoren?
+
+Im nächsten Schritt wird eine Korrelationsanalyse durchgeführt. Einkommen, und Alter ist metrisch, Kinderanzahl ordinal und das Geschlecht binär kodiert.
+
+```{r, echo=T, eval= T, message= F}
+cor.test(inc, age, alternative = "greater", conf.level = 0.95) # Pearson´s r Korrelation
+# Hypothese: Ist das Einkommen mit höheren Werten des Alters höher?
+```
+
+Pearson´s r Produkt-Moment Korrelation liegt zwischen -1 und 1. Der Wert ist hier positiv und vernachlässigbar gering in seiner Stärke.
+Der P-Wert testet die Signifikanz der Effektgröße.
+Die Signifikanz gibt an wie wahrscheinliches ist solch einen Wert oder extremer in einer Stichprobe zu erhalten, wenn man unendlich viele Stichproben zöge. Im vorliegenden Beispiel ist der Wert auf 94 prozentigen Konfidenzniveau signifikant. Um diese Aussage zu vereinfachen könnte man sagen, dass von von 100 gezognen Stichproben nur in 6 Stichproben der Wert nicht wie vorliegend auffindbar wäre. In 94 Stichproben wäre es der wahre Wert (zur Logik der klassischen Inferenz siehe das Kapitel zu Wahrscheinlichkeit).
+
+Zur Erinnerung: Wir nutzen simulierte Daten.
+
+```{r, echo=T, eval= T, message= F}
+cor.test(inc, child, alternative = "less", conf.level = 0.95, method = "kendall") # Kendalls´tau-b Korrelation
+# Hypothese: Ist das Einkommen von weiblich kodierten Beobachtungen geringer?
+```
+
+Der Kendalls tau-b Wert zeigt einen negativen Zusammenhang zwischen monatlichen Einkommen und Kinderanzahl an. Er liegt zwischen -1 und 1. Steigt also das Einkommen sinkt die Kinderanzahl und umgekehrt, jedoch ist die Effektgröße vernachlässigbar.
+Der p-Wert gibt an, dass dieser Effekt bei einem Konfidenzniveau von 95 Prozent und einer Irrtumswahrscheinlichkeit von 5 Prozent insifnifikant ist. Der Effekt als nicht so vorliegt.
+
+```{r, echo=T, eval= T, message= F, warning= F}
+library("lsr")   # install.packages("lsr") # Um Cramer´s V zu berechnen benötigen wir das Paket lsr
+cramersV(X) # Effektgröße von Geschlecht auf Einkommen
+```
+
+Wir können feststellen, dass die binär geschlechtlichen Kategorien lediglich einen vernachlässigbar kleinen Effekt auf das monatliche Einkommen aufweisen.
+
+## Haben das Geschlecht, die Kinderanzahl und das Alter von Befragten einen Effekt auf das monatliche Einkommen?
+
+Nun berechnen wir ein Regressionsmodell mit den simulierten Daten und lassen uns direkt die gesamte Zusammenfassung des Modells anzeigen.
+
+```{r, echo=T, eval= T, message= T}
+summary(lm(inc ~ sex + child + age, data)) # Fasse das Regressionsmodell in der Ausgabe zusammen
+```
+
+Der Überblick der Zusammenfassung:
+
++ Wir haben unter "call" das Modell als Formel und die Angabe das dafür der Datensatz data genutzt wurde.
++ Unter "residuals" gibt uns R die 5-Punkte-Zusammenfassung der Residualanalyse aus.
++ "Coefficients" ist für die allgemeine Interpreation der interessante Teil der Zusammenfassung.
++ "Signif. codes" gibt nur an, wie die Signifikanztestergebnisse unter "coefficients" angezeigt wird.
++ Im unteren Teil haben wir noch "residual standard error", "multiple R-squared" und die "F-statistic".
+
+_Zur Interpretation_:
+In Bezug auf die simulierten Daten können wir feststellen, dass das Geschlecht und die Kinderanzahl einen negativen Effekt auf das Einkommen hat.
+
+Das Alter hingegen hat einen positiven Effekt auf das Einkommen. Dies geht jeweils aus der Spalte "estimate" hervor.
+
+Die Zeile "Intercept" steht für den y-Achsenabschnitt und stellt das Nullmodell dar. Also das Modell, wenn alle inkludierten Variablen einen Wert von Null haben.
+Im solch einem Falle würde man sagen, dass eine theoretische Beobachtung eines Mannes (weil Null kodiert),
+ohne Kinder und Null Jahren ein durchschnittliches monatliches Einkommen von 2692,578 Euro besäße.
+
+In Bezug auf, dass Geschlecht interpretieren wir, dass wenn eine Beobachtung als weiblich kodiert ist (=1),
+dann sinkt die abhängige Variable Einkommen durchschnittlich um 5,814 Euro.
+
+Steigt die Kinderanzahl um jeweils ein weiteres Kind so verringert sich das durchscnittliche monatliche Einkommen einer beobachteten Person um jeweils 2,769 Euro.
+
+Steigt das Alter um ein Lebensjahr so steigt im Schnitt das monatliche Einkommen um 3,798 Euro.
+
+Der Standardfehler in der Spalte "Std.Error" zeigt, dass es einen sehr hohen Fehler bei diesen Aussagen gibt. Es weichen also viele Fälle von diesen durchschnittlichen Aussagen ab. Die beiden letzten Spalten bilden die Signifikanztests für die Effektstärken ab.
+
+Alle Variablen sind insignifikant, lediglich die Ordinate ist signifikant. Wir können bei den beobachtenten simulierten Fällen nicht davon ausgehen, dass die durchschnittlichen linearen Effekte so vorliegen, wie eben interpretiert. Auch die F-Statistik belegt, dass das gesamte Modell insignifikant ist. 
+R² ligt zwischen 0 und 1 und kann daher umgerechnet auf prozentuale Angaben interpretiert werden. Es gibt an, dass lediglich 0,335 Prozent der Varianz durch das multiple Modell erklärt werden können. Im Umkehrschluss bedeutet das, dass 99,665 Prozent der Streuung der abhängigen Variablen "monatliches Einkommen" nicht durch die unabhängigen Variablen im Modell erklärt werden konnten.
+
+Es müssten hier weitergehende Analysen durchgeführt werden, um festzustellen ob und inwiefern Effekte auf das monatliche Einkommen vorliegen.
+
+Um noch einmal festzuhalten. Dieses Beispiel soll nur verdeutlichen, wie eine Regression in R durchgeführt wird und wie eine Regression im allgemeinen interpretiert wird. Es handelt sich um simulierte Fälle, keine echten Personen!
