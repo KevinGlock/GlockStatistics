@@ -1638,8 +1638,10 @@ wie man eine simple Simulation durchführt und wie man Korrelations- und Regress
 <div id="Zufallszahlen" class="section level2">
 
 <h2>Zufallszahlen</h2>
-<p>Wie erzeugt man Zufallszahlen?</p>
+<p><b>Wie erzeugt man Zufallszahlen?</b></p>
+
 <p>Um in R Zufallszahlen erzeugen zu können gibt es verschiedene Algorithmen, die alle gut dokumentiert sind. In diesem Schritt werden zufällige Werte für das Einkommen, Alter und die Kinderanzahl für 350 Beobachtungen aus Normalverteilungen gezogen. Dabei wird immer ein Mittelwert und eine Standardabweichung mitkodiert. Das Geschlecht wird aus einer Gleichverteilung für 350 Beobachtungen gezogen, da es hier binär mit Null und Eins kodiert wird (auch wenn es mehr gender Auspägungen gibt).</p>
+
 <pre class="r"><code>set.seed(54321) # Zufallszahlengenerator
 
 inc &lt;- round(rnorm(350, mean=2800, sd=850)) #sample aus einer Normalverteilung
@@ -1663,9 +1665,11 @@ X &lt;- data.frame(sex, inc) # Um Cramer´s V Kontingenzkoeffizent zu berechnen 
 
 <h2>Korrelation</h2>
 
-<p>Korreliert das Einkommen mit den möglichen Einflussfaktoren?</p>
+<pre class="r"><code># Forschungsfrage: Korreliert das Einkommen mit den möglichen Einflussfaktoren?</code></pre> 
 
 <p>Um diese Frage zu beantworten wird im nächsten Schritt wird eine Korrelationsanalyse durchgeführt. Einkommen, und Alter ist metrisch, Kinderanzahl ordinal und das Geschlecht binär kodiert.</p>
+
+<pre class="r"><code># Hypothese: Das monatliche Einkommen ist mit höheren Werten des Alters im Schnitt höher.</code></pre>
 
 <pre class="r"><code>cor.test(inc, age, alternative = &quot;greater&quot;, conf.level = 0.95) # Pearson´s r Korrelation</code></pre>
 
@@ -1681,11 +1685,9 @@ X &lt;- data.frame(sex, inc) # Um Cramer´s V Kontingenzkoeffizent zu berechnen 
 ##          cor 
 ## -0.002714911</code></pre>
 
-<pre class="r"><code># Hypothese: Ist das Einkommen mit höheren Werten des Alters höher?</code></pre>
-
 <p>Pearson´s r Produkt-Moment Korrelation liegt zwischen -1 und 1. Der Wert ist hier negativ und vernachlässigbar gering in seiner Stärke. Der P-Wert testet die Signifikanz der Effektgröße. Die Signifikanz gibt an wie wahrscheinliches ist solch einen Wert oder extremer in einer Stichprobe zu erhalten, wenn man unendlich viele Stichproben zöge. Im vorliegenden Beispiel ist der Wert auf 94 prozentigen Konfidenzniveau signifikant. Um diese Aussage zu vereinfachen könnte man sagen, dass von von 100 gezognen Stichproben nur in 6 Stichproben der Wert nicht wie vorliegend auffindbar wäre. In 94 Stichproben wäre es der wahre Wert (zur Logik der klassischen Inferenz siehe das Kapitel zu Wahrscheinlichkeit).</p>
 
-<p>Zur Erinnerung: Wir nutzen simulierte Daten.</p>
+<pre class="r"><code># Hypothese: Das Einkommen sinkt mit der Anzahl der Kinder im Schnitt.</code></pre>
 
 <pre class="r"><code>cor.test(inc, child, alternative = &quot;less&quot;, conf.level = 0.95, method = &quot;kendall&quot;) # Kendalls´tau-b Korrelation</code></pre>
 
@@ -1699,9 +1701,10 @@ X &lt;- data.frame(sex, inc) # Um Cramer´s V Kontingenzkoeffizent zu berechnen 
 ##        tau 
 ## 0.04086507</code></pre>
 
-<pre class="r"><code># Hypothese: Ist das Einkommen von weiblich kodierten Beobachtungen geringer?</code></pre>
 
 <p>Der Kendalls tau-b Wert zeigt einen negativen Zusammenhang zwischen monatlichen Einkommen und Kinderanzahl an. Er liegt zwischen -1 und 1. Steigt also das Einkommen sinkt die Kinderanzahl und umgekehrt, jedoch ist die Effektgröße vernachlässigbar. Der p-Wert gibt an, dass dieser Effekt bei einem Konfidenzniveau von 95 Prozent und einer Irrtumswahrscheinlichkeit von 5 Prozent insifnifikant ist. Der Effekt als nicht so vorliegt.</p>
+
+<pre class="r"><code># Hypothese: Das Einkommen von weiblich kodierten Beobachtungen ist im Schnitt geringer.</code></pre>
 
 <pre class="r"><code>library(&quot;lsr&quot;)   # install.packages(&quot;lsr&quot;) # Um Cramer´s V zu berechnen benötigen wir das Paket lsr
 cramersV(X) # Effektgröße von Geschlecht auf Einkommen</code></pre>
@@ -1710,13 +1713,14 @@ cramersV(X) # Effektgröße von Geschlecht auf Einkommen</code></pre>
 
 <p>Wir können feststellen, dass die binär geschlechtlichen Kategorien lediglich einen vernachlässigbar kleinen Effekt auf das monatliche Einkommen aufweisen.</p>
 
+<p><b>Zur Erinnerung:</b> Wir nutzen simulierte Daten.</p>
 </div>
 
 <div id="Regression" class="section level2">
 
 <h2>Regression</h2>
 
-	<p>Haben das Geschlecht, die Kinderanzahl und das Alter von Befragten einen Effekt auf das monatliche Einkommen?</p	
+	<pre class="r"><code># Forschungsfrage: Haben das Geschlecht, die Kinderanzahl und das Alter von Befragten einen Effekt auf das monatliche Einkommen?</code></pre>
 	
 	<p>Berechnen wir ein Regressionsmodell mit den simulierten Daten und lassen uns direkt die gesamte Zusammenfassung des Modells anzeigen.</p>
 	<pre class="r"><code>summary(lm(inc ~ sex + child + age, data)) # Fasse das Regressionsmodell in der Ausgabe zusammen</code></pre>
@@ -1742,7 +1746,7 @@ cramersV(X) # Effektgröße von Geschlecht auf Einkommen</code></pre>
 	## Multiple R-squared:  0.01151,    Adjusted R-squared:  0.002941 
 	## F-statistic: 1.343 on 3 and 346 DF,  p-value: 0.2602</code></pre>
 	
-	<p>Der Überblick der Zusammenfassung:</p>
+	<p><b>Überblick über die Zusammenfassung:</b></p>
 	
 	<ul>
 	<li>Wir haben unter “call” das Modell als Formel und die Angabe das dafür der Datensatz data genutzt wurde.</li>
@@ -1752,7 +1756,7 @@ cramersV(X) # Effektgröße von Geschlecht auf Einkommen</code></pre>
 	<li>Im unteren Teil haben wir noch “residual standard error”, “multiple R-squared” und die “F-statistic”.</li>
 	</ul>
 	
-	<p><b>Zur Interpretation</b>: In Bezug auf die simulierten Daten können wir feststellen, dass das Geschlecht und die Kinderanzahl einen negativen Effekt auf das Einkommen hat.</p>
+	<p><b>Zur Interpretation:</b> In Bezug auf die simulierten Daten können wir feststellen, dass das Geschlecht und die Kinderanzahl einen negativen Effekt auf das Einkommen hat.</p>
 	<p>Das Alter hingegen hat einen positiven Effekt auf das Einkommen. Dies geht jeweils aus der Spalte “estimate” hervor.</p>
 	<p>Die Zeile “Intercept” steht für den y-Achsenabschnitt und stellt das Nullmodell dar. Also das Modell, wenn alle inkludierten Variablen einen Wert von Null haben. Im solch einem Falle würde man sagen, dass eine theoretische Beobachtung eines Mannes (weil Null kodiert), ohne Kinder und Null Jahren ein durchschnittliches monatliches Einkommen von 2692,578 Euro besäße.</p>
 	<p>In Bezug auf, dass Geschlecht interpretieren wir, dass wenn eine Beobachtung als weiblich kodiert ist (=1), dann sinkt die abhängige Variable Einkommen durchschnittlich um 5,814 Euro.</p>
