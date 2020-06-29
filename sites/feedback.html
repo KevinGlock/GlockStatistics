@@ -71,21 +71,21 @@ if(isset($_POST["q7"]))
 		Falls du dies nicht möchtest, kannst du auch anonymisiert antworten oder ein Pseudonym verwenden.</p>
 
 <?php
-if ( empty ($_GET['vorname']) == TRUE )
+if ( empty ($_POST['vorname']) == TRUE )
 and
-if ( empty ($_GET['q1']) == TRUE )
+if ( empty ($_POST['q1']) == TRUE )
 or
-if ( empty ($_GET['q2']) == TRUE )
+if ( empty ($_POST['q2']) == TRUE )
 or
-if ( empty ($_GET['q3']) == TRUE )
+if ( empty ($_POST['q3']) == TRUE )
 or
-if ( empty ($_GET['q4']) == TRUE )
+if ( empty ($_POST['q4']) == TRUE )
 or
-if ( empty ($_GET['q5']) == TRUE )
+if ( empty ($_POST['q5']) == TRUE )
 or
-if ( empty ($_GET['q6']) == TRUE )
+if ( empty ($_POST['q6']) == TRUE )
 and
-if ( empty ($_GET['q7']) == TRUE )
+if ( empty ($_POST['q7']) == TRUE )
 {
     echo 'Bitte füllen sie fehlende Felder aus.
 		';
@@ -96,25 +96,25 @@ else
  $handle = fopen ( "feedback.txt", "w" );
  
     // schreiben des Inhaltes von feedback
-    fwrite ( $handle, $_GET['vorname'] );
-	fwrite ( $handle, $_GET['q1'] );
-	fwrite ( $handle, $_GET['q2'] );
-	fwrite ( $handle, $_GET['q3'] );
-	fwrite ( $handle, $_GET['q4'] );
-	fwrite ( $handle, $_GET['q5'] );
-	fwrite ( $handle, $_GET['q6'] );
- 	fwrite ( $handle, $_GET['q7'] );
+    fwrite ( $handle, $_POST['vorname'] );
+	fwrite ( $handle, $_POST['q1'] );
+	fwrite ( $handle, $_POST['q2'] );
+	fwrite ( $handle, $_POST['q3'] );
+	fwrite ( $handle, $_POST['q4'] );
+	fwrite ( $handle, $_POST['q5'] );
+	fwrite ( $handle, $_POST['q6'] );
+ 	fwrite ( $handle, $_POST['q7'] );
 	
     // Trennzeichen einfügen, damit Auswertung möglich wird
     fwrite ( $handle, "|" );
  
     // schreiben des Inhalts von name
-    fwrite ( $handle, $_GET['name'] );
+    fwrite ( $handle, $_POST['name'] );
  
     // Datei schließen
     fclose ( $handle );
  
-    echo "Danke - Ihre Daten wurden erfolgreich gespeichert";
+    echo "Danke - Ihre Daten wurden erfolgreich gespeichert. Sie können diese Seite nun schließen.";
  
     // Datei wird nicht weiter ausgeführt
     exit;
@@ -122,7 +122,6 @@ else
 ?>
 
 		<form action="feedbackside.html" name="feedback" id="person" enctype="text/plain" method="post">
-		<!--input type="hidden" name="empfaenger" value="k_glock@web.de"-->
 
 		<label class="h4" form="person">Wie ist dein Name?</label></br>
 			<input type="text" name="vorname" id="vorname" maxlength="30">
@@ -166,8 +165,8 @@ else
 	</main>
 
 	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
-	<a href="examples.html">Examples</a>
-	<a href="../index.html">Home</a>
+	<a href="examples.html#Examples">Examples</a>
+	<a href="../index.html#home">Home</a>
 	</div>
 
 <button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
