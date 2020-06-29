@@ -1677,7 +1677,7 @@ X &lt;- data.frame(sex, inc) # Um Cramer´s V Kontingenzkoeffizent zu berechnen 
 ##  Pearson&#39;s product-moment correlation
 ## 
 ## data:  inc and age
-## t = -0.050646, df = 348, p-value = 0.5202
+## t = -0.050646, df = 348, p-value = 0.05732
 ## alternative hypothesis: true correlation is greater than 0
 ## 95 percent confidence interval:
 ##  -0.0907648  1.0000000
@@ -1685,7 +1685,11 @@ X &lt;- data.frame(sex, inc) # Um Cramer´s V Kontingenzkoeffizent zu berechnen 
 ##          cor 
 ## -0.002714911</code></pre>
 
-<p>Pearson´s r Produkt-Moment Korrelation liegt zwischen -1 und 1. Der Wert ist hier negativ und vernachlässigbar gering in seiner Stärke. Der P-Wert testet die Signifikanz der Effektgröße. Die Signifikanz gibt an wie wahrscheinliches ist solch einen Wert oder extremer in einer Stichprobe zu erhalten, wenn man unendlich viele Stichproben zöge. Im vorliegenden Beispiel ist der Wert auf 94 prozentigen Konfidenzniveau signifikant. Um diese Aussage zu vereinfachen könnte man sagen, dass von von 100 gezognen Stichproben nur in 6 Stichproben der Wert nicht wie vorliegend auffindbar wäre. In 94 Stichproben wäre es der wahre Wert (zur Logik der klassischen Inferenz siehe das Kapitel zu Wahrscheinlichkeit).</p>
+<p>Pearson´s r Produkt-Moment Korrelation liegt zwischen -1 und 1.
+Der Wert ist hier negativ und vernachlässigbar gering in seiner Stärke.
+Der P-Wert testet die Signifikanz der Effektgröße. Die Signifikanz gibt an wie wahrscheinlich es ist, solch einen Wert oder extremer in einer Stichprobe zu erhalten,
+wenn man unendlich viele Stichproben zöge.
+Im vorliegenden Beispiel ist der Wert auf 94 prozentigen Konfidenzniveau signifikant. Um diese Aussage zu vereinfachen könnte man sagen, dass von von 100 gezognen Stichproben nur in 6 Stichproben der Wert nicht wie vorliegend auffindbar wäre. In 94 Stichproben wäre es der wahre Wert (zur Logik der klassischen Inferenz siehe das Kapitel zu Wahrscheinlichkeit).</p>
 
 <pre class="r"><code># Hypothese: Das Einkommen sinkt mit der Anzahl der Kinder im Schnitt.</code></pre>
 
@@ -1702,16 +1706,20 @@ X &lt;- data.frame(sex, inc) # Um Cramer´s V Kontingenzkoeffizent zu berechnen 
 ## 0.04086507</code></pre>
 
 
-<p>Der Kendalls tau-b Wert zeigt einen negativen Zusammenhang zwischen monatlichen Einkommen und Kinderanzahl an. Er liegt zwischen -1 und 1. Steigt also das Einkommen sinkt die Kinderanzahl und umgekehrt, jedoch ist die Effektgröße vernachlässigbar. Der p-Wert gibt an, dass dieser Effekt bei einem Konfidenzniveau von 95 Prozent und einer Irrtumswahrscheinlichkeit von 5 Prozent insifnifikant ist. Der Effekt als nicht so vorliegt.</p>
+<p>Der Kendalls tau-b Wert zeigt einen positiven Zusammenhang zwischen monatlichen Einkommen und Kinderanzahl an.
+Er liegt zwischen -1 und 1. Steigt also das Einkommen steigt die Kinderanzahl und umgekehrt, jedoch ist die Effektgröße vernachlässigbar.
+Der p-Wert gibt an, dass dieser Effekt bei einem Konfidenzniveau von 95 Prozent und einer Irrtumswahrscheinlichkeit von 5 Prozent insifnifikant ist.
+Der Effekt liegt also nicht so vor, wie angenommen.</p>
 
 <pre class="r"><code># Hypothese: Das Einkommen von weiblich kodierten Beobachtungen ist im Schnitt geringer.</code></pre>
 
 <pre class="r"><code>library(&quot;lsr&quot;)   # install.packages(&quot;lsr&quot;) # Um Cramer´s V zu berechnen benötigen wir das Paket lsr
 cramersV(X) # Effektgröße von Geschlecht auf Einkommen</code></pre>
 
-<pre><code>## [1] 0.01469437</code></pre>
+<pre><code>## [1] -0.01469437</code></pre>
 
-<p>Wir können feststellen, dass die binär geschlechtlichen Kategorien lediglich einen vernachlässigbar kleinen Effekt auf das monatliche Einkommen aufweisen.</p>
+<p>Wir können feststellen, dass die binär geschlechtlichen Kategorien lediglich einen vernachlässigbar kleinen Effekt auf das monatliche Einkommen aufweisen.
+Wenn das Geschlecht weiblich ausgeprägt ist, ist das Einkommen marginal geringer.</p>
 
 <p><b>Zur Erinnerung:</b> Wir nutzen simulierte Daten.</p>
 </div>
@@ -1736,8 +1744,8 @@ cramersV(X) # Effektgröße von Geschlecht auf Einkommen</code></pre>
 	## Coefficients:
 	##              Estimate Std. Error t value Pr(&gt;|t|)    
 	## (Intercept) 2658.5261   192.9940  13.775   &lt;2e-16 ***
-	## sex          169.1493    91.3061   1.853   0.0648 .  
-	## child         68.1095    83.1670   0.819   0.4134    
+	## sex         -169.1493    91.3061   1.853   0.0648 .  
+	## child        -68.1095    83.1670   0.819   0.4134    
 	## age            0.2745     3.5353   0.078   0.9382    
 	## ---
 	## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
@@ -1756,22 +1764,46 @@ cramersV(X) # Effektgröße von Geschlecht auf Einkommen</code></pre>
 	<li>Im unteren Teil haben wir noch “residual standard error”, “multiple R-squared” und die “F-statistic”.</li>
 	</ul>
 	
-	<p><b>Zur Interpretation:</b> In Bezug auf die simulierten Daten können wir feststellen, dass das Geschlecht und die Kinderanzahl einen negativen Effekt auf das Einkommen hat.</p>
+	<p><b>Zur Interpretation:</b> In Bezug auf die simulierten Daten können wir feststellen,
+	dass das Geschlecht und die Kinderanzahl einen negativen Effekt auf das Einkommen hat.
+	Wobei das Geschlecht auf dem 90 Prozent Konfidenznieveau signifikant ist.</p>
+	
 	<p>Das Alter hingegen hat einen positiven Effekt auf das Einkommen. Dies geht jeweils aus der Spalte “estimate” hervor.</p>
-	<p>Die Zeile “Intercept” steht für den y-Achsenabschnitt und stellt das Nullmodell dar. Also das Modell, wenn alle inkludierten Variablen einen Wert von Null haben. Im solch einem Falle würde man sagen, dass eine theoretische Beobachtung eines Mannes (weil Null kodiert), ohne Kinder und Null Jahren ein durchschnittliches monatliches Einkommen von 2692,578 Euro besäße.</p>
-	<p>In Bezug auf, dass Geschlecht interpretieren wir, dass wenn eine Beobachtung als weiblich kodiert ist (=1), dann sinkt die abhängige Variable Einkommen durchschnittlich um 5,814 Euro.</p>
-	<p>Steigt die Kinderanzahl um jeweils ein weiteres Kind so verringert sich das durchscnittliche monatliche Einkommen einer beobachteten Person um jeweils 2,769 Euro.</p>
-	<p>Steigt das Alter um ein Lebensjahr so steigt im Schnitt das monatliche Einkommen um 3,798 Euro.</p>
-	<p>Der Standardfehler in der Spalte “Std.Error” zeigt, dass es einen sehr hohen Fehler bei diesen Aussagen gibt. Es weichen also viele Fälle von diesen durchschnittlichen Aussagen ab. Die beiden letzten Spalten bilden die Signifikanztests für die Effektstärken ab.</p>
-	<p>Alle Variablen sind insignifikant, lediglich die Ordinate ist signifikant. Wir können bei den beobachtenten simulierten Fällen nicht davon ausgehen, dass die durchschnittlichen linearen Effekte so vorliegen, wie eben interpretiert. Auch die F-Statistik belegt, dass das gesamte Modell insignifikant ist.</p>
-	<p>R² liegt zwischen 0 und 1 und kann daher umgerechnet auf prozentuale Angaben interpretiert werden. Es gibt an, dass lediglich 0,335 Prozent der Varianz durch das multiple Modell erklärt werden können. Im Umkehrschluss bedeutet das, dass 99,665 Prozent der Streuung der abhängigen Variablen “monatliches Einkommen” nicht durch die unabhängigen Variablen im Modell erklärt werden konnten.</p>
+	
+	<p>Die Zeile “Intercept” steht für den y-Achsenabschnitt und stellt das Nullmodell dar.
+	Also das Modell, wenn alle inkludierten Variablen einen Wert von Null haben.
+	In solch einem Falle würde man sagen, dass eine theoretische Beobachtung eines Mannes (weil Null kodiert),
+	ohne Kinder und Null Jahren ein durchschnittliches monatliches Einkommen von 2658,53 Euro besäße.</p>
+	
+	<p>In Bezug auf, dass Geschlecht interpretieren wir,
+	dass wenn eine Beobachtung als weiblich kodiert ist (=1),
+	dann sinkt die abhängige Variable Einkommen durchschnittlich um 169,15 Euro.</p>
+	
+	<p>Steigt die Kinderanzahl um jeweils ein weiteres Kind,
+	so verringert sich das durchscnittliche monatliche Einkommen einer beobachteten Person um jeweils 68,11 Euro.</p>
+	
+	<p>Steigt das Alter um ein Lebensjahr so steigt im Schnitt das monatliche Einkommen um 0,2745 Euro.</p>
+	
+	<p>Der Standardfehler in der Spalte “Std.Error” zeigt,
+	dass es einen sehr hohen Fehler bei diesen Aussagen gibt.
+	Es weichen also viele Fälle von diesen durchschnittlichen Aussagen ab. Die beiden letzten Spalten bilden die Signifikanztests für die Effektstärken ab.</p>
+	
+	<p>Alle Variablen sind auf dem 95 Prozent Niveau insignifikant,
+	lediglich die Ordinate ist signifikant.
+	Wir können bei den beobachtenten simulierten Fällen nicht davon ausgehen,
+	dass die durchschnittlichen linearen Effekte so vorliegen, wie eben interpretiert.
+	Auch die F-Statistik belegt, dass das gesamte Modell insignifikant ist.</p>
+	
+	<p>R² liegt zwischen 0 und 1 und kann daher umgerechnet auf prozentuale Angaben interpretiert werden.
+	Es gibt an, dass lediglich 1,151 Prozent der Varianz durch das multiple Modell erklärt werden können.
+	Im Umkehrschluss bedeutet das, dass 98,849 Prozent der Streuung
+	der abhängigen Variablen “monatliches Einkommen” nicht durch die unabhängigen Variablen im Modell erklärt werden konnten.</p>
+	
 	<p>Es müssten hier weitergehende Analysen durchgeführt werden, um festzustellen ob und inwiefern Effekte auf das monatliche Einkommen vorliegen.</p>
-	<p>Um noch einmal festzuhalten. Dieses Beispiel soll nur verdeutlichen, wie eine Regression in R durchgeführt wird und wie eine Regression im allgemeinen interpretiert wird. Es handelt sich um simulierte Fälle, keine echten Personen!</p>
+	
+	<p>Um noch einmal festzuhalten. Dieses Beispiel soll nur verdeutlichen, wie eine Regression in R durchgeführt wird und wie eine Regression im allgemeinen interpretiert wird.
+	Es handelt sich um simulierte Fälle, keine echten Personen!</p>
 </div>
-
-
-
-
 </div>
 
 
@@ -1786,6 +1818,15 @@ Wie kann ich weiterführende Tests durchführen? Was kann man noch alles mit Zuf
 </div>
 
 
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
+	<a href="../sites/examples.html#simulation">Examples</a>
+	<a href="../index.html#home">Home</a>
+	</div>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 <script>
 
 // add bootstrap table styles to pandoc tables
@@ -1795,7 +1836,6 @@ function bootstrapStylePandocTables() {
 $(document).ready(function () {
   bootstrapStylePandocTables();
 });
-
 
 </script>
 
@@ -1857,14 +1897,6 @@ $(document).ready(function ()  {
   })();
 </script>
 
-<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-	<div style="font-size: 10pt; text-align: center;" id="fussbereich">
-	<a href="../sites/examples.html#simulation">Examples</a>
-	<a href="../index.html#home">Home</a>
-	</div>
-<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-</div>
-<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <div>
  <button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
  <link href="../css/style.css" rel="stylesheet" type="text/css">
