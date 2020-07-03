@@ -12,7 +12,7 @@ overflow: scroll;
     float: none;
     display: block;
     width: 100%;
-    text-align: justify; /* If you want the text to be left-aligned on small screens */
+    text-align: left; /* If you want the text to be left-aligned on small screens */
   }
 }
 
@@ -30,7 +30,7 @@ overflow: scroll;
 #circle1:before {
   border-radius:50%;
   content:"";
-  position:relative;
+  position:absolute;
   overflow: scroll;
   top:0; left:0;
   width:inherit;
@@ -65,7 +65,7 @@ overflow: scroll;
 #circle2:before {
   border-radius:50%;
   content:"";
-  position:relative;
+  position:absolute;
   overflow: scroll;
   top:0; left:0;
   width:inherit;
@@ -100,7 +100,7 @@ overflow: scroll;
 #circle3:before {
   border-radius:50%;
   content:"";
-  position:relative;
+  position:absolute;
   overflow: scroll;
   top:0; left:0;
   width:inherit;
