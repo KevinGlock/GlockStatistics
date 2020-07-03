@@ -52,6 +52,7 @@
   top:0; left:0;
   width:inherit;
   height:inherit;
+  overflow: auto;
   box-shadow:
       inset 140px 0 0 hsla(210,75%,34%,0.8),  
       inset 0 140px 0 hsla(210,75%,34%,0.8), 
@@ -62,7 +63,7 @@
 
 #circle2:hover:before{ 
   box-shadow:
-      inset 26px 0 0 hsla(90,50%,40%,0.4),
+      inset 26px 0 0 hsla(210,50%,40%,0.4),
       inset 0 26px 0 hsla(240,50%,40%,0.2), 
       inset -26px 0 0 hsla(300,50%,40%,0.2), 
       inset 0 -26px 0 hsla(60,50%,40%,0.2)
