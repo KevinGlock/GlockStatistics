@@ -3,13 +3,13 @@
 /* Index Circles*/
 
 
-#tab2{
+.tab{
 position:relative;
 overflow: auto;
 }
 
 @media screen and (max-width: 500px) {
-  #tab2 {
+  .tab {
     float: none;
     display: block;
     width: 100%;
