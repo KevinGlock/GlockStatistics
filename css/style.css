@@ -20,7 +20,7 @@ overflow: auto;
 #circle1 {
   position:relative;
   cursor:pointer;
-  margin:20px;
+  margin:0px;
   width:50px;
   height:50px;
   transform:translateZ(0);
@@ -52,7 +52,7 @@ overflow: auto;
 #circle2 {
   position:relative;
   cursor:pointer;
-  margin:20px;
+  margin:0px;
   width:50px;
   height:50px;
   transform:translateZ(0);
@@ -84,7 +84,7 @@ overflow: auto;
 #circle3 {
   position:relative;
   cursor:pointer;
-  margin:20px;
+  margin:0px;
   width:50px;
   height:50px;
   transform:translateZ(0);
