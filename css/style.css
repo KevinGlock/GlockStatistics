@@ -3,7 +3,7 @@
 /* Index Circles*/
 
 #tab{
-position:relative;
+position:absolute;
 overflow: scroll;	
 }
 
