@@ -3,7 +3,8 @@
 /* Index Circles*/
 
 #tab{
-position:relative;	
+position:relative;
+overflow: auto;	
 }
 
 #circle1 {
