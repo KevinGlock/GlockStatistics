@@ -14,7 +14,7 @@
 }
 
 #circle1:before {
-  border-radius:10%;
+  border-radius:50%;
   content:"";
   position:absolute;
   top:0; left:0;
@@ -37,7 +37,7 @@
 }
 
 #circle2 {
-  position:relative;
+  position:absolute;
   cursor:pointer;
   margin:0 auto;
   width:140px;
@@ -71,7 +71,7 @@
 }
 
 #circle3 {
-  position:relative;
+  position:absolute;
   cursor:pointer;
   margin:0 auto;
   width:140px;
