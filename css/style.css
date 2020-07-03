@@ -131,6 +131,7 @@ img {
 body {
   text-align: justify;
   color: #000;
+  hyphens: auto;
 }
  /* Style the navigation menu */
 .navbar {
