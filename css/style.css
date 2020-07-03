@@ -15,7 +15,7 @@
 
 .circle1:before {
   border-radius:50%;
-  content:"";
+  content:"Nachhilfe";
   position:absolute;
   top:0; left:0;
   width:inherit;
