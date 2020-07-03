@@ -9,7 +9,8 @@
    -moz-border-radius: 70px; 
    -webkit-border-radius: 70px; 
    border-radius: 70px;
-   position: left;
+   position: relative;
+   left: 10px;
 }
 
 #circle2 { 
@@ -19,7 +20,8 @@
    -moz-border-radius: 70px; 
    -webkit-border-radius: 70px; 
    border-radius: 70px;
-   position: right;
+   position: relative;
+   right: 10px;
 }
 
 /* My picture */
