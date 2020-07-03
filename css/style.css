@@ -10,6 +10,7 @@ overflow: auto;
 #circle1 {
   position:relative;
   cursor:pointer;
+  overflow: inh;
   margin:20px;
   width:140px;
   height:140px;
@@ -43,6 +44,7 @@ overflow: auto;
 #circle2 {
   position:relative;
   cursor:pointer;
+  overflow: inherit;
   margin:20px;
   width:140px;
   height:140px;
@@ -76,6 +78,7 @@ overflow: auto;
 #circle3 {
   position:relative;
   cursor:pointer;
+  overflow: inherit;
   margin:20px;
   width:140px;
   height:140px;
