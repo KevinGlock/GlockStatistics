@@ -3,8 +3,7 @@
 /* Index Circles*/
 
 #circle1 {
-  position:absolute;
-  left: 240px;
+  position:relative;
   cursor:pointer;
   margin:20px;
   width:140px;
@@ -38,8 +37,7 @@
 }
 
 #circle2 {
-  position:absolute;
-  left: 400px;
+  position:relative;
   cursor:pointer;
   margin:20px;
   width:140px;
@@ -73,8 +71,7 @@
 }
 
 #circle3 {
-  position:absolute;
-  right: 220px;
+  position:relative;
   cursor:pointer;
   margin:0 auto;
   width:140px;
