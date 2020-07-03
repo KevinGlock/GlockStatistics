@@ -10,13 +10,13 @@
   height:140px;
   overflow:hidden;
   transform:translateZ(0);
-  padding-right:20px;
+  padding-right:50px;
 }
 
 #circle1:before {
   border-radius:50%;
   content:"";
-  position:absolute;
+  position:relative;
   top:0; left:0;
   width:inherit;
   height:inherit;
@@ -44,13 +44,13 @@
   height:140px;
   overflow:hidden;
   transform:translateZ(0);
-  padding-right:20px;
+  padding-right:50px;
 }
 
 #circle2:before {
   border-radius:50%;
   content:"";
-  position:absolute;
+  position:relative;
   top:0; left:0;
   width:inherit;
   height:inherit;
@@ -73,7 +73,7 @@
 #circle3 {
   position:relative;
   cursor:pointer;
-  margin:0 auto;
+  margin:20px;
   width:140px;
   height:140px;
   overflow:hidden;
@@ -83,7 +83,7 @@
 #circle3:before {
   border-radius:50%;
   content:"";
-  position:absolute;
+  position:relative;
   top:0; left:0;
   width:inherit;
   height:inherit;
