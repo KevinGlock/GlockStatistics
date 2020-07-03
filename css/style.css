@@ -2,13 +2,14 @@
 
 /* Index Circles*/
 
-#tab{
+
+#tab2{
 position:relative;
 overflow: scroll;	
 }
 
 @media screen and (max-width: 500px) {
-  #tab {
+  #tab2 {
     float: none;
     display: block;
     width: 100%;
@@ -19,7 +20,6 @@ overflow: scroll;
 #circle1 {
   position:relative;
   cursor:pointer;
-  overflow: scroll;
   margin:20px;
   width:140px;
   height:140px;
@@ -31,7 +31,6 @@ overflow: scroll;
   border-radius:50%;
   content:"";
   position:absolute;
-  overflow: scroll;
   top:0; left:0;
   width:inherit;
   height:inherit;
@@ -54,7 +53,6 @@ overflow: scroll;
 #circle2 {
   position:relative;
   cursor:pointer;
-  overflow: scroll;
   margin:20px;
   width:140px;
   height:140px;
@@ -66,7 +64,6 @@ overflow: scroll;
   border-radius:50%;
   content:"";
   position:absolute;
-  overflow: scroll;
   top:0; left:0;
   width:inherit;
   height:inherit;
@@ -89,7 +86,6 @@ overflow: scroll;
 #circle3 {
   position:relative;
   cursor:pointer;
-  overflow: scroll;
   margin:20px;
   width:140px;
   height:140px;
@@ -101,7 +97,6 @@ overflow: scroll;
   border-radius:50%;
   content:"";
   position:absolute;
-  overflow: scroll;
   top:0; left:0;
   width:inherit;
   height:inherit;
