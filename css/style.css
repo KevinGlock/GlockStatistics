@@ -14,7 +14,7 @@
 }
 
 #circle1:before {
-  border-radius:50%;
+  border-radius:10%;
   content:"";
   position:absolute;
   top:0; left:0;
