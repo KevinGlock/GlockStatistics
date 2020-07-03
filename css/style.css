@@ -4,8 +4,9 @@
 
 #circle1 {
   position:absolute;
+  left: 20px;
   cursor:pointer;
-  margin:0 auto;
+  margin:20px;
   width:140px;
   height:140px;
   overflow:hidden;
@@ -38,8 +39,9 @@
 
 #circle2 {
   position:absolute;
+  right: 20px;
   cursor:pointer;
-  margin:0 auto;
+  margin:20px;
   width:140px;
   height:140px;
   overflow:hidden;
