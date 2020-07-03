@@ -9,7 +9,7 @@
   width:140px;
   height:140px;
   transform:translateZ(0);
-  padding-right:50px;
+  padding:50px;
 }
 
 #circle1:before {
@@ -29,10 +29,10 @@
 
 #circle1:hover:before{ 
   box-shadow:
-      inset 50px 0 0 hsla(10,50%,40%,0.4),
-      inset 0 50px 0 hsla(140,50%,40%,0.2), 
-      inset -50px 0 0 hsla(200,50%,40%,0.2), 
-      inset 0 -50px 0 hsla(120,50%,40%,0.2)
+      inset 10px 0 0 hsla(10,50%,40%,0.4),
+      inset 0 10px 0 hsla(140,50%,40%,0.2), 
+      inset -10px 0 0 hsla(200,50%,40%,0.2), 
+      inset 0 -10px 0 hsla(120,50%,40%,0.2)
 }
 
 #circle2 {
@@ -41,9 +41,8 @@
   margin:20px;
   width:140px;
   height:140px;
-  overflow:hidden;
   transform:translateZ(0);
-  padding-right:50px;
+  padding:50px;
 }
 
 #circle2:before {
@@ -75,8 +74,8 @@
   margin:20px;
   width:140px;
   height:140px;
-  overflow:hidden;
-  transform:translateZ(0)
+  transform:translateZ(0);
+  padding:50px;
 }
 
 #circle3:before {
