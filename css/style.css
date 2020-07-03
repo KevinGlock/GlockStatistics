@@ -10,7 +10,7 @@
    -webkit-border-radius: 70px; 
    border-radius: 70px;
    position: relative;
-   left: 10px;
+   left: 500px;
 }
 
 #circle2 { 
@@ -21,7 +21,7 @@
    -webkit-border-radius: 70px; 
    border-radius: 70px;
    position: relative;
-   right: 10px;
+   right: 500px;
 }
 
 /* My picture */
