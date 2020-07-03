@@ -2,6 +2,10 @@
 
 /* Index Circles*/
 
+#tab{
+position:relative;	
+}
+
 #circle1 {
   position:relative;
   cursor:pointer;
