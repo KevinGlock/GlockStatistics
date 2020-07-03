@@ -29,10 +29,10 @@
 
 #circle1:hover:before{ 
   box-shadow:
-      inset 10px 0 0 hsla(10,50%,40%,0.4),
-      inset 0 10px 0 hsla(140,50%,40%,0.2), 
-      inset -10px 0 0 hsla(200,50%,40%,0.2), 
-      inset 0 -10px 0 hsla(120,50%,40%,0.2)
+      inset 25px 0 0 hsla(10,50%,40%,0.4),
+      inset 0 25px 0 hsla(140,50%,40%,0.2), 
+      inset -25px 0 0 hsla(200,50%,40%,0.2), 
+      inset 0 -25px 0 hsla(120,50%,40%,0.2)
 }
 
 #circle2 {
