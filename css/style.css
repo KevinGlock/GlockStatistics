@@ -3,14 +3,23 @@
 /* Index Circles*/
 
 #tab{
-position:absolute;
+position:relative;
 overflow: scroll;	
+}
+
+@media screen and (max-width: 500px) {
+  #tab {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: justify; /* If you want the text to be left-aligned on small screens */
+  }
 }
 
 #circle1 {
   position:relative;
   cursor:pointer;
-  overflow: auto;
+  overflow: scroll;
   margin:20px;
   width:140px;
   height:140px;
@@ -21,8 +30,8 @@ overflow: scroll;
 #circle1:before {
   border-radius:50%;
   content:"";
-  position:absolute;
-  overflow: auto;
+  position:relative;
+  overflow: scroll;
   top:0; left:0;
   width:inherit;
   height:inherit;
@@ -45,7 +54,7 @@ overflow: scroll;
 #circle2 {
   position:relative;
   cursor:pointer;
-  overflow: auto;
+  overflow: scroll;
   margin:20px;
   width:140px;
   height:140px;
@@ -56,8 +65,8 @@ overflow: scroll;
 #circle2:before {
   border-radius:50%;
   content:"";
-  position:absolute;
-  overflow: auto;
+  position:relative;
+  overflow: scroll;
   top:0; left:0;
   width:inherit;
   height:inherit;
@@ -80,7 +89,7 @@ overflow: scroll;
 #circle3 {
   position:relative;
   cursor:pointer;
-  overflow: auto;
+  overflow: scroll;
   margin:20px;
   width:140px;
   height:140px;
@@ -91,8 +100,8 @@ overflow: scroll;
 #circle3:before {
   border-radius:50%;
   content:"";
-  position:absolute;
-  overflow: auto;
+  position:relative;
+  overflow: scroll;
   top:0; left:0;
   width:inherit;
   height:inherit;
