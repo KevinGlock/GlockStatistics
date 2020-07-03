@@ -4,7 +4,6 @@
 
 #circle1 {
   position:absolute;
-  left: 20px;
   cursor:pointer;
   margin:20px;
   width:140px;
@@ -39,7 +38,6 @@
 
 #circle2 {
   position:absolute;
-  right: 20px;
   cursor:pointer;
   margin:20px;
   width:140px;
