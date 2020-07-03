@@ -29,10 +29,10 @@
 
 #circle1:hover:before{ 
   box-shadow:
-      inset 25px 0 0 hsla(10,50%,40%,0.4),
-      inset 0 25px 0 hsla(140,50%,40%,0.2), 
-      inset -25px 0 0 hsla(200,50%,40%,0.2), 
-      inset 0 -25px 0 hsla(120,50%,40%,0.2)
+      inset 26px 0 0 hsla(170,45%,34%,0.8),
+      inset 0 26px 0 hsla(140,50%,40%,0.2), 
+      inset -26px 0 0 hsla(200,50%,40%,0.2), 
+      inset 0 -26px 0 hsla(120,50%,40%,0.2)
 }
 
 #circle2 {
@@ -62,10 +62,10 @@
 
 #circle2:hover:before{ 
   box-shadow:
-      inset 36px 0 0 hsla(90,50%,40%,0.4),
-      inset 0 36px 0 hsla(240,50%,40%,0.2), 
-      inset -36px 0 0 hsla(300,50%,40%,0.2), 
-      inset 0 -36px 0 hsla(60,50%,40%,0.2)
+      inset 26px 0 0 hsla(90,50%,40%,0.4),
+      inset 0 26px 0 hsla(240,50%,40%,0.2), 
+      inset -26px 0 0 hsla(300,50%,40%,0.2), 
+      inset 0 -26px 0 hsla(60,50%,40%,0.2)
 }
 
 #circle3 {
@@ -95,10 +95,10 @@
 
 #circle3:hover:before{ 
   box-shadow:
-      inset 36px 0 0 hsla(90,50%,40%,0.4),
-      inset 0 36px 0 hsla(240,50%,40%,0.2), 
-      inset -36px 0 0 hsla(300,50%,40%,0.2), 
-      inset 0 -36px 0 hsla(60,50%,40%,0.2)
+      inset 26px 0 0 hsla(90,50%,40%,0.4),
+      inset 0 26px 0 hsla(240,50%,40%,0.2), 
+      inset -26px 0 0 hsla(300,50%,40%,0.2), 
+      inset 0 -26px 0 hsla(60,50%,40%,0.2)
 }
 
 /* My picture */
