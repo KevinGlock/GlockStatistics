@@ -9,6 +9,7 @@
    -moz-border-radius: 70px; 
    -webkit-border-radius: 70px; 
    border-radius: 70px;
+   padding-right: 20 px:
 }
 
 #circle2 { 
@@ -18,6 +19,7 @@
    -moz-border-radius: 70px; 
    -webkit-border-radius: 70px; 
    border-radius: 70px;
+   padding-right: 20 px;
 }
 
 #circle3 { 
