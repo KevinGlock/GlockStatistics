@@ -93,6 +93,7 @@ if ( empty ($_POST['q7']) == TRUE )
 else
 {
 
+mail($empfaenger)
  $handle = fopen ( "feedback.txt", "w" );
  
     // schreiben des Inhaltes von feedback
@@ -114,15 +115,21 @@ else
     // Datei schließen
     fclose ( $handle );
  
-    echo "Danke - Ihre Daten wurden erfolgreich gespeichert. Sie können diese Seite nun schließen.";
+    echo "	<h1>Vielen Dank!</h1>
+
+		<p>Das ist wirklich sehr nett von dir, dass du dich für ein Feedback entschieden hast und hilft mir sehr!</p>
+
+		<p>Deine Angaben werden in den kommenden Tagen verarbeitet und deine Empfehlung erscheint, falls abgegeben, auf meinen Webauftritt.</p>
+
+		<p>Sie können diese Seite jetzt schließen.</p>";
  
     // Datei wird nicht weiter ausgeführt
     exit;
 }
 ?>
 
-		<form action="feedbackside.html" name="feedback" id="person" enctype="text/plain" method="post">
-
+		<form action="feedback.html" name="feedback" id="person" enctype="text/plain" method="post">
+		<label class="hidden" empfaenger="k_glock@web.de">
 		<label class="h4" form="person">Wie ist dein Name?</label></br>
 			<input type="text" name="vorname" id="vorname" maxlength="30">
 			

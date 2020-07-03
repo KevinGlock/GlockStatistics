@@ -1,5 +1,26 @@
 /* CSS Document       */ 
 
+/* Index Circles*/
+
+#circle1 { 
+   width: 140px;
+   height: 140px;
+   background: #037CA9; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+   position: left;
+}
+
+#circle2 { 
+   width: 140px;
+   height: 140px;
+   background: #037CA9; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+   position: right;
+}
 
 /* My picture */
 
