@@ -4,7 +4,7 @@
 
 #circle1 {
   position:absolute;
-  left: 140px;
+  left: 240px;
   cursor:pointer;
   margin:20px;
   width:140px;
@@ -39,7 +39,7 @@
 
 #circle2 {
   position:absolute;
-  center: 0;
+  left: 400px;
   cursor:pointer;
   margin:20px;
   width:140px;
@@ -74,7 +74,7 @@
 
 #circle3 {
   position:absolute;
-  right: 120px;
+  right: 220px;
   cursor:pointer;
   margin:0 auto;
   width:140px;
