@@ -199,9 +199,10 @@ main {
 }
 
 .dropdown {
+  display:inline;
   float: inherit;
   overflow: inherit;
-  font-family: inherit;
+  font-family: Helvetica;
 }
 
 .dropdown .dropbtn {
@@ -211,7 +212,7 @@ main {
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: Helvetica;
+  font-family: inherit;
   margin: 0;
 }
 
