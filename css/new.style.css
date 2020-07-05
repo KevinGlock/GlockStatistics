@@ -29,16 +29,16 @@ overflow: auto;
 }
 
 main {
-  padding: 10px 10px;
-  margin: 20px 150px;
+  padding: 20px 20px;
+  margin: 30px 200px;
   border-radius: 2px;
   background-color: white;
 }
 
 @media screen and (max-width: 500px) {
   main{
-  padding: 10px 10px;
-  margin: 20px 150px;
+  padding: 20px 20px;
+  margin: 20px 50px;
   border-radius: 2px;
   background-color: white;
   }
