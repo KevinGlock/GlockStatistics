@@ -8,7 +8,9 @@ header {
    background-position: ;
    background-size: cover;
    background-repeat: no-repeat;
-   height: 200px;
+   height: 250px;
+   padding: 0px;
+   margin:0px;
 }
 
 .content{
