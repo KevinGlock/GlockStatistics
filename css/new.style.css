@@ -18,6 +18,7 @@ body {
 	margin-top: -200px;
 	padding: 200px 0;
 	transform: skew(0deg, -10deg);
+	background-color: red;
 	background-image: url(../img/text-4316738(1).jpg);
 }
 
