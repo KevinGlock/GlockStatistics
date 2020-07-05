@@ -6,7 +6,7 @@ header {
    background-color: #000000;
    background-image: url(../img/text-4316738(1).jpg);
    background-position: ;
-   background-size: cover;
+   background-size: 100% 100%;
    background-repeat: no-repeat;
    height: 200px;
 }
@@ -26,7 +26,11 @@ overflow: auto;
 }
 
 main {
-	position:center;
+  position:center;
+  background-image: url(../img/brown-and-white-rock-formation-4312843.jpg);
+  background-position:;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #circle1 {
@@ -144,10 +148,6 @@ body {
   text-align: justify;
   color: #000;
   hyphens: auto;
-  background-image: url(../img/macro-photo-of-a-leaf-4593876.jpg);
-  background-position:;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
  /* Style the navigation menu */
 .navbar {
