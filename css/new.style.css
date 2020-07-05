@@ -139,21 +139,21 @@ body {
   text-align: justify;
   color: #000;
   hyphens: auto;
-  /*background-image: url(../img/macro-photo-of-a-leaf-4593876.jpg);*/
+  background-image: url(../img/macro-photo-of-a-leaf-4593876.jpg);
   background-position:;
   background-size: cover;
   background-repeat: no-repeat;
 }
  /* Style the navigation menu */
-/*.navbar {
+.navbar {
   width: 100%;
   background-image: linear-gradient(to right, #155799, #159957);
   overflow: hidden;
   border-radius: 6px;
-}*/
+}
 
 /* Navigation links */
-/*.navbar a {
+.navbar a {
   display:block;
   float: left;
   padding: 12px;
@@ -161,27 +161,27 @@ body {
   text-decoration: none;
   font-size: 17px;
   width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-/*  text-align: center; *//* If you want the text to be centered */
-/*}*/
+  text-align: center; /* If you want the text to be centered */
+}
 
 /* Add a background color on mouse-over */
-/*.navbar a:hover {
+.navbar a:hover {
   background-color: #159957;
 }
 
 /* Style the current/active link */
-/*.navbar a.active {
+.navbar a.active {
   background-color: linear-gradient(to right, #155799, #158999);
 }
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-/*@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .navbar a {
     float: none;
     display: block;
     width: 100%;
     text-align: left; /* If you want the text to be left-aligned on small screens */
-/*  }
+  }
 }
 
 /*ScrollUpButton*/
