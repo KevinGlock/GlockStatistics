@@ -29,8 +29,9 @@ overflow: auto;
 }
 
 main {
-  margin-left: 60px;
-  margin-right:60px;
+  padding: 60 px;
+ /* margin-left: 60px;
+  margin-right:60px;*/
 }
 
 #circle1 {
