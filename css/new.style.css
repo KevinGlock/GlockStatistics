@@ -14,6 +14,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.skew {
+	margin-top: -200px;
+	padding: 200px 0;
+	transform: skew(0deg, -10deg);
+	background-image: url(../img/text-4316738(1).jpg);
+}
+
+.about{
+	text-align: justify;
+	padding-top:100px;
+}
+
 header {
    background-color: #000000;
    background-image: url(../img/brown-and-white-rock-formation-4312843.jpg);
