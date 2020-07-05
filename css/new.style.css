@@ -1,7 +1,5 @@
 /* CSS Document */ 
 
-/* Index Circles*/
-
 header {
    background-color: #000000;
    background-image: url(../img/brown-and-white-rock-formation-4312843.jpg);
@@ -16,7 +14,6 @@ header {
 
 .content{
 position:relative;
-overflow: auto;
 }
 
 main {
@@ -25,6 +22,8 @@ main {
   border-radius: 2px;
   background-color: white;
 }
+
+/* Index Circles*/
 
 #circle1 {
   position:relative;
