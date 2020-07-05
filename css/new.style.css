@@ -167,8 +167,8 @@ main {
 }
 
 .dropdown {
-  display: none;
-  float: inherit;
+  display: block;
+  float: left;
   overflow: hidden;
 }
 
