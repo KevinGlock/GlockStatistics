@@ -208,8 +208,8 @@ body {
   .navbar a {
     float: none;
     display: inline;
-    width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
+    width: 20%;
+    text-align: justify; /* If you want the text to be left-aligned on small screens */
   }
 }
 
