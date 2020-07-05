@@ -176,7 +176,6 @@ body {
 
 .sticky {
   position: fixed;
-  overflow: hidden;
   top: 0;
   width: 100%;
 }
