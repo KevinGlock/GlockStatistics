@@ -165,16 +165,23 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
+  font-family: Helvetica;
+  font-size: 16px;
 }
 
 /* Navbar links */
 .navbar a {
-  float: left;
+  float: center;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px;
   text-decoration: none;
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #159957;
 }
 
 /* Page content */
