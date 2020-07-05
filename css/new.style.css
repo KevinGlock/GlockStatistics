@@ -25,6 +25,10 @@ overflow: auto;
   }
 }
 
+main {
+	position:center;
+}
+
 #circle1 {
   position:relative;
   cursor:pointer;
