@@ -232,7 +232,7 @@ main {
   display: block;
 }
 
-/*.content {
+.content {
   padding: 10px;
 }
 
@@ -242,7 +242,7 @@ main {
   width: 100%;
 }
 
-.sticky + .content {
+/*.sticky + .content {
   padding-top: 55px;
 }*/
 
