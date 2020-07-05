@@ -1,5 +1,6 @@
 /* CSS Document */ 
 
+
 header {
    background-color: #000000;
    background-image: url(../img/brown-and-white-rock-formation-4312843.jpg);
@@ -12,10 +13,21 @@ header {
    font-size: 20px;
 }
 
-/*.content{
-position:relative;
 
-}*/
+/*body specifications*/
+
+body {
+  color: #000;
+  hyphens: auto;
+  width: 100%;
+  height:100%;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(../img/body-of-water-2524874.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
 
 main {
   padding: 10px 10px;
@@ -123,20 +135,6 @@ main {
       inset 0 -26px 0 hsla(60,50%,40%,0.2)
 }
 
-/*body specifications*/
-
-body {
-  color: #000;
-  hyphens: auto;
-  width: 100%;
-  height:100%;
-  margin: 0px;
-  padding: 0px;
-  background-image: url(../img/body-of-water-2524874.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 /* Style the navbar */
 
 
@@ -170,8 +168,6 @@ body {
   color: #f2f2f2;
 }
 
-.content {
-  padding: 16px;
 }
 
 .sticky {
@@ -218,8 +214,8 @@ main {
 #myBtn {
   display: block;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30px;
+  right: 20px;
   z-index: 99;
   font-size: 18px;
   border: none;
