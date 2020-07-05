@@ -198,12 +198,10 @@ main {
   padding-top: 55px;
 }
 
-
-
-
 .dropdown {
-  float: left;
+  float: center;
   overflow: hidden;
+  font-family: inherit;
 }
 
 .dropdown .dropbtn {
@@ -236,7 +234,7 @@ main {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 .dropdown-content a:hover {
