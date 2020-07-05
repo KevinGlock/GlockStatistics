@@ -212,6 +212,7 @@ main {
 
 .dropdown-content a:hover {
   background-color: #ddd;
+  color: #f2f2f2;
 }
 
 .dropdown:hover .dropdown-content {
