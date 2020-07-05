@@ -184,15 +184,21 @@ main {
   padding-top: 55px;
 }
 
+
+
+
 /* The dropdown container */
+
+
 .dropdown {
-  float: left;
+  float: center;
   overflow: hidden;
 }
 
 /* Dropdown button */
+
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 17px;
   border: none;
   outline: none;
   color: white;
@@ -204,7 +210,7 @@ main {
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #ddd;
 }
 
 /* Dropdown content (hidden by default) */
@@ -224,7 +230,7 @@ main {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 /* Add a grey background color to dropdown links on hover */
