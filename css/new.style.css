@@ -184,20 +184,6 @@ main {
 
 }
 
-.content {
-  padding: 10px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 55px;
-}
-
 .dropdown {
   display:inline;
   float: center;
@@ -245,6 +231,20 @@ main {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/*.content {
+  padding: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 55px;
+}*/
 
 /*ScrollUpButton*/
 
