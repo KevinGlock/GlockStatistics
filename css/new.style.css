@@ -167,7 +167,7 @@ body {
 .navbar {
   width: 100%;
   background-image: #333;
-  overflow: hidden;
+  position:fixed;
   border-radius-bottom: 3px;
 }
 
@@ -177,9 +177,12 @@ body {
   display: inline;
   color: #f2f2f2;
   text-align: center;
-  width: 20%;
-  padding: 20px;
-  font-size: 16px;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
 }
 
 /* Add a background color on mouse-over */
