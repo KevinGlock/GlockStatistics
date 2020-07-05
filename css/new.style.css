@@ -29,9 +29,9 @@ overflow: auto;
 }
 
 main {
-  padding: 60 px;
- /* margin-left: 60px;
-  margin-right:60px;*/
+  padding-top: 60 px;
+  margin-left: 60px;
+  margin-right:60px;
 }
 
 #circle1 {
@@ -156,7 +156,6 @@ body {
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
-  position: fixed;
   background-image: url(../img/body-of-water-2524874.jpg);
   background-position:;
   background-size: cover;
