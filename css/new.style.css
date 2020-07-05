@@ -131,7 +131,7 @@ body {
   width: 100%;
   height:100%;
   margin: 0px;
-  padding: 0px;
+  padding: 20px;
   background-image: url(../img/body-of-water-2524874.jpg);
   background-size: cover;
   background-repeat: no-repeat;*/
@@ -181,7 +181,7 @@ body {
 }
 
 
-/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+/* Add responsiveness - on screens less than 500px*/
 @media screen and (max-width: 500px) {
 
 #navbar {
@@ -204,12 +204,12 @@ main {
   background-color: white;
   }
 
- .content {
+/* .content {
     float: none;
     display: block;
     width: 100%;
     text-align: left; /* If you want the text to be left-aligned on small screens */
-  }
+/*  }*/
 }
 
 
@@ -218,8 +218,8 @@ main {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 50px;
+  right: 50px;
   z-index: 99;
   font-size: 18px;
   border: none;
