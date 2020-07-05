@@ -185,8 +185,8 @@ main {
 }
 
 .dropdown {
-  display: inherit;
-  float: inherit;
+/*  display: inherit;
+  float: inherit;*/
   overflow: hidden;
 }
 
