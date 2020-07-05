@@ -5,7 +5,8 @@
 head{
    background-color: #000000;
    background-image: url(../img/text-4316738.jpg);
-   background-position: 100% 100%;
+   background-position: ;
+   background-size: auto;
    background-repeat: no-repeat;
 }
 
@@ -139,7 +140,8 @@ body {
   color: #000;
   hyphens: auto;
   background-image: url(../img/macro-photo-of-a-leaf-4593876.jpg);
-  background-position: 100% 100%;
+  background-position:;
+  background-size: auto;
   background-repeat: no-repeat;
 }
  /* Style the navigation menu */
