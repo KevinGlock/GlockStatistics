@@ -167,7 +167,7 @@ main {
 }
 
 .dropdown {
-  display: inherit;
+  display: none;
   float: inherit;
   overflow: hidden;
 }
