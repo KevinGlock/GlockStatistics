@@ -188,6 +188,7 @@ body {
 /* Page content */
 .content {
   padding: 16px;
+  text-align: center;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
