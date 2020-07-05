@@ -161,7 +161,7 @@ main {
 }
 
 .navbar a {
-  float: center;
+  /*float: center;*/
   display: inline;
   color: #f2f2f2;
   padding: 14px 16px;
