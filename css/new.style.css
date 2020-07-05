@@ -197,7 +197,7 @@ main {
 }
 
 .dropdown-content a {
-  float: none;
+  float: left;
   color: black;
   padding: 12px 14px;
   text-decoration: none;
