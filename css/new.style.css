@@ -206,10 +206,10 @@ main {
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 14px;
+  padding: 12px 10px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 .dropdown-content a:hover {
