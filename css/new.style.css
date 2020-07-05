@@ -152,7 +152,7 @@ body {
   hyphens: auto;
 }
  /* Style the navigation menu */
-.navbar navbar-inverse {
+.navbar {
   width: 100%;
   background-image: linear-gradient(to right, #155799, #159957);
   overflow: hidden;
