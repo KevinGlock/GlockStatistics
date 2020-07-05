@@ -6,7 +6,7 @@ header {
    background-color: #000000;
    background-image: url(../img/brown-and-white-rock-formation-4312843.jpg);
    background-position: ;
-   background-size: 100% 100%;
+   background-size: cover;
    background-repeat: no-repeat;
    height: 200px;
 }
@@ -150,7 +150,7 @@ body {
   hyphens: auto;
 }
  /* Style the navigation menu */
-.navbar {
+.navbar navbar-inverse {
   width: 100%;
   background-image: linear-gradient(to right, #155799, #159957);
   overflow: hidden;
