@@ -159,10 +159,10 @@ img {
 body {
   color: #000;
   hyphens: auto;
- /* width: 100%;
+  width: 100%;
   height:100%;
   margin: 0px;
-  padding: 0px;*/
+  padding: 0px;
   background-image: url(../img/body-of-water-2524874.jpg);
   background-size: cover;
   background-repeat: no-repeat;*/
@@ -270,7 +270,7 @@ body {
 
 #myBtn {
   display: none;
-  position: fixed;
+  overflow: hidden;
   bottom: 20px;
   right: 30px;
   z-index: 99;
