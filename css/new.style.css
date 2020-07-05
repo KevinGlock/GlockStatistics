@@ -5,13 +5,11 @@
 header {
    background-color: #000000;
    background-image: url(../img/brown-and-white-rock-formation-4312843.jpg);
-   background-position: ;
    background-size: cover;
    background-repeat: no-repeat;
    text-align: center;
    height: 300px;
    padding: 12px;
-   margin-top:12px;
    color: lightgrey;
    font-size: 20px;
 }
@@ -33,6 +31,7 @@ overflow: auto;
 main {
   margin-left: 60px;
   margin-right:60px;
+  overflow:hidden;
 }
 
 #circle1 {
