@@ -152,7 +152,7 @@ main {
   text-decoration: none;
   font-size: 17px;
   font-family: Helvetica;
-  width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
   text-align: center; /* If you want the text to be centered */
 }
 
@@ -167,8 +167,8 @@ main {
 }
 
 .dropdown {
-  display: block;
-  float: left;
+  display: inherit;
+  float: inherit;
   overflow: hidden;
 }
 
@@ -188,7 +188,7 @@ main {
 }
 
 .dropdown-content {
-  display: none;
+  display: block;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 180px;
