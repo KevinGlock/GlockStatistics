@@ -19,29 +19,11 @@ position:relative;
 overflow: auto;
 }
 
-@media screen and (max-width: 500px) {
-  .content {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
-  }
-}
-
 main {
   padding: 10px 10px;
   margin: 30px 200px;
   border-radius: 2px;
   background-color: white;
-}
-
-@media screen and (max-width: 500px) {
-  main{
-  padding: 20px 20px;
-  margin: 20px 20px;
-  border-radius: 2px;
-  background-color: white;
-  }
 }
 
 #circle1 {
@@ -141,19 +123,6 @@ main {
       inset 0 -26px 0 hsla(60,50%,40%,0.2)
 }
 
-/* My picture */
-
-.flex { 
-    display: flex; 
-    justify-content: right; 
-    align-items: right;
-}
-
-img {
-	width: 20%;
-    height: 10%;
-}
-
 /*body specifications*/
 
 body {
@@ -168,9 +137,7 @@ body {
   background-repeat: no-repeat;*/
 }
 
-
-
-  /* Style the navbar */
+/* Style the navbar */
 
 
 #navbar {
@@ -209,6 +176,7 @@ body {
 
 .sticky {
   position: fixed;
+  overflow: hidden;
   top: 0;
   width: 100%;
 }
@@ -218,37 +186,6 @@ body {
 }
 
 
-
-
-
-/*
-.navbar {
-  width: 100%;
-  background-color: #333;
-  overflow: hidden;
-  border-radius-bottom: 3px;
-  padding: 20px;
-}
-*/
-/* Navbar links *//*
-.navbar a {
-  float: center;
-  display: inline;
-  color: #f2f2f2;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-/*  text-align: center; /* If you want the text to be centered */
-/*}*/
-
-/* Add a background color on mouse-over */
-/*.navbar a:hover {
-  background-color: #159957;
-}
-
-
-
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-width: 500px) {
 #navbar {
@@ -256,11 +193,25 @@ body {
   top: 0;
   width: 100%;
 	}
-}
-  #navbar a {
+
+#navbar a {
     float: none;
     display: inline;
     width: 10%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+
+main{
+  padding: 20px 20px;
+  margin: 20px 20px;
+  border-radius: 2px;
+  background-color: white;
+  }
+
+ .content {
+    float: none;
+    display: block;
+    width: 100%;
     text-align: left; /* If you want the text to be left-aligned on small screens */
   }
 }
@@ -288,84 +239,9 @@ body {
   background-color: #159957;
 }
 
-/*FeedbackButtons*/
-
-#myFdb1 {
-  position: fixed;
-  bottom: 20px;
-  right: 150px;
-  z-index: 99;
-  font-size: 12px;
-  border: none;
-  outline: none;
-  background-color: #155799;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myFdb1:hover {
-  background-color: #159957;
-}
-
-#myFdb2 {
-  position: fixed;
-  bottom: 20px;
-  right: 300px;
-  z-index: 99;
-  font-size: 12px;
-  border: none;
-  outline: none;
-  background-color: #155799;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myFdb2:hover {
-  background-color: #159957;
-}
-
-/*FeedbackTextArea*/
-
-#vorname {
-	caret-color: black;
-	width: 15em;
-	height: 3em;
-	border: 1px solid #cccccc;
-	padding: 0.5em;
-	font-family: Calibri, sans-serif;
-	border-radius: 4px;
-	color: black;
-}
-#vorname:focus {
-      background: linear-gradient(to right, #157299, #158999);
-	  color:white;
-}
-
-textarea {
-	caret-color: black;
-	width: 40em;
-	height: 5em;
-	margin-bottom:15px;
-	border: 1px solid #cccccc;
-	padding: 0.5em;
-	font-family: Calibri, sans-serif;
-	border-radius: 4px;
-	color: black;
-}
-textarea:focus {
-      background: linear-gradient(to right, #157299, #158999);
-	  color: white;
-}
-
-form {
-	margin-bottom: 15px;
-}
 
 /*Footer*/
+
 footer{
   text-align: center;
 }
