@@ -134,7 +134,7 @@ body {
   padding: 0px;
   background-image: url(../img/body-of-water-2524874.jpg);
   background-size: cover;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
 }
 
 /* Style the navbar */
@@ -216,7 +216,7 @@ main {
 /*ScrollUpButton*/
 
 #myBtn {
-  display: none;
+  display: block;
   position: fixed;
   bottom: 50px;
   right: 50px;
