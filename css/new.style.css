@@ -175,7 +175,8 @@ body {
   float: center;
   display: inline;
   color: #f2f2f2;
-  text-align: justify;
+  text-align: center;
+  width: 20%;
   padding: 20px;
   font-size: 16px;
 }
