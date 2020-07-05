@@ -199,8 +199,8 @@ main {
 }
 
 .dropdown {
-  float: center;
-  overflow: hidden;
+  float: inherit;
+  overflow: inherit;
   font-family: inherit;
 }
 
