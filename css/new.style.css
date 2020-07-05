@@ -165,11 +165,10 @@ body {
 
   /* Style the navbar */
 .navbar {
+  width: 100%;
+  background-image: #333;
   overflow: hidden;
-  position: fixed;
-  background-color: #333;
-  font-family: Helvetica;
-  width:100%;
+  border-radius-bottom: 3px;
 }
 
 /* Navbar links */
