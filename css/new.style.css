@@ -11,6 +11,8 @@ header {
    height: 250px;
    padding: 0px;
    margin:0px;
+   color: lightgrey;
+   font-size: 20px;
 }
 
 .content{
@@ -179,7 +181,7 @@ body {
 
 /* Style the current/active link */
 .navbar a.active {
-  background-color: linear-gradient(to right, #155799, #158999);
+  background-color: linear-gradient(to right, #222, #158999);
 }
 
 .sticky {
