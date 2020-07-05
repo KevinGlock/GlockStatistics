@@ -167,7 +167,7 @@ main {
 }
 
 .dropdown {
-  display: inline;
+  display: block;
   float: left;
   overflow: hidden;
 }
@@ -211,7 +211,7 @@ main {
 
 .dropdown:hover .dropdown-content {
   display: block;
-  text-align:center;
+  text-align:left;
 }
 
 .content {
