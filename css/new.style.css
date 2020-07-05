@@ -156,7 +156,7 @@ body {
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
-  overflow:hidden;
+  position: fixed;
   background-image: url(../img/body-of-water-2524874.jpg);
   background-position:;
   background-size: cover;
