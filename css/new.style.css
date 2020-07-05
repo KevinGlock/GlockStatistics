@@ -31,7 +31,6 @@ overflow: auto;
 main {
   margin-left: 60px;
   margin-right:60px;
-  overflow:hidden;
 }
 
 #circle1 {
@@ -156,6 +155,7 @@ body {
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
+  overflow:hidden;
   background-image: url(../img/body-of-water-2524874.jpg);
   background-position:;
   background-size: cover;
