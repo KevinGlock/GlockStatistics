@@ -10,7 +10,7 @@ header {
    background-repeat: no-repeat;
    height: 250px;
    padding: 0px;
-   margin:0px;
+   margin-top:0px;
    color: lightgrey;
    font-size: 20px;
 }
@@ -31,8 +31,8 @@ overflow: auto;
 
 main {
   text-align: center;
-  margin-left: 40px;
-  margin-right:40px;
+  margin-left: 60px;
+  margin-right:60px;
   /*background-image: url(../img/brown-and-white-rock-formation-4312843.jpg);
   background-position:;
   background-size: cover;
@@ -155,10 +155,12 @@ body {
   text-align: center;
   color: #000;
   hyphens: auto;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-right: 0px;
-  padding-left: 0px;
+  margin-top: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-top:1px;
+  padding-right: 1px;
+  padding-left: 1px;
 }
 
   /* Style the navbar */
