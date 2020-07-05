@@ -2,7 +2,7 @@
 
 /* Index Circles*/
 
-head{
+head {
    background-color: #000000;
    background-image: url(../img/text-4316738.jpg);
    background-position: ;
@@ -148,12 +148,13 @@ body {
 .navbar {
   width: 100%;
   background-image: linear-gradient(to right, #155799, #159957);
-  overflow: auto;
+  overflow: hidden;
   border-radius: 6px;
 }
 
 /* Navigation links */
 .navbar a {
+  display:block;
   float: left;
   padding: 12px;
   color: white;
