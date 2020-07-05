@@ -142,6 +142,7 @@ main {
   overflow: hidden;
   padding-bottom: 10px;
   padding-top: 10px;
+  display:block;
 }
 
 .navbar a {
@@ -212,6 +213,7 @@ main {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  text-align:center;
 }
 
 .content {
