@@ -1,4 +1,4 @@
-/* CSS Document       */ 
+/* CSS Document */ 
 
 /* Index Circles*/
 
@@ -8,6 +8,7 @@ header {
    background-position: ;
    background-size: cover;
    background-repeat: no-repeat;
+   height: 200px;
 }
 
 .content{
@@ -146,7 +147,7 @@ body {
 }
  /* Style the navigation menu */
 .navbar {
-  width: 100%;
+  width: 10%;
   background-image: linear-gradient(to right, #155799, #159957);
   overflow: hidden;
   border-radius: 6px;
