@@ -142,6 +142,7 @@ main {
   overflow: hidden;
   padding-bottom: 10px;
   padding-top: 10px;
+  hyphens: none !important; 
 }
 
 .navbar a {
