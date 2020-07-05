@@ -38,7 +38,7 @@ main {
 @media screen and (max-width: 500px) {
   main{
   padding: 20px 20px;
-  margin: 20px 50px;
+  margin: 20px 20px;
   border-radius: 2px;
   background-color: white;
   }
