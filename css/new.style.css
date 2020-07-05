@@ -188,6 +188,7 @@ body {
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-width: 500px) {
+
 #navbar {
   overflow: hidden;
   top: 0;
@@ -201,7 +202,7 @@ body {
     text-align: left; /* If you want the text to be left-aligned on small screens */
   }
 
-main{
+main {
   padding: 20px 20px;
   margin: 20px 20px;
   border-radius: 2px;
