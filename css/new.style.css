@@ -30,13 +30,8 @@ overflow: auto;
 }
 
 main {
-  text-align: center;
   margin-left: 60px;
   margin-right:60px;
-  /*background-image: url(../img/brown-and-white-rock-formation-4312843.jpg);
-  background-position:;
-  background-size: cover;
-  background-repeat: no-repeat;*/
 }
 
 #circle1 {
@@ -152,7 +147,7 @@ img {
 /*body specifications*/
 
 body {
-  text-align: center;
+  text-align: justify;
   color: #000;
   hyphens: auto;
   margin-top: 0px;
@@ -161,11 +156,16 @@ body {
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
+  background-image: url(../img/body-of-water-2524874.jpg);
+  background-position:;
+  background-size: cover;
+  background-repeat: no-repeat;*/
 }
 
   /* Style the navbar */
 .navbar {
   overflow: hidden;
+  position: fixed;
   background-color: #333;
   font-family: Helvetica;
 }
