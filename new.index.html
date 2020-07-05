@@ -34,20 +34,6 @@
   <a href="sites/examples.html#Examples">Examples</a>
 </div>
 
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
 
 	<main>	
 	  
@@ -145,6 +131,10 @@ function myFunction() {
 	<p>(diese Seite befindet sich noch im Aufbau)</p>
 	</div>
 
+
+
+</main>
+
 <button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
 	<script>
 //Get the button
@@ -166,10 +156,23 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-	</script>
 
-</main>
 
+// Navbar function
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+	
 </body>
 
 </html>
