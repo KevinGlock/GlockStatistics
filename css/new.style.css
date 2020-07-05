@@ -171,7 +171,7 @@ main {
 }
 
 .content {
-  padding: 16px;
+  padding: 10px;
 }
 
 .sticky {
@@ -181,7 +181,7 @@ main {
 }
 
 .sticky + .content {
-  padding-top: 50px;
+  padding-top: 55px;
 }
 
 /* Add responsiveness - on screens less than 500px*/
