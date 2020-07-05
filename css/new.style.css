@@ -31,6 +31,8 @@ overflow: auto;
 
 main {
   text-align: center;
+  margin-left: 40px;
+  margin-right:40px;
   /*background-image: url(../img/brown-and-white-rock-formation-4312843.jpg);
   background-position:;
   background-size: cover;
@@ -153,8 +155,10 @@ body {
   text-align: center;
   color: #000;
   hyphens: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
   /* Style the navbar */
