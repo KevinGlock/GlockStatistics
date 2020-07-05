@@ -182,6 +182,12 @@ body {
   background-color: linear-gradient(to right, #155799, #158999);
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-width: 500px) {
   .navbar a {
@@ -190,6 +196,12 @@ body {
     width: 100%;
     text-align: left; /* If you want the text to be left-aligned on small screens */
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /*ScrollUpButton*/
