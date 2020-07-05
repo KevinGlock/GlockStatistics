@@ -4,7 +4,7 @@
 
 header{
    background-color: #000000;
-   background-image: text-4316738.jpg;
+   background-image: url(../img/text-4316738.jpg);
    background-position: 100% 100%;
    background-repeat: no-repeat;
 }
@@ -138,7 +138,7 @@ body {
   text-align: justify;
   color: #000;
   hyphens: auto;
-  background-image: macro-photo-of-a-leaf-4593876.jpg;
+  background-image: url(../img/macro-photo-of-a-leaf-4593876.jpg);
 }
  /* Style the navigation menu */
 .navbar {
