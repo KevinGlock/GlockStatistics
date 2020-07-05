@@ -114,6 +114,7 @@ main {
   width:inherit;
   height:inherit;
   box-shadow:
+  
       inset 50px 0 0 hsla(210,75%,34%,0.8),  
       inset 0 50px 0 hsla(210,75%,34%,0.8), 
       inset -50px 0 0 hsla(210,75%,34%,0.8), 
@@ -151,7 +152,7 @@ body {
 }
  /* Style the navigation menu */
 .navbar {
-  width: 10%;
+  width: 100%;
   background-image: linear-gradient(to right, #155799, #159957);
   overflow: hidden;
   border-radius: 6px;
@@ -159,7 +160,7 @@ body {
 
 /* Navigation links */
 .navbar a {
-  display:block;
+  display: inline;
   float: left;
   padding: 12px;
   color: white;
