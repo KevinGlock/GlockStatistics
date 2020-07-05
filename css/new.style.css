@@ -200,8 +200,8 @@ main {
 
 .dropdown {
   display:inline;
-  float: inherit;
-  overflow: inherit;
+  float: center;
+  overflow: hidden;
   font-family: Helvetica;
 }
 
