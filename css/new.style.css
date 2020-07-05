@@ -6,7 +6,7 @@ head {
    background-color: #000000;
    background-image: url(../img/text-4316738.jpg);
    background-position: ;
-   background-size: contain;
+   background-size: cover;
    background-repeat: no-repeat;
 }
 
@@ -141,7 +141,7 @@ body {
   hyphens: auto;
   background-image: url(../img/macro-photo-of-a-leaf-4593876.jpg);
   background-position:;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
  /* Style the navigation menu */
