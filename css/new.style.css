@@ -29,7 +29,8 @@ body {
 /* My picture */
 
 .flex { 
-    display: flex; 
+    display: flex;
+	position: relative;
     justify-content: right; 
     align-items: right;
 	margin-right: 10px;
@@ -84,36 +85,36 @@ li a {
 	color: black;
 }
 
-li a:hover{
-	color:black;
+li a:hover {
+		color:black;
 }
 
-ol li a{
-	color:black;
+ol li a {
+		color:black;
 }
 
-h1{
+h1 {
+	color: #eee;
+	font-family: Trebuchet MS;
+}
+
+h2 {
 	color: black;
-  font-family: Trebuchet MS;
+	font-family: Trebuchet MS;
 }
 
-h2{
+h3 {
 	color: black;
-  font-family: Trebuchet MS;
+	font-family: Trebuchet MS;
 }
 
-h3{
+h4 {
 	color: black;
-  font-family: Trebuchet MS;
-}
-
-h4{
-	color: black;
-  font-family: Trebuchet MS
+	font-family: Trebuchet MS
 }
 
 main {
-  padding: 20px 20px;
+  padding: 50px 30px;
   margin: 100px 100px;
   border-radius: 2px;
   background-color: rgba(250, 250, 250, 0.9);
