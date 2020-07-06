@@ -250,7 +250,6 @@ main {
   border: none;
   outline: none;
   color: white;
-  overflow:hidden;
   background-color: inherit;
   padding: 12px 14px;
   text-decoration: none;
@@ -359,7 +358,7 @@ footer {
 .navbar {
   overflow: hidden;
   top: 0;
-  width: 100%;
+  /*width: 100%;*/
 	}
 
 .navbar a {
