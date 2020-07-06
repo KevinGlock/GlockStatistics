@@ -309,7 +309,7 @@ main {
 /*ScrollUpButton*/
 
 #myBtn {
-  display: black;
+  display: block;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -358,7 +358,7 @@ footer {
 .navbar {
   overflow: hidden;
   top: 0;
-  /*width: 100%;*/
+  width: 100%;
 	}
 
 .navbar a {
@@ -391,17 +391,41 @@ main {
     text-align: left; /* If you want the text to be left-aligned on small screens */
   }
 
+.flex { 
+    display: flex; 
+    justify-content: right; 
+    align-items: right;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+
 footer {
 	color: f2f2f2;
 	background-color: #333;
 	font-family: Trebuchet MS;
 	bottom:0px !important;
 	width:100%;
-	padding-top: 20px;
+	padding-top: 15px;
 	padding-bottom: 20px;
 	height:25px;
 	margin:0px auto;
 	font-size: 8pt;
 	text-align: center;
 	}
+}
+
+#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #155799;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }
