@@ -59,7 +59,7 @@ header {
    font-size: 20px;
 }
 
-#Examples a{
+#examples a{
 	color: #777;
 }
 
@@ -248,6 +248,7 @@ main {
   border: none;
   outline: none;
   color: white;
+  overflow:hidden;
   background-color: inherit;
   padding: 12px 14px;
   text-decoration: none;
@@ -353,13 +354,13 @@ footer {
 /* Add responsiveness - on screens less than 500px*/
 @media screen and (max-width: 800px) {
 
-#navbar {
+.navbar {
   overflow: hidden;
   top: 0;
   width: 100%;
 	}
 
-#navbar a {
+.navbar a {
     float: none;
     display: inline;
     width: 10%;
@@ -386,9 +387,9 @@ footer {
 	font-family: Trebuchet MS;
 	bottom:0px !important;
 	width:100%;
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-bottom: 20px;
-	height:30px;
+	height:25px;
 	margin:0px auto;
 	font-size: 8pt;
 	text-align: center;
