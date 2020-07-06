@@ -18,6 +18,7 @@
 
 <body style="background-image: url(../img/abstract-background-with-green-paint-on-white-surface-4046753.jpg) !important;">
 
+<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
 	
 	  
 		<!--div class="skew">
@@ -112,18 +113,18 @@
 
 </div>
 
+</main>
 	
-<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
 
-	<script>
+		<script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 15px from the top of the document, show the button
+// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.main.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 3550 || document.documentElement.scrollTop > 3550) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -135,9 +136,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 </script>
-</main>
 
 <script>
 // Navbar function
@@ -155,9 +154,7 @@ function myFunction() {
 }
 </script>
 	
-		</div>
-		
-			<footer  id="fussbereich">
+	<footer  id="fussbereich">
 	<a href="../sites/impressum.html#impressum">Impressum</a>
 	<a href="examples.html#examples">Examples</a>
 	<p>(diese Seite befindet sich noch im Aufbau)</p>

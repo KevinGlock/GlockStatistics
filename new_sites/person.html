@@ -17,6 +17,7 @@
 </head>
 
 <body style="background-image: url(../img/white-and-black-floral-textile-4644397.jpg) !important;">
+<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
 
 	
 	  
@@ -116,35 +117,11 @@
 		<p>
 		    Schau dich gern um!<sup><a id="fn1" title="If you want this site in English please use Chrome´s translation tool." href="sites/footnotes.html#fn1">[1]</a></sup></p>
 
+
+
+
 </div>
 
-
-
-<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
-
-	<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 15px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.main.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-</script>
-</main>
 
 <script>
 // Navbar function
@@ -164,6 +141,28 @@ function myFunction() {
 	
 		</div>
 		
+</main>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 			<footer  id="fussbereich">
 	<a href="../sites/impressum.html#impressum">Impressum</a>
 	<a href="examples.html#examples">Examples</a>

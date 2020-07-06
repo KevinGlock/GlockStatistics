@@ -18,6 +18,7 @@
 
 <body style="background-image: url(../img/orange-and-blue-abstract-painting-1036379.jpg) !important;">
 
+<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
 <!--header>
 
 </header-->
@@ -127,17 +128,19 @@
 
 
 
-<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
 
+</main>
+	
+</body>
 	<script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 15px from the top of the document, show the button
+// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.main.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -149,7 +152,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 </script>
 
 <script>
@@ -167,9 +169,6 @@ function myFunction() {
   }
 }
 </script>
-</main>
-	
-</body>
 	<footer  id="fussbereich">
 	<a href="../sites/impressum.html#impressum">Impressum</a>
 	<a href="examples.html#examples">Examples</a>
