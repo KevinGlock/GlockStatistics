@@ -10,7 +10,6 @@ body {
   margin: 0px;
   margin-bottom:150px;
   padding: 0px;
-  background-image: url(../img/body-of-water-2524874.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -393,7 +392,7 @@ body {
 
 main {
   padding: 15px 15px;
-  margin: 20px 20px;
+  margin: 20px 15px;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.6);
   }
