@@ -89,22 +89,22 @@ ol li a {
 
 h1 {
 	color: black;
-	font-family: Trebuchet MS;
+	font-family: "Trebuchet MS";
 }
 
 h2 {
 	color: black;
-	font-family: Trebuchet MS;
+	font-family: "Trebuchet MS";
 }
 
 h3 {
 	color: black;
-	font-family: Trebuchet MS;
+	font-family: "Trebuchet MS";
 }
 
 h4 {
 	color: black;
-	font-family: Trebuchet MS
+	font-family: "Trebuchet MS";
 }
 
 main {
@@ -114,7 +114,7 @@ main {
 	background-color: rgba(250, 250, 250, 0.9);
 	color: black;
 	font-family: Tahoma;
-	text-decoration: none;
+	/*text-decoration: none;*/
 	text-align: justify;
 }
 
@@ -172,7 +172,7 @@ main {
 }
 
 .dropdown:hover .dropbtn {
-	background-color: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.2);
 	color: black;
 }
 
@@ -181,10 +181,11 @@ main {
 	position: absolute;
 	background-color: rgba(250, 250, 250, 0.8);
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: rgba(0,0,0,0.2);
 	z-index: 12;
 	overflow: hidden;
 }
+/*0px 8px 16px 0px*/
 
 .dropdown-content a {
 	float: none;
@@ -232,7 +233,7 @@ main {
 /*ScrollUpButton*/
 
 #myBtn {
-	display: hidden; /* Hidden by default */
+	display: block; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
 	bottom: 120px; /* Place the button at the bottom of the page */
 	right: 80px; /* Place the button 30px from the right */
@@ -256,7 +257,7 @@ main {
 footer {
 	color: grey;
 	background: rgba(250, 250, 250, 0.9);
-	font-family: Trebuchet MS;
+	font-family: "Trebuchet MS";
 	overflow: hidden;
 	position: fixed;
 	bottom:0px !important;
@@ -271,7 +272,7 @@ footer {
 
 #fussbereich a {
 	color: grey;
-	font-family: Trebuchet MS;
+	font-family: "Trebuchet MS";
 	text-decoration: none;
 }
 
@@ -343,20 +344,20 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-	background-color: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.2);
 	color: black;
 }
-
+/*0px 8px 16px 0px*/
 .dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: rgba(250, 250, 250, 0.8);
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: rgba(0,0,0,0.2);
 	z-index: 12;
 	overflow: hidden;
 }
-
+/*0px 8px 16px 0px */
 .dropdown-content a {
 	float: none;
 	overflow: hidden;
@@ -427,7 +428,7 @@ main {
 footer {
 	color: grey;
 	background: rgba(250, 250, 250, 0.9);
-	font-family: Trebuchet MS;
+	font-family: "Trebuchet MS";
 	bottom:0px !important;
 	width:100%;
 	padding-top: 5px;
@@ -440,7 +441,7 @@ footer {
 
 #fussbereich a {
 	color: grey;
-	font-family: Trebuchet MS;
+	font-family: "Trebuchet MS";
 	text-decoration: none;
 }
 
@@ -451,7 +452,7 @@ footer {
 /*ScrollUpButton*/
 
 #myBtn {
-  display: hidden; /* Hidden by default */
+  display: block; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
 	bottom: 40px; /* Place the button at the bottom of the page */
 	right: 30px; /* Place the button 30px from the right */
