@@ -21,8 +21,8 @@ body {
 	border-collapse: collapse;
 	font-size: 10pt !important;
 	text-align: center !important;
-	overflow-x: auto !important;
-	width: 50%;
+	overflow: auto !important;
+	width: 75%;
 	scrollbar-width: thin;
 	scrollbar-color: grey;
 }
