@@ -16,7 +16,7 @@ body {
 }
 
 .solid {
-	border: solid #ddd;
+	border: solid white;
 	border-width:1px !important;
 	font-size: 10pt !important;
 	margin-left: auto;
