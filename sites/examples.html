@@ -9,7 +9,7 @@
 	<meta name="description" content="Website of GlockStatistics. Statistical Consulting and Tutoring">
 	<meta name="author" content="Kevin Glock">
 	<meta name="copyright" content="© Kevin Glock 2020">
-<link href="../css/new.style.css" rel="stylesheet" type="text/css">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
 <!--End Discription-->
 <body>
@@ -18,7 +18,7 @@
 </header-->
 <!--Navbar-->
 <div class="navbar">
-  <a class="active" href="../new.index.html">Home</a>
+  <a class="active" href="../index.html">Home</a>
 	<div class="dropdown">
 		<button class="dropbtn">Person
 		<i class="fa fa-caret-down"></i>
@@ -44,11 +44,11 @@
 <div class="languageSelect col-xs-3 col-sm-7 col-md-8" style="margin-right: 20px;">
 	<div class="tx-srlanguagemenu tx-srlanguagemenu-links">
 		<div class="CUR";  style="float: right; position: relative; display: inline;">
-			<a class="linked-language" href="work.html">DE</a>
+			<a class="linked-language" href="examples.html">DE</a>
 		</div>
 		<a style="float: right; position: inherit; display: inline;">|</a>
 			<div class="NO SPC";  style="float: right;">
-				<a class="linked-language" href="../en/work.html">EN</a>
+				<a class="linked-language" href="../en/examples.html">EN</a>
 			</div>
 	</div>
 </div>
@@ -56,42 +56,43 @@
 <!--End Navbar-->
 <main style="margin-top: 120px;">		
 	<div class="content">
-	<h1>Berufliche Erfahrung</h1>
-
-		<p>
-		<b>wissenschaftliche Hilfskraft:</b></p>
-
-		<ul>
-		<li>Seit SS2020 Leibniz-Institut für Bildungsverläufe e.V.</li>
-		<li>Abteilung: Bildungsrenditen</li>
-		<li>Fokus: Entwicklung neuer Messinstrumente für die Messung von Skills Missmatch</li>		
-		</ul>
+	<h1>Beispiele</h1>
+	
+		<p>Die Liste soll einen unvollständigen knappen Überblick über meine theoretischen und praktischen Kenntnisse darstellen.</p>
 		
-		<p>
-		<b>studentischer Mitarbeiter:</b></p>
-
-		<ul>
-		<li>SS18 bis WS 19/20 Lehrstuhl für Public Policy und Landespolitik</li>
-		<li>Projekt: MigTex</li>
-		<li>Fokus: Aufbereitung und Bereitstellung von Parlamentskorpora</br>
-		für die Integrations- und Migrationsforschung (siehe: <a href="https://polmine.github.io/" style="text-decoration: none; color: black;">polmine</a>)</li>
-		</ul>
+		<ol>
+		<li><a id="realmodel" href="../stats/realmodel.html#realmodel">Realität? Modelle!</a></li>
 		
-		<p>
-		<b>Nachhilfe & Beratung:</b></p>
-
-		<ul>
-		<li>Seit WS 2017/18  Freiberuflich</li>
-		<li>Selbstständige Beratung und Nachhilfe:</br>Methoden der empirischen Sozialforschung und angewandte Statistik</li>
-		</ul>
+		<li><a id="marcopolo" href="../stats/marcopolo.html#marcopolo">Makro-Makro, Makro-Mikro, Mikro-Makro, Mikro-Mikro: komplexes System?</a></li>
 		
-		<p>
-		<b>studentische Hilfskraft:</b></p>
-
-		<ul>
-		<li>WS 2017/18 bis WS18/19 Lehrstuhl für empirische Politologie</li>
-		<li>Tutor: Methoden der empirischen Sozialforschung und angewandte Statistik mit SPSS</li>
-		</ul>
+		<li><a id="causeneffect" href="../stats/causeneffect.html#causeneffect">Ursache und Wirkung oder Korrelation?</a></li>
+		
+		<li><a id="firstclass" href="../stats/firstclass.html#firstclass">Objektivität, Reliaibilität, Validität: Güte und Gute Wissenschaft!</a></li>
+		
+		<li><a id="surveys" href="../stats/surveys.html#surveys">Surveys</a></li>
+		
+		<li><a id="sample" href="../stats/sample.html#sample">Vollerhebung vs. Stichprobe. And the winner is...</a></li>
+		
+		<li><a id="chars" href="../stats/chars.html#chars">Urlisten, Listen, Ränge, Messungen, Tabellen</a></li>
+		
+		<li><a id="parameters" href="../stats/parameters.html#parameters">Parameter, speziell Lagemaße</a></li>
+		
+		<li><a id="dispersion" href="../stats/dispersion.html#dispersion">Die Dispersion: Streuungsmaße</a></li>
+		
+		<li><a id="classification" href="../stats/classification.html#classification">Klassen und Intervalle</a></li>
+		
+		<li><a id="chance" href="../stats/chance.html#chance">Wahrscheinlichkeit, Chancen & Unabhängigkeit</a></li>
+		
+		<li><a id="regress" href="../stats/regress.html#regress">Regression (to the mean)</a></li>
+		
+		<li><a id="arrr" href="../stats/arrr.html#arrr">Arrr! als Programmiersprache.</a></li>
+		
+		<li><a id="simulation" href="../stats/simulation.html#simulation">Eine Simulation in R</a></li>
+		
+		<li><a id="data" href="../stats/data.html#data">Datamanagement</a></li>
+		
+		<li><a id="bayes" href="../stats/bayes.html#bayes">Eine andere Sicht auf Wahrscheinlichkeit: Bayes-Statistik</a></li>
+		</ol>
 </div>
 </main>
 	<script>
@@ -102,7 +103,7 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 15650 || document.documentElement.scrollTop > 15650) {
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -131,7 +132,7 @@ function myFunction() {
 }
 	</script>
 <footer id="fussbereich">
-	<a href="../sites/impressum.html#impressum">Impressum</a>
+	<a href="impressum.html">Impressum</a>
 	<a href="examples.html">Examples</a>
 	<p>(diese Seite befindet sich noch im Aufbau)</p>
 </footer>
