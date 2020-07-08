@@ -16,13 +16,13 @@ body {
 }
 
 .solid {
-	border: solid grey;
-	border-width:2px !important;
+	border: solid #ddd;
+	border-width:1px !important;
 	border-collapse: collapse;
 	font-size: 10pt !important;
 	text-align: center !important;
 	overflow-x: auto !important;
-	width: 100%;
+	width: 50%;
 	scrollbar-width: thin;
 	scrollbar-color: grey;
 }
