@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<!--Discription-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GlockStatistics. Statistical Consulting and Tutoring</title>
+	<meta name="description" content="Website of GlockStatistics. Statistical Consulting and Tutoring">
+	<meta name="author" content="Kevin Glock">
+	<meta name="copyright" content="© Kevin Glock 2020">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<!--End Discription-->
+<body>
+	<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+<!--header>
+</header-->
+<!--Navbar-->
+<div class="navbar">
+  <a class="active" href="../index.html">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn">Person
+		<i class="fa fa-caret-down"></i>
+		</button>
+    <div class="dropdown-content">
+  <a href="person.html">About</a>
+  <a href="edu.html">Education</a>
+  <a href="work.html">Work</a>
+    </div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Services
+		<i class="fa fa-caret-down"></i>
+		</button>
+    <div class="dropdown-content">
+  <a href="tutoring.html">Tutoring</a>
+  <a href="analyses.html">Analyses</a>
+  <a href="consulting.html">Consulting</a>
+    </div>
+	</div>
+  <a href="examples.html">Examples</a>
+<!--Language Select-->
+<div class="languageSelect col-xs-3 col-sm-7 col-md-8" style="margin-right: 20px;">
+	<div class="tx-srlanguagemenu tx-srlanguagemenu-links">
+		<div class="CUR" style="float: right; position: relative; display: inline;">
+			<a class="linked-language" href="tutoring.html">DE</a>
+		</div>
+		<a style="float: right; position: inherit; display: inline;">|</a>
+			<div class="NO SPC" style="float: right;">
+				<a class="linked-language" href="../en/tutoring.html">EN</a>
+			</div>
+	</div>
+</div>
+<!--End Language Select-->
+</div>
+<!--End Navbar-->
+<main style="margin-top: 120px;">		
+	<div class="content">
+ 		 <h1>Nachhilfe</h1>
+		<p>
+			Du benötigst Hilfe bei deiner anstehenden Klausur in:</p>
+			<ul>
+			<li>Methoden der empirischen Sozialforschung für PolitologInnen</li>
+			<li>Methoden der empirischen Sozialforschung für SoziologInnen</li>
+			<li>Methodenlehre I</li>
+			<li>Methodenlehre II</li>
+			<li>deskriptive Statistik</li>
+			<li>Inferenzstatistik</li>
+			<li>Statistik für PolitologInnen</li>
+			<li>Statistik für SoziologInnen</li>
+			<li>Statistik I</li>
+			<li>Statistik II</li>
+			<li>Statistik III</li>
+			<li>Statistik für KommunikationswissenschaftlerInnen</li>
+			<li>usw.</li>
+			</ul>
+			
+		<p>
+		und möchtest du dich adäquat vorbereiten?
+		</p>
+		
+		<p>			  
+			Meine Kenntnisse umfassen das Verständnis, die Interpretation und
+			Anwendung von qualitativen und quantitativen Methoden empirischer Sozialforschung sowie die mathematische Statistik.
+			Wir gehen alle relevanten Themen intensiv und einfach erklärend durch, wir machen Übungsaufgaben, wobei ich dir auch deine Fragen beantworte.
+			Am Ende stelle ich dir eine an deine Prüfung ausgerichtete allgemeine Übungsklausur, so dass du dir sicher sein kannst adäquat vorbereitet zu sein.
+		</p>
+		
+		<p>
+			Vermutlich kann ich dir dabei helfen, kontaktiere mich einfach unverbindlich unter: kevin (dot) glock (at) stud (dot) uni (minus) bamberg (dot) de.
+			Dann können wir alles weitere besprechen. Das Erstgespräch ist selbstverständlich kostenlos.
+		</p>
+		
+		<p>
+		    Für einen Eindruck, schau dich gern um!
+		<p>
+</div>
+</main>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+	<script>
+// Navbar function
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	</script>
+
+</body>
+</html>
