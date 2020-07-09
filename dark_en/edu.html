@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<!--Discription-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GlockStatistics. Statistical Consulting and Tutoring</title>
+	<meta name="description" content="Website of GlockStatistics. Statistical Consulting and Tutoring">
+	<meta name="author" content="Kevin Glock">
+	<meta name="copyright" content="© Kevin Glock 2020">
+<link href="../css/dark.style.css" rel="stylesheet" type="text/css">
+</head>
+<!--End Discription-->
+<body>
+	<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+<!--header>
+</header-->
+
+<!--Add Icons for light and dark modes-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Navbar-->
+<div class="navbar">
+  <a class="active" href="../index.html">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn">Person
+		<i class="fa fa-caret-down"></i>
+		</button>
+    <div class="dropdown-content">
+  <a href="person.html">About</a>
+  <a href="edu.html">Education</a>
+  <a href="work.html">Work</a>
+    </div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Services
+		<i class="fa fa-caret-down"></i>
+		</button>
+    <div class="dropdown-content">
+  <a href="tutoring.html">Tutoring</a>
+  <a href="analyses.html">Analyses</a>
+  <a href="consulting.html">Consulting</a>
+    </div>
+	</div>
+  <a href="examples.html">Examples</a>
+<!--Light Mode Select-->
+<div class="mode" style="margin-right: 50px;">
+	<div class="light" style="float: right; position:relative; display:inline;">
+		<a class="light-link" href="../sites/edu.html"><i class="fa fa-circle-o"></i></a> <!--light-->
+	</div>
+		<a style="float: right; position: relative; display: inline;">|</a>
+			<div class="dark" style="float: right; position: relative;">
+				<a class="dark-link" href="edu.html"><i class="fa fa-circle"></i></a> <!--dark-->
+			</div>
+</div>
+<!--End Light Mode Select-->
+<!--Language Select-->
+<div class="languageSelect col-xs-3 col-sm-7 col-md-8" style="margin-right: 20px;">
+	<div class="tx-srlanguagemenu tx-srlanguagemenu-links">
+		<div class="CUR" style="float: right; position: relative; display: inline;">
+			<a class="linked-language" href="../sites/edu.html">DE</a>
+		</div>
+		<a style="float: right; position: inherit; display: inline;">|</a>
+			<div class="NO SPC" style="float: right;">
+				<a class="linked-language" href="edu.html">EN</a>
+			</div>
+	</div>
+</div>
+<!--End Language Select--></div>
+<!--End Navbar-->
+<main style="margin-top: 120px;">		
+	<div class="content">
+<h1>Education</h1>
+		
+		<p>
+		<b>Master of Science:</b></p>
+		
+		<ul>
+		<li>Since SS2020 Otto Friedrich University, Bamberg, Bavaria,
+		Department of Survey Statistics</li>
+		<li>Focus: Statistics with a view on survey methodologies, computer-based analyses,<br>
+		measurement-theoretical problems and mathematical-analytical statistics<br>
+		in the context of social and economic sciences</li>
+		<li>Software: R, Stata</li>
+		</ul>
+		
+		<p>
+		<b>Bachelor of Arts:</b></p>
+	
+		<ul>
+		<li>WS 2016/17 to WS 2019/20 at the University of Duisburg-Essen, NRW,<br>
+		Department of Political Science</li>
+		<li>Focus: philosophy of science, measurement theory, application and evaluation of<br> 
+		qualitative and quantitative methods in empirical social research</li>
+		<li>Software: SPSS, Stata, R</li>
+		<li>Final grade: 1.7</li>
+		</ul>
+		
+		<p>
+		<b>A level:</b></p>
+	
+		<ul>
+		<li>WS 2013/14 to SS 2016 at the Ottilie Schoenewald evening school, Bochum, NRW,
+		course Abitur-Online NRW</li>
+		<li>Focus: split phases with two-day attendance and predominantly self-learning phases, digital literacy and media,<br>
+		presentations, blended learning plattforms and software systems (Moddel, Geogebra, Office packages)</li>
+		<li>graduation subjects: biology and English</li>
+		<li>Final grade: 2.1</li>
+		</ul>
+		
+		<p>
+		<b>school-based training with vocational phases:</b></p>
+	
+		<ul>
+		<li>SS 2011 to SS 2012 at the Elisabeth Lueders Vocational College, Hamm, NRW,<br>
+		basic training in pedagogical nursing assistance (state-certifed nursery school)</li>
+		<li>vocational training facility, with additional previous full-time internship of 6 months:<br>
+		day care centre Sonnenhaus, Hamm, NRW; Focus: nutritional and physical education</li>
+		<li>practical and theoretical focus:<br>pedagogy, educational, developmental and learning psychology, nutrition and exercise</li>
+		<li>secondary school certificate with advanced level qualification</li>
+		<li>Average grade: 1.6</li>
+		</ul>
+</div>
+</main>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+	<script>
+// Navbar function
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	</script>
+
+</body>
+</html>

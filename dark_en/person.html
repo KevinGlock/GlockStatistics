@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<!--Discription-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GlockStatistics. Statistical Consulting and Tutoring</title>
+	<meta name="description" content="Website of GlockStatistics. Statistical Consulting and Tutoring">
+	<meta name="author" content="Kevin Glock">
+	<meta name="copyright" content="© Kevin Glock 2020">
+<link href="../css/dark.style.css" rel="stylesheet" type="text/css">
+</head>
+<!--End Discription-->
+<body>
+	<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+<!--header>
+</header-->
+
+<!--Add Icons for light and dark modes-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Navbar-->
+<div class="navbar">
+  <a class="active" href="index.html">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn">Person
+		<i class="fa fa-caret-down"></i>
+		</button>
+    <div class="dropdown-content">
+  <a href="person.html">About</a>
+  <a href="edu.html">Education</a>
+  <a href="work.html">Work</a>
+    </div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Services
+		<i class="fa fa-caret-down"></i>
+		</button>
+    <div class="dropdown-content">
+  <a href="tutoring.html">Tutoring</a>
+  <a href="analyses.html">Analyses</a>
+  <a href="consulting.html">Consulting</a>
+    </div>
+	</div>
+  <a href="examples.html">Examples</a>
+<!--End website links-->
+<!--Light Mode Select-->
+<div class="mode" style="margin-right: 50px;">
+	<div class="light" style="float: right; position:relative; display:inline;">
+		<a class="light-link" href="../sites/person.html"><i class="fa fa-circle-o"></i></a> <!--light-->
+	</div>
+		<a style="float: right; position: relative; display: inline;">|</a>
+			<div class="dark" style="float: right; position: relative;">
+				<a class="dark-link" href="person.html"><i class="fa fa-circle"></i></a> <!--dark-->
+			</div>
+</div>
+<!--End Light Mode Select-->
+<!--Language Select-->
+<div class="languageSelect col-xs-3 col-sm-7 col-md-8" style="margin-right: 20px;">
+	<div class="tx-srlanguagemenu tx-srlanguagemenu-links">
+		<div class="CUR" style="float: right; position: relative; display: inline;">
+			<a class="linked-language" href="person.html">DE</a>
+		</div>
+		<a style="float: right; position: inherit; display: inline;">|</a>
+			<div class="NO SPC" style="float: right;">
+				<a class="linked-language" href="../dark_en/person.html">EN</a>
+			</div>
+	</div>
+</div>
+<!--End Language Select-->
+</div>
+<!--End Navbar-->
+<main style="margin-top: 200px;">		
+	<div class="content">
+		<div class="flex"><img src="../img/ichrund.png" alt="Ein Bild von mir"></div>
+
+			<p>	My name is Kevin Glock. I come from a beautiful city in Westphalia and settled in Duisburg during my studies.
+			I am currently completing my master's degree in tranquil Bamberg in the middle of Franconia and commuting between Bavaria and North Rhine-Westphalia.
+			I love good food, good books, films and the sea.
+		</p>
+		
+		<p>	Before I started my basic studies, I completed a basic education in the pedagogical area,
+			but afterwards I decided to do a high school diploma at the evening college, that I completed a "blended learning" course,
+			so that I had several years of professional experience in social pedagogy and nursing pedagogy before my studies.
+			I was able to collect areas and acquired competencies in dealing with digital teaching and learning concepts at an early stage.
+		</p>
+		
+		<p>
+			During this time I have been interested in research and science for a long time and in my spare time and work I have increased my knowledge in pedagogy,
+			development & learning psychology, educational research and social research.
+		</p>
+		
+		<p>
+			This knowledge was useful in my bachelor's degree, which enabled me to accompany and support many students.
+			So I was on hand with advice and support in the methodical implementation and evaluation and successfully helped with a number of exam preparations,
+			seminar work and theses. All were passed, whether seminar, bachelor, master thesis or dissertation.
+		</p>
+		
+		<p>
+			My focus is on general communication of the logic of science and research, as well as the acquisition of education in the course of study,
+			so that I can later tackle methodological problems independently.
+			The aim should be to discuss difficulties in methodical implementations and evaluations,
+			to explain them clearly and to solve them. Always with a very high technical standard, but simple,
+			understandable and explained using everyday examples and your specific content.
+		</p>
+		
+		<p>
+			In addition to my bachelor's degree, I have always worked outside of the university.
+			This gave me a very comprehensive insight into various professional fields.
+			I was also involved in teaching as a tutor for methods of empirical social research and computer-aided statistics with SPSS.
+			In the further course of my bachelor's degree, I worked as a student assistant in a research project that dealt with the preparation,
+			distribution and statistical and qualitative evaluation of text data using the R programming language.
+			As part of the project, the main focus of my work was on measurement-theoretical aspects (reliability and validity of the data), data management and theoretical work.
+		</p>
+		
+		<p>
+			As part of my master’s degree, I am now deepening my knowledge of data collection, management and analysis.
+			The main focus is on mathematical statistics and an analytical-mathematical solution to problems.
+			Just as extensive is the deepening of measurement theory problems and computer-aided work.
+			So I deepen my knowledge in R, Stata, statistical schools (classic, Bayesian), simulations, variance estimates and much more.
+			In addition to my master's degree, I am currently working at the Leibniz Institute for Educational Trajectories and focus on interdisciplinary returns on education
+			from a social and economic perspective. The focus of my work here is more on methodological aspects (measurement theory, data quality, data management) than on content issues.
+		</p>
+		
+		<p>
+			My basic education is shaped by social sciences, but my interests are broad and cover natural sciences, education, social research in general, psychology, economic development,
+			complex systems and methodological research.
+		</p>
+		
+		<p>
+		    Like to look around!
+		</p>
+</div>
+</main>
+	<script>
+// Navbar function
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	</script>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+</body>
+</html>

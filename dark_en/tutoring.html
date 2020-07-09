@@ -9,11 +9,11 @@
 	<meta name="description" content="Website of GlockStatistics. Statistical Consulting and Tutoring">
 	<meta name="author" content="Kevin Glock">
 	<meta name="copyright" content="© Kevin Glock 2020">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/dark.style.css" rel="stylesheet" type="text/css">
 </head>
 <!--End Discription-->
 <body>
-	<!--button onclick="topFunction()" id="myBtn" title="GoUp!">^</button--> 
+	<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
 <!--header>
 </header-->
 
@@ -28,9 +28,9 @@
 		<i class="fa fa-caret-down"></i>
 		</button>
     <div class="dropdown-content">
-  <a href="sites/person.html">About</a>
-  <a href="sites/edu.html">Education</a>
-  <a href="sites/work.html">Work</a>
+  <a href="person.html">About</a>
+  <a href="edu.html">Education</a>
+  <a href="work.html">Work</a>
     </div>
 	</div>
 	<div class="dropdown">
@@ -38,21 +38,21 @@
 		<i class="fa fa-caret-down"></i>
 		</button>
     <div class="dropdown-content">
-  <a href="sites/tutoring.html">Tutoring</a>
-  <a href="sites/analyses.html">Analyses</a>
-  <a href="sites/consulting.html">Consulting</a>
+  <a href="tutoring.html">Tutoring</a>
+  <a href="analyses.html">Analyses</a>
+  <a href="consulting.html">Consulting</a>
     </div>
 	</div>
-  <a href="sites/examples.html">Examples</a>
+  <a href="examples.html">Examples</a>
 <!--End website links-->
 <!--Light Mode Select-->
 <div class="mode" style="margin-right: 50px;">
 	<div class="light" style="float: right; position:relative; display:inline;">
-		<a class="light-link" href="index.html"><i class="fa fa-circle-o"></i></a> <!--light-->
+		<a class="light-link" href="../sites/tutoring.html"><i class="fa fa-circle-o"></i></a> <!--light-->
 	</div>
 		<a style="float: right; position: relative; display: inline;">|</a>
 			<div class="dark" style="float: right; position: relative;">
-				<a class="dark-link" href="dark/index.html"><i class="fa fa-circle"></i></a> <!--dark-->
+				<a class="dark-link" href="tutoring.html"><i class="fa fa-circle"></i></a> <!--dark-->
 			</div>
 </div>
 <!--End Light Mode Select-->
@@ -60,11 +60,11 @@
 <div class="languageSelect col-xs-3 col-sm-7 col-md-8" style="margin-right: 20px;">
 	<div class="tx-srlanguagemenu tx-srlanguagemenu-links">
 		<div class="CUR" style="float: right; position: relative; display: inline;">
-			<a class="linked-language" href="index.html">DE</a>
+			<a class="linked-language" href="../sites/tutoring.html">DE</a>
 		</div>
 		<a style="float: right; position: inherit; display: inline;">|</a>
 			<div class="NO SPC" style="float: right;">
-				<a class="linked-language" href="en/index.html">EN</a>
+				<a class="linked-language" href="tutoring.html">EN</a>
 			</div>
 	</div>
 </div>
@@ -73,12 +73,66 @@
 <!--End Navbar-->
 <main style="margin-top: 120px;">		
 	<div class="content">
-
-<!--img src="../img/Chi-square_pdf.svg" style="width:20%; height:20%;"-->
-	<h1 style="text-align: center; font-size: 45px">GlockStatistics.<br>Statistical Consulting and<br>Tutoring</h1>
-	<h3 style="text-align: center;">Willkommen!</h3>
+ <h1>Tutoring</h1>
+		<p>
+			You need help with your upcoming exam in:</p>
+			<ul>
+			<li>Methods of empirical social research for political scientists</li>
+			<li>Methods of empirical social research for sociologists</li>
+			<li>Methodology I</li>
+			<li>Methodology II</li>
+			<li>descriptive statistics</li>
+			<li>Inference statistics</li>
+			<li>Statistics for political scientists</li>
+			<li>Statistics for sociologists</li>
+			<li>Statistics I</li>
+			<li>Statistics II</li>
+			<li>Statistics III</li>
+			<li>Statistics for cognition and communication scientists</li>
+			<li>ect.</li>
+			</ul>
+			
+		<p>
+		and do you want to prepare adequately?
+		</p>
+		
+		<p>			  
+			My knowledge includes understanding, interpreting and applying qualitative and quantitative methods of empirical social research
+			as well as mathematical statistics. We go through all relevant topics intensively and simply, we do exercises, and I will also answer your questions.
+			In the end, I will provide you with a general practice exam, so that you can be sure that you are adequately prepared.
+		</p>
+		
+		<p>
+			I can probably help you with this, just contact me without obligation at: kevin (dot) glock (at) stud (dot) uni (minus) bamberg (dot) de.
+			Then we can discuss everything else. The first interview is of course free of charge.
+		</p>
+		
+		<p>
+		    For an impression, take a look around!
+		</p>
 </div>
 </main>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
 	<script>
 // Navbar function
 window.onscroll = function() {myFunction()};
@@ -94,31 +148,6 @@ function myFunction() {
   }
 }
 	</script>
-	<!--script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "none";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-	</script-->
-<footer  id="fussbereich">
-	<a href="sites/impressum.html">Impressum</a>
-	<a href="sites/examples.html">Examples</a>
-	<p>(diese Seite befindet sich noch im Aufbau)</p>
-</footer>
 </body>
 </html>
