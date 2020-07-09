@@ -3,7 +3,7 @@
 /*body specifications*/
 
 body {
-	color: #000;
+	color: #21A1DE;
 	hyphens: auto;
 	width: 100%;
 	height:100%;
@@ -11,7 +11,7 @@ body {
 	margin-bottom:150px;
 	padding: 0px;
 	background-size: cover;
-	background-color: black;
+	background-color: #000000;
 	background-repeat: no-repeat;
 }
 
@@ -25,7 +25,7 @@ body {
 	text-align: center !important;
 	overflow: auto !important;
 	width: auto;
-	color: #342FD1;
+	color: #21A1DE;
 	height:auto;
 }
 
@@ -45,7 +45,7 @@ body {
 .tab {
 	overflow-x: auto;
 	scrollbar-width: thin;
-	scrollbar-color: #ddd;
+	scrollbar-color: #21A1DE;
 	-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
 }
 /* My picture */
@@ -83,53 +83,53 @@ body {
 }*/
 
 #examples a	{
-	color: #342FD1;;
+	color: #21A1DE;
 }
 
 sup a {
 	text-decoration:none;
-	color: #342FD1;
+	color: #21A1DE;
 }
 
 sup a:hover {
-	color: #9026DE;
+	color: #21A1DE;
 }
 
 li {
-	color: #342FD1;
+	color: #21A1DE;
 	padding: 0px 0px 6px 6px;
 }
 
 li a {
 	text-decoration: none;
-	color: #342FD1;
+	color: #21A1DE;
 }
 
 li a:hover {
-	color: #9026DE;
+	color: #21A1DE;
 }
 
 ol li a {
-	color: #342FD1;
+	color: #21A1DE;
 }
 
 h1 {
-	color: #342FD1;
+	color: #21A1DE;
 	font-family: "Trebuchet MS";
 }
 
 h2 {
-	color: #342FD1;
+	color: #21A1DE;
 	font-family: "Trebuchet MS";
 }
 
 h3 {
-	color: #342FD1;
+	color: #21A1DE;
 	font-family: "Trebuchet MS";
 }
 
 h4 {
-	color: #342FD1;
+	color: #21A1DE;
 	font-family: "Trebuchet MS";
 }
 
@@ -137,8 +137,8 @@ main {
 	padding: 50px 150px;
 	margin: 200px 200px;
 	border-radius: 2px;
-	background-color: #0B1B52;
-	color: #342FD1;
+	background-color: #000000;
+	color: #21A1DE;
 	font-family: Tahoma;
 	text-align: justify;
 }
@@ -151,7 +151,7 @@ main {
 	padding-bottom: 10px;
 	padding-top: 10px;
 	hyphens: none !important;
-	background: #0B1B52;
+	background: #000000;
 	position: fixed;
 	top: 0;
 	z-index:1;
@@ -160,7 +160,7 @@ main {
 .navbar a {
 	float: left;
 	display: inline;
-	color: grey;
+	color: #21A1DE;
 	padding: 12px 14px;
 	text-decoration: none;
 	font-size: 17px;
@@ -169,8 +169,8 @@ main {
 }
 
 .navbar a:hover {
-	background-color: #14349E;
-	color: #342FD1;
+	background-color: #000000;
+	color: #21A1DE;
 }
 
 .dropdown {
@@ -184,7 +184,7 @@ main {
 	font-size: 17px;  
 	border: none;
 	outline: none;
-	color: grey;
+	color: #21A1DE;
 	overflow: hidden;
 	background-color: inherit;
 	padding: 12px 14px;
@@ -197,14 +197,14 @@ main {
 }
 
 .dropdown:hover .dropbtn {
-	background-color: #14349E;
-	color: #342FD1;
+	background-color: #000000;
+	color: #21A1DE;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #14349E;
+	background-color: #000000;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 12;
@@ -215,29 +215,29 @@ main {
 .dropdown-content a {
 	float: none;
 	overflow: hidden;
-	color: grey;
+	color: #21A1DE;
 	padding: 9px 16px;
 	text-decoration: none;
 	display: block;
 	text-align: center;
 	position: relative;
-	background: rgba(250, 250, 250, 0.8);
+	background: #000000;
 	z-index: 15;
 }
 
 .dropdown-content a:hover {
-	color: #342FD1;
-	background: rgba(250, 250, 250, 0.8);
+	color: #21A1DE;
+	background: #000000;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown:hover .dropdown-content {
 	display: block;
 	text-align:left;
-	color: #342FD1;
+	color: #21A1DE;
 	overflow: hidden;
 	position: fixed;
-	background: rgba(250, 250, 250, 0.8);
+	background: #000000;
 	z-index: 14;
 }
 
@@ -266,7 +266,7 @@ main {
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
 	background-color: #14349E; /* Set a background color */
-	color: #342FD1; /* Text color */
+	color: #21A1DE; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 15px; /* Some padding */
 	border-radius: 4px; /* Rounded corners */
@@ -280,8 +280,8 @@ main {
 /*Footer*/
 
 footer {
-	color: #342FD1;
-	background: #14349E;
+	color: #21A1DE;
+	background: #000000;
 	font-family: "Trebuchet MS";
 	overflow: hidden;
 	position: fixed;
@@ -296,13 +296,13 @@ footer {
 }
 
 #fussbereich a {
-	color: #342FD1;
+	color: #21A1DE;
 	font-family: "Trebuchet MS";
 	text-decoration: none;
 }
 
 #fussbereich a:hover {
-	color: black;
+	color: #21A1DE;
 }
 
 /* Add responsiveness - on screens less than 500px*/
@@ -327,7 +327,7 @@ body {
 .tab {
 	overflow-x: auto;
 	scrollbar-width: thin;
-	scrollbar-color: grey;
+	scrollbar-color: #21A1DE;
 	-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
 }
 /*--------------------------------------------------------------------------------*/
@@ -340,7 +340,7 @@ body {
 	padding-bottom: 10px;
 	padding-top: 10px;
 	hyphens: none !important;
-	background: rgba(250, 250, 250, 0.9);
+	background: #000000;
 	position: fixed;
 	top: 0;
 	z-index:1;
@@ -349,7 +349,7 @@ body {
 .navbar a {
 	float: left;
 	display: inline;
-	color: grey;
+	color: #21A1DE;
 	padding: 12px 14px;
 	text-decoration: none;
 	font-size: 16px;
@@ -358,8 +358,8 @@ body {
 }
 
 .navbar a:hover {
-	background-color: rgba(250, 250, 250, 0.2);
-	color: black;
+	background-color: #000000;
+	color: #21A1DE;
 }
 
 .dropdown {
@@ -373,7 +373,7 @@ body {
 	font-size: 17px;  
 	border: none;
 	outline: none;
-	color: grey;
+	color: #21A1DE;
 	overflow: hidden;
 	background-color: inherit;
 	padding: 12px 14px;
@@ -386,14 +386,14 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-	background-color: rgba(0,0,0,0.2);
-	color: black;
+	background-color: #000000;
+	color: #21A1DE;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: rgba(250, 250, 250, 0.8);
+	background-color: #000000;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 12;
@@ -403,29 +403,29 @@ body {
 .dropdown-content a {
 	float: none;
 	overflow: hidden;
-	color: grey;
+	color: #21A1DE;
 	padding: 9px 16px;
 	text-decoration: none;
 	display: block;
 	text-align: center;
 	position: relative;
-	background: rgba(250, 250, 250, 0.8);
+	background: #000000;
 	z-index: 15;
 }
 
 .dropdown-content a:hover {
-	color: black;
-	background: rgba(250, 250, 250, 0.8);
+	color: #21A1DE;
+	background: #000000;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown:hover .dropdown-content {
 	display: block;
 	text-align:left;
-	color: black;
+	color: #21A1DE;
 	overflow: hidden;
 	position: fixed;
-	background: rgba(250, 250, 250, 0.8);
+	background: #000000;
 	z-index: 14;
 }
 
@@ -446,7 +446,7 @@ main {
 	margin: 100px 10px;
 	border-radius: 2px;
 	font-size: 12px;
-	background-color: #0B1B52;
+	background-color: #000000;
 }
 
 h1 {
@@ -485,8 +485,8 @@ h4 {
 }
 	
 footer {
-	color: grey;
-	background: rgba(250, 250, 250, 0.9);
+	color: #21A1DE;
+	background: #000000;
 	font-family: "Trebuchet MS";
 	bottom:0px !important;
 	width:100%;
@@ -499,13 +499,13 @@ footer {
 }
 
 #fussbereich a {
-	color: grey;
+	color: #21A1DE;
 	font-family: "Trebuchet MS";
 	text-decoration: none;
 }
 
 #fussbereich a:hover {
-	color: black;
+	color: #21A1DE;
 }
 
 /*ScrollUpButton*/
@@ -519,7 +519,7 @@ footer {
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
 	background-color: #F57A07; /* Set a background color */
-	color: white; /* Text color */
+	color: #21A1DE; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 15px; /* Some padding */
 	border-radius: 4px; /* Rounded corners */
