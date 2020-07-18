@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <!--Discription-->
 <head>
 	<meta charset="utf-8">
@@ -18,15 +18,15 @@
 </header-->
 <!--Navbar-->
 <div class="navbar">
-  <a class="active" href="../index.html">Home</a>
+  <a class="active" href="../en/index.html">Home</a>
 	<div class="dropdown">
 		<button class="dropbtn">Person
 		<i class="fa fa-caret-down"></i>
 		</button>
     <div class="dropdown-content">
-  <a href="../sites/person.html">About</a>
-  <a href="../sites/edu.html">Education</a>
-  <a href="../sites/work.html">Work</a>
+  <a href="../en/person.html">About</a>
+  <a href="../en/edu.html">Education</a>
+  <a href="../en/work.html">Work</a>
     </div>
 	</div>
 	<div class="dropdown">
@@ -34,33 +34,21 @@
 		<i class="fa fa-caret-down"></i>
 		</button>
     <div class="dropdown-content">
-  <a href="../sites/tutoring.html">Tutoring</a>
-  <a href="../sites/analyses.html">Analyses</a>
-  <a href="../sites/consulting.html">Consulting</a>
+  <a href="../en/tutoring.html">Tutoring</a>
+  <a href="../en/analyses.html">Analyses</a>
+  <a href="../en/consulting.html">Consulting</a>
     </div>
 	</div>
-  <a href="../sites/examples.html">Examples</a>
-<!--End website links-->
-<!--Light Mode Select-->
-<div class="mode" style="margin-right: 50px;">
-	<div class="light" style="float: right; position:relative; display:inline;">
-		<a class="light-link" href="parameters.html"><i class="fa fa-circle-o"></i></a> <!--light-->
-	</div>
-		<a style="float: right; position: relative; display: inline;">|</a>
-			<div class="dark" style="float: right; position: relative;">
-				<a class="dark-link" href="../dark_stats/parameters.html"><i class="fa fa-circle"></i></a> <!--dark-->
-			</div>
-</div>
-<!--End Light Mode Select-->
+  <a href="../en/examples.html">Examples</a>
 <!--Language Select-->
 <div class="languageSelect col-xs-3 col-sm-7 col-md-8" style="margin-right: 20px;">
 	<div class="tx-srlanguagemenu tx-srlanguagemenu-links">
 		<div class="CUR" style="float: right; position: relative; display: inline;">
-			<a class="linked-language" href="parameters.html">DE</a>
+			<a class="linked-language" href="../stats/parameters.html">DE</a>
 		</div>
 		<a style="float: right; position: inherit; display: inline;">|</a>
 			<div class="NO SPC" style="float: right;">
-				<a class="linked-language" href="../stats_en/parameters.html">EN</a>
+				<a class="linked-language" href="parameters.html">EN</a>
 			</div>
 	</div>
 </div>
@@ -103,10 +91,8 @@
 		Dafür werden alle Noten addiert und durch die Anzahl der geschriebenen Klausuren geteilt.</p>
 
 		<ul>
-		<li><b>Das arithmetische Mittel:</b> Die Summe aller Beobachtungen dividiert durch die Anzahl aller Beobachtungen.
-		</li>
-		</ul>
-		<math>
+		<li><b>Das arithmetische Mittel:</b> Die Summe aller Beobachtungen dividiert durch die Anzahl aller Beobachtungen.</li>
+		<p><math>
 		<mfrac bevelled="false">
 		<mi>1</mi>
 		<mi>n</mi>
@@ -121,11 +107,10 @@
 		<mi>x</mi>
 		<mn>i</mn>
 		</msub> 
-		</mstyle>
-		</math>
-		<sup>
+		</math><sup>
 		<a id="i" title="MathML wird in Chrome und Edge nicht untersstützt. Ein Umstieg auf MathJax erfolgt bald." href="../sites/footnotes.html#i">[i]</a>
-		</sup>
+		</sup></p>
+		</ul>
 		
 		<p>Neben dem arithmetischen Mittel als Durchscnitt gibt es noch weitere Möglichkeiten einen Mittelwert einer Verteilung zu errechnen um diese zu beschreiben<sup><a id="fn16" title="Benninghaus. 2007. S.36-50." href="../sites/footnotes.html#fn16">[16]</a>
 		<a id="fn17" title="Fahrmeir. 200. S. 61-63." href="../sites/footnotes.html#fn17">[17]</a></sup>. Häufig wird auch die so genannte <b>5-Punkte-Zusammenfassung</b><sup>
@@ -155,7 +140,9 @@
 
 	</main>
 	
-<script>
+
+<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+	<script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
 

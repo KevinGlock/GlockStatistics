@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <!--Discription-->
 <head>
 	<meta charset="utf-8">
@@ -18,15 +18,15 @@
 </header-->
 <!--Navbar-->
 <div class="navbar">
-  <a class="active" href="../index.html">Home</a>
+  <a class="active" href="../en/index.html">Home</a>
 	<div class="dropdown">
 		<button class="dropbtn">Person
 		<i class="fa fa-caret-down"></i>
 		</button>
     <div class="dropdown-content">
-  <a href="../sites/person.html">About</a>
-  <a href="../sites/edu.html">Education</a>
-  <a href="../sites/work.html">Work</a>
+  <a href="../en/person.html">About</a>
+  <a href="../en/edu.html">Education</a>
+  <a href="../en/work.html">Work</a>
     </div>
 	</div>
 	<div class="dropdown">
@@ -34,33 +34,21 @@
 		<i class="fa fa-caret-down"></i>
 		</button>
     <div class="dropdown-content">
-  <a href="../sites/tutoring.html">Tutoring</a>
-  <a href="../sites/analyses.html">Analyses</a>
-  <a href="../sites/consulting.html">Consulting</a>
+  <a href="../en/tutoring.html">Tutoring</a>
+  <a href="../en/analyses.html">Analyses</a>
+  <a href="../en/consulting.html">Consulting</a>
     </div>
 	</div>
-  <a href="../sites/examples.html">Examples</a>
-<!--End website links-->
-<!--Light Mode Select-->
-<div class="mode" style="margin-right: 50px;">
-	<div class="light" style="float: right; position:relative; display:inline;">
-		<a class="light-link" href="chance.html"><i class="fa fa-circle-o"></i></a> <!--light-->
-	</div>
-		<a style="float: right; position: relative; display: inline;">|</a>
-			<div class="dark" style="float: right; position: relative;">
-				<a class="dark-link" href="../dark_stats/chance.html"><i class="fa fa-circle"></i></a> <!--dark-->
-			</div>
-</div>
-<!--End Light Mode Select-->
+  <a href="../en/examples.html">Examples</a>
 <!--Language Select-->
 <div class="languageSelect col-xs-3 col-sm-7 col-md-8" style="margin-right: 20px;">
 	<div class="tx-srlanguagemenu tx-srlanguagemenu-links">
 		<div class="CUR" style="float: right; position: relative; display: inline;">
-			<a class="linked-language" href="chance.html">DE</a>
+			<a class="linked-language" href="../stats/chance.html">DE</a>
 		</div>
 		<a style="float: right; position: inherit; display: inline;">|</a>
 			<div class="NO SPC" style="float: right;">
-				<a class="linked-language" href="../stats_en/chance.html">EN</a>
+				<a class="linked-language" href="chance.html">EN</a>
 			</div>
 	</div>
 </div>
@@ -172,16 +160,18 @@
 		Haustierbesitzer decken in diesem Fall nur die Ausprägungen Hund oder Katze ab; nicht beides, keins, oder andere.
 		Man könnte dies also als einfachen Münzwurf auffassen, entweder Kopf oder Zahl, Katze oder Hund.
 		</p>
-
+		
 		<p>
 		Folgen wir Google Trends, zeigt sich ein klares gestiegenes Interesse in der Zeit von COVID-19 und HomeOffice in Deutschland, was damit assoziert sein könnte, dass mehr Leute Zeit für
 		und Interesse an einem Hund als Haustier haben, um der sozialen Distanz zu entkommen. Von vormalige Beliebtheitswert ist von 75 Indexpunkten auf 100 gestiegen und zeigt damit größte Beliebtheit in den Suchanfragen an.
 		Katzen hingegen sind konstant beliebt bei um die 30 Indexpunkten auf der Beliebtheitsskala.
 		</p>
-		  <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2213_RC01/embed_loader.js"></script>
+		
+		<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2213_RC01/embed_loader.js"></script>
   <script type="text/javascript">
     trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"Hund","geo":"DE","time":"today 12-m"},{"keyword":"Katze","geo":"DE","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=DE&q=Hund,Katze&date=today 12-m,today 12-m","guestPath":"https://trends.google.de:443/trends/embed/"});
   </script>
+
 		<p>Eine Modellierung mit Kleinanzeigen auf Ebay zeigen ebenfalls steigende Anzeigen in diesem Bereich.</p>
 		
 		<p>
@@ -248,7 +238,9 @@
 		</div>
 
 	</main>
-<script>
+
+<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+	<script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
