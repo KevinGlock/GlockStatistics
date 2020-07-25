@@ -20,6 +20,9 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center !important;
+}
+
+.png img {
 	width: 95% !important;
 	height: 100% !important;
 }
