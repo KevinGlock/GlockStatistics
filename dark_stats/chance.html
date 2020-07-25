@@ -106,8 +106,9 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 	<li>Dies entspricht der regulativen Idee von Wahrheit bei Popper (siehe Kapitel Gütekriterien).</li>
 	</ul>
 	
-	<p>Aus Sicht der Herangehensweise waren Fisher´s wissenschaftlichen Opponenten Thomas Bayes und Pierre-Simon Laplace,
-	die die Bayes-Inferenz bereits vor Fisher begründeten (subjektiver Wahrscheinlichkeitsbegriff). Fisher lehnte die bedingte Wahrscheinlichkeit wie sie sie begründeten vehement ab um Theorien zu testen und propagierte erfolgreich die Durchsetzung des Signifikanztestes und den Status quo der objektiven Wahrscheinlichkeit.<p>
+	<p>Aus Sicht der Herangehensweise waren Fisher´s wissenschaftliche Opponenten Thomas Bayes und Pierre-Simon Laplace,
+	die die Bayes-Inferenz bereits vor Fisher begründeten (subjektiver Wahrscheinlichkeitsbegriff). Fisher lehnte die bedingte Wahrscheinlichkeit um Theorien zu testen wie die Bayes-Inferenz sie begründete vehement ab und propagierte erfolgreich die Durchsetzung des Signifikanztestes und den Status quo der objektiven Wahrscheinlichkeit.<p>
+	
 	<p>Die Bayes-Statistik nahm sich nähmlich heraus zu behaupten, dass jedem <b>Parameter eine Wahrscheinlichkeit zugeordnet</b> werden kann. Man betrachtet schließlich Daten, die ja nur bei genügender Grundlage den wahrscheinlichsten Parameter als wahren Wert abbilden.
 	Hingegen vertritt jedoch die klassische Inferenz, dass <b>wahre Parameter immer unbekannt</b> sind und nur geschätzt werden können. Hypothesen sind also nicht bedingt auf die Daten zu betrachten, sondern Daten bedingt auf eine Hypothese, die gegen eine Nullhypothese zu testen sei.
 	Nur in der Langzeitbetrachtung können wir so einen wahren Wert approximieren, sicher können wir uns dennoch nie sein.</p>
@@ -120,7 +121,18 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 	<li>als plausibel oder unplausibel im Nachhinein (<b>a-posteriori</b>) entschieden werden kann.</li>
 	<li>Folglich geben große Datenmengen mehr Anlass für Plausiblität einer zu testenden Aussage.</li>
 	</ul>
+	
 	<p>Die Wahrscheinlichkeit für eine als vorläufig richtig oder falsche Aussage setzt sich also aus einem Prior als Vorinformation und Daten bedingt auf diese Vorinformation in Relation zu der Datengrundlage zusammen.</p>
+	
+	<math>
+		<mn>P(H|E)</mn>
+	<mo>=</mo>
+	<mfrac bevelled="false">
+		<mi>P(H)*P(E|H)</mi>
+		<mi>P(E)</mi>
+	</mfrac>
+	</math>
+	
 	<p>Diese Sichtweise auf Wahrscheinlichkeit kennt jeder persönlich aus seiner Erfahrung und macht in der Praxis häufig mehr Sinn,
 	erscheint aber im Vergleich zur klassischen Wahrscheinlichkeit als unwissenschaftlich um Hypothesen zu überprüfen
 	(zumindest für Personen, die sich eher als FrequentistInnen identifizieren). Jedoch nutzen auch FrequentistInnen (un)bewusst in ihrer Praxis eher beysianische Wege für die Interpretation von Daten auch, wenn häufig Objektivität als Maßstab genutzt wird.</p>
@@ -161,9 +173,8 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 	</mfrac>
 	</math>
 	
-	<p>Dieses Prinzip findet sich im Kapitel Klassen und Intervalle als relative Häufigkeiten.
-	Hier wird dieses Prinzip lediglich anstatt auf beobachtete Ausprägungen auf die Wahrscheinlichkeit des Eintreten von Ereignissen übertragen.
-	Daher wird meist ein Würfel oder eine Münze als Beispiel genutzt. Ein Würfel hat 6 Seiten, alle Seiten treten gleich wahrscheinlich mit
+<p>Dieses Prinzip ist demnach konsistent mit dem klassischen Wahrscheinlichkeitsbegriff der ebenfalls bei der Wahrscheinlichkeit eines Ereignisses von einer relativen Häufigkeit ausgeht.
+	Verdeutlicht wird diese relative Chance meist mit einem Würfel oder einer Münze. Ein Würfel hat 6 Seiten, alle Seiten treten gleich wahrscheinlich mit
 	<math>
 		<mn>P(A)</mn>
 	<mo>=</mo>
@@ -171,8 +182,37 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 		<mi>|1|</mi>
 		<mi>|6|</mi>
 	</mfrac>
-	</math> ein. Bei einer Münze haben ebenso beide Seiten die gleiche Wahrscheinlichkeit des Eintritts mit 50 Porzent, also ein Chancenverhältnis von 50:50.</p>
+	</math> ein. Bei einer Münze haben ebenso beide Seiten die gleiche Wahrscheinlichkeit des Eintritts mit 0,5 oder 50 Prozent, also ein Chancenverhältnis von 50:50.</p>
 	
+	<p>Axiomatisch bedeutet, dass wir Wahrscheinlichkeit als eine Funktion reellen Zahlen zuordnen können und Wahrscheinlichkeiten einzelner Ereignisse summieren können.</p>
+	
+	<math>
+	<mn>P(</mn>
+	<mstyle displaymode="false">
+		<munderover>
+		<mo>&cup;</mo>
+		<mn>i=0</mn>
+		<mn>&infin;</mn>
+		</munderover>
+		<msub>
+		<mi>A</mi>
+		<mn>i</mn>
+		<mi></mi>
+		</msub> 
+		<mn>)</mn>
+	<mo>=</mo>
+	<mstyle displaymode="false">
+		<munderover>
+		<mo>&sum;</mo>
+		<mn>i=1</mn>
+		<mn>&infin;</mn>
+		</munderover>
+		<msub>
+		<mi>P(A</mi>
+		<mn>i</mn>
+		<mi>)</mi>
+		</msub> 
+	</math>
 	<h1>Was ist die Chance?</h1>
 
 		<p>Die Chance ist das Verhältnis zweier Größen in einer 2x2 Kreuztabelle. Sie ist ein simples Maß um auf Wahrscheinlichkeiten zu schließen.
@@ -222,15 +262,6 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 		Hast du vielleicht ein Haustier oder jemand in deiner Familie? Dann weißt du vermutlich warum.</p>
 		
 		<p>Wahrscheinlichkeit ist also eine Hypothese, die bedingt auf Evidenz Betrachtung findet und als wahrscheinlich plausibel oder unplausibel angesehen werden kann.</p>
-		
-		<math>
-		<mn>P(H|E)</mn>
-	<mo>=</mo>
-	<mfrac bevelled="false">
-		<mi>P(H)*P(E|H)</mi>
-		<mi>P(E)</mi>
-	</mfrac>
-	</math>
 	
 		<p>Haustiere fungieren als treuer Partner, machen den Alltag manchmal lebenswerter und sind Spielpartner, Freund und besonders Hunde häufig auch Beschützer.
 		Daraus folgt, dass besonders Familien mit Kindern, einsame Personen, ältere Personen sowie Landbesitzer Tiere in ihrer Familie haben.
