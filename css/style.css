@@ -19,6 +19,8 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center !important;
+	width: 95% !important;
+	height: 100% !important;
 }
 
 .solid {
@@ -51,7 +53,7 @@ body {
 	overflow-x: auto;
 	scrollbar-width: thin;
 	scrollbar-color: #ddd;
-	-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+	-webkit-overflow-scrolling: touch; /* Let it scroll lazy */
 }
 /* My picture */
 
