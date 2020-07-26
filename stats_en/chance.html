@@ -112,6 +112,7 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 	
 	<p>Die Wahrscheinlichkeit für eine als vorläufig richtig oder falsche Aussage setzt sich also aus einem Prior als Vorinformation und Daten bedingt auf diese Vorinformation in Relation zu der Datengrundlage zusammen.</p>
 	
+	<div class="math">
 	<math>
 		<mn>P(H|E)</mn>
 	<mo>=</mo>
@@ -120,6 +121,7 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 		<mi>P(E)</mi>
 	</mfrac>
 	</math>
+	</div>
 	
 	<p>Diese Sichtweise auf Wahrscheinlichkeit kennt jeder persönlich aus seiner Erfahrung und macht in der Praxis häufig mehr Sinn,
 	erscheint aber im Vergleich zur klassischen Wahrscheinlichkeit als unwissenschaftlich um Hypothesen zu überprüfen
@@ -152,6 +154,7 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 	<li>Oder formell: die Wahrscheinlichkeit von A ist die Mächtigkeit von A durch die Mächtigkeit der Ereignismenge Omega:</li>
 	</ul>
 	
+	<div class="math">
 	<math>
 	<mn>P(A)</mn>
 	<mo>=</mo>
@@ -160,6 +163,7 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 	<mi>|Ω|</mi>
 	</mfrac>
 	</math>
+	</div>
 	
 <p>Dieses Prinzip ist demnach konsistent mit dem klassischen Wahrscheinlichkeitsbegriff der ebenfalls bei der Wahrscheinlichkeit eines Ereignisses von einer relativen Häufigkeit ausgeht.
 	Verdeutlicht wird diese relative Chance meist mit einem Würfel oder einer Münze. Ein Würfel hat 6 Seiten, alle Seiten treten gleich wahrscheinlich mit
@@ -172,8 +176,8 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 	</mfrac>
 	</math> ein. Bei einer Münze haben ebenso beide Seiten die gleiche Wahrscheinlichkeit des Eintritts mit 0,5 oder 50 Prozent, also ein Chancenverhältnis von 50:50.</p>
 	
-	<p>Nach Kolmogorow bedeutet das axoimatisch, dass wir Wahrscheinlichkeit als eine Funktion reellen Zahlen zuordnen können: P: P(&Omega;) &rarr; &#8477; und Wahrscheinlichkeiten einzelner Ereignisse summieren können.</p>
-	
+	<p>Nach Kolmogorow bedeutet das axiomatisch, dass wir Wahrscheinlichkeit als eine Funktion reellen Zahlen zuordnen können: P: P(&Omega;) &rarr; &#8477; und Wahrscheinlichkeiten einzelner Ereignisse summieren können, wobei die Wahrscheinlichkeitssumme immer 1 also 100% ergibt.</p>
+	<div class="math">
 	<math>
 	<mn>P(</mn>
 	<mstyle displaymode="false">
@@ -182,7 +186,7 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 		<mn>i=0</mn>
 		<mn>&infin;</mn>
 		</munderover>
-		<msub>
+			<msub>
 		<mi>A</mi>
 		<mn>i</mn>
 		</msub> 
@@ -199,7 +203,39 @@ Grob werden <b>subjektive und objektive Wahrscheinlichkeit</b> unterschieden. Di
 		<mn>i</mn>
 		</msub> 
 		<mn>)</mn>
+		<mo>=</mo>
+		<msub>
+		<mi>P(A</mi>
+		<mn>1</mn>
+		</msub> 
+		<mn>)</mn>
+		<mo>+</mo>
+		<msub>
+		<mi>P(A</mi>
+		<mn>2</mn>
+		</msub> 
+		<mn>)</mn>
+		<mo>+</mo>
+		<mn>...</mn>
+		<mo>+</mo>
+		<msub>
+		<mi>P(A</mi>
+		<mn>i</mn>
+		</msub> 
+		<mn>)</mn>
+		<mo>=</mo>
+		<mn>n</mn>
+		<mo>*</mo>
+		<msub>
+		<mi>P(A</mi>
+		<mn>i</mn>
+		</msub> 
+		<mn>)</mn>
+		<mo>=</mo>
+		<mn>1</mn>
 	</math>
+	</div>
+	
 	<h1>Was ist die Chance?</h1>
 
 		<p>Die Chance ist das Verhältnis zweier Größen in einer 2x2 Kreuztabelle. Sie ist ein simples Maß um auf Wahrscheinlichkeiten zu schließen.
