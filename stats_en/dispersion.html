@@ -90,10 +90,11 @@
 
 		<ul>
 		<li><b>Die mittlere Abweichungssumme:</b> Die Summe aller Beobachtungen jeweils subtrahiert vom Mittelwert ergibt immer Null.
-		Leiten wir sie sie weiter ab kommen wir zum arithmetischen Mittel zurück<sup><a id="fn19" title="Walser. 2011. S.24" href="../sites/footnotes.html#fn19">[19]</a></sup>.</li>
+		Leiten wir sie weiter ab und stellen sie um, kommen wir zum arithmetischen Mittel zurück<sup><a id="fn19" title="Walser. 2011. S.24" href="../sites/footnotes.html#fn19">[19]</a></sup>.</li>
 		</ul>
 		
-		<table rules="none;" style="font-size: 12pt;">
+		<div class="tab">
+		<table>
 		  <tr>
 			<th>
 				<math>
@@ -154,7 +155,9 @@
 		<mo>)</mo>
 		<mo>=</mo>
 		<mi>0</mi>
-		</math><sup><a id="ii" title="MathML wird in Chrome und Edge nicht untersstützt. Ein Umstieg auf MathJax erfolgt bald." href="../sites/footnotes.html#ii">[ii]</a></sup>
+		</mstyle>
+		</math>
+		<sup><a id="ii" title="MathML wird in Chrome und Edge nicht untersstützt. Ein Umstieg auf MathJax erfolgt bald." href="../sites/footnotes.html#ii">[ii]</a></sup>
 			</th>
 		  </tr>
 		  
@@ -184,7 +187,7 @@
 		<mo>=</mo>
 		<mi>n</mi>
 		<mo>*</mo>
-		<msub>
+			<msub>
 			<mi>x</mi>
 				<mn>i</mn>
 		</msub>
@@ -197,13 +200,40 @@
 		</mover>
 		<mo>=</mo>
 		<mi>0</mi>
+		</mstyle>
 		</math>
 		  </tr>
 			</th>
 			
 		  <tr>
 			<th>
-			<math>
+	<math>
+		<mi>n</mi>
+		<mo>*</mo>
+		<mo>(</mo>
+		<mover>
+			<mi>x</mi>
+				<mn>i</mn>
+		</mover>
+		<mo>-</mo>
+		<mover>
+			<mi>x</mi>
+				<mn>_</mn>
+		</mover>
+		<mo>)</mo>
+		<mo>=</mo>
+		<mi>0</mi>
+		</math>	
+			</th>
+		  </tr>
+		</table>
+
+</div>
+		<p>Dies zeigt uns lediglich, dass, wenn wir jeweils nach rechts und links vom Mittelwert abweichen und die einzelnen Terme wieder zusammen nehmen,
+		sich die rechts und linksseitigen Abweichungen (Residuen) gegenseitig aufheben, wir also eine Nullabweichung erhalten. Dies zeigt uns, dass der Mittelwert das Zentrum als Schwerpunkt der Verteilung darstellt.</p>
+
+		<div class="math">
+		<math>
 		<mfrac bevelled="false">
 		<mi>1</mi>
 		<mi>n</mi>
@@ -217,31 +247,10 @@
 		<msub>
 		<mi>x</mi>
 		<mn>i</mn>
-		</msub> 
+		</msub>
+		</mstyle>
 		</math>
-			</th>
-		  </tr>
-		</table>
-
-		<p>Dies zeigt uns lediglich, dass, wenn wir jeweils nach rechts und links vom Mittelwert abweichen und die einzelnen Terme wieder zusammen nehmen,
-		sich die rechts und linksseitigen Abweichungen gegenseitig aufheben. Betrachtet man das Zentrum als Schwerpunkt zeigt sich:</p>
-		
-		<div class="math">
-		<math>
-		<mo>(</mo>
-		<mover>
-			<mi>x</mi>
-				<mn>_</mn>
-		</mover>
-		<mo>-</mo>
-		<mover>
-			<mi>x</mi>
-				<mn>_</mn>
-		</mover>
-		<mo>)</mo>
-		<mo>=</mo>
-		<mi>0</mi>
-		</math><sup><a id="iii" title="MathML wird in Chrome und Edge nicht untersstützt. Ein Umstieg auf MathJax erfolgt bald." href="../sites/footnotes.html#iii">[iii]</a></sup>
+		<sup><a id="iii" title="MathML wird in Chrome und Edge nicht untersstützt. Ein Umstieg auf MathJax erfolgt bald." href="../sites/footnotes.html#iii">[iii]</a></sup>
 		</div>
 		
 		<p>Da wir so keine Abweichungen betrachten können, sondern immer zum Ursprung zurückgelangen,
