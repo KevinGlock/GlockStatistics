@@ -157,7 +157,7 @@
 		<li>Kovarianzeffekt- (ANCOVA)<sup>
 		<a id="fn34" title="Field et al. 2012. Chap. 11." href="../sites/footnotes.html">[34]</a>
 		</sup>,</li>
-		<li>Eigenwertmodell- und Hauptkomponenten- (Hauptkompontenanalyse)<sup>
+		<li>Eigenwertmodell- und Hauptkomponenten- (Hauptkomponentenanalyse)<sup>
 		<a id="fn35" title="Dunteman. 1989." href="../sites/footnotes.html#fn35">[35]</a>
 		</sup>, sowie</li>
 		<li>Faktoreneffekterklärungen (Faktorenanalyse)<sup>
@@ -168,11 +168,11 @@
 		</sup>, im Kontext von Zeitreihenanalysen,</li>
 		<li>oder Neuronale Netze<sup>
 		<a id="fn38" title="Grus. 2016. Kap. 18." href="../sites/footnotes.html#fn38">[38]</a>
-		</sup> im Kontext von maschine learning basieren auf einem additiven Modell als Gerüst.</li>
+		</sup> im Kontext von Machine Learning basieren auf einem additiven Modell als Gerüst.</li>
 		</ul>
 	<h2>Was ist also eine OLS-Regression?</h2>
 	
-		<p>Die OLS-Regression (Ordinary Least Squears) kombiniert, das Prinzip der Regression und kombiniert es mit dem Anzahl der kleinsten Fehlerquadrate.
+		<p>Die OLS-Regression (Ordinary Least Squares) kombiniert das Prinzip der Regression mit dem Prinzip der kleinsten Fehlerquadrate.
 		Ziel ist es eine durchschnittliche Steigung einer Geraden zu formulieren,
 		die durch einen gemeinsamen Punkt
 		<math>
@@ -189,7 +189,7 @@
 		<mo>)</mo>
 		</math>
 		verläuft, der die Mittelwerte der abhängigen metrisch skalierten und der beliebig skalierten unabhängigen Variablen kombiniert. Die abhängige Variable muss dabei zudem möglichst normalverteilt sein.
-		Dabei wird für die Steigung der Geraden vorausgesetzt, dass die unerklärte Streuung (Residuuen) in Form der Fehlerquadrate minimiert werden soll.
+		Dabei wird für die Steigung der Geraden vorausgesetzt, dass die unerklärte Streuung (Residuen) in Form der Fehlerquadrate minimiert werden soll.
 		Man kann daher ein durchschnittliches Modell wie folgt formulieren:</p>
 		
 		<table class="tab">
@@ -215,8 +215,8 @@
 		</table>
 		
 		<p>Der Wert a bezeichnet dabei die Konstante bei der die Gerade die y-Achse (Ordinate) schneidet.
-		Der Faktor b bezeichnet die Effektstärke, der Variabeln x, oder auch die Steigung.
-		Sie ergbibt sich aus der Relation der Kovarianz beider Variablen und der Varianz von x, also gemeinsame Streuung im Verhältnis zur Marginalstreuung der unabhängigen Variablen x.</p>
+		Der Faktor b bezeichnet die Effektstärke, der Variablen x, oder auch die Steigung.
+		Sie ergibt sich aus der Relation der Kovarianz beider Variablen und der Varianz von x, also gemeinsame Streuung im Verhältnis zur Marginalstreuung der unabhängigen Variablen x.</p>
 		
 		<p>Ein Regressionsmodell kann auch mehr als eine unabhängige Variable (multivariate Regression) umfassen.</p>
 		
@@ -262,11 +262,11 @@
 		  </tr>
 		  </table>
 		  
-		<p>Die Interpretation der Steigungskoeffizenten b (beta) bleibt in beiden Fällen gleich<sup>
+		<p>Die Interpretation der Steigungskoeffizienten b (beta) bleibt in beiden Fällen gleich<sup>
 		<a id="fn39" title="Behnke et al. 2010. Empirische Methoden der Politikwissenschaft. S. 438f. Schöningh, UTB." href="../sites/footnotes.html#fn39">[39]</a>
 		</sup>.
 		Steigt die unabhängige Variable um eine Skaleneinheit,
-		so steigt die abhängige Variabel durchschnittlich um die Effektstärke der jeweiligen unabhängigen Variabeln an (Ein Beispiel findest du unter Simulationen in R).</p>
+		so steigt die abhängige Variable durchschnittlich um die Effektstärke der jeweiligen unabhängigen Variablen an (Ein Beispiel findest du unter Simulationen in R).</p>
 		
 		<p>Wir können also nur einen Teil der Streuung der abhängigen Variablen durch die unabhängige Variable erklären.</p>
 		
@@ -274,10 +274,10 @@
 		da ein Modell nicht perfekt ist, bleibt immer ein Rest Unsicherheit der Schätzung zurück,
 		der hier durch die Datengrundlage angebbar wird. Wir machen schließlich nur eine durchschnittliche Schätzung des Effektes.</p>
 		
-		<p><b>Fraglich bleibt:</b> Welche weiteren formalen Voraussetzung hat eine Regression für die Anwendung?
-		Was sind Residuuen und wie berechnet man sie?
+		<p><b>Fraglich bleibt:</b> Welche weiteren formalen Voraussetzungen hat eine Regression für die Anwendung?
+		Was sind Residuen und wie berechnet man sie?
 		Wie formuliert man eine nicht-lineare Regression und wie interpretiert man diese? Wie überprüfe ich weitere formale Voraussetzung für die Anwendung?
-		Wie überprüfe ich, die Stärke des Effekt der unabhängigen Variabeln auf die abhängige?
+		Wie überprüfe ich, die Stärke des Effekts der unabhängigen Variablen auf die abhängige?
 		Wie vergleiche ich Modelle nach ihrer Anpassung?</p>
 	
 		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
