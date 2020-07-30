@@ -73,11 +73,11 @@ body {
 }
 
 .math mstyle {
-	scriptlevel: +2;
+	fontsize: 16px;
 }
 
 .tab mstyle {
-	scriptlevel: +2;
+	fontsize: 16px;
 }
 
 /* My picture */
