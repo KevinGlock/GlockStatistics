@@ -69,7 +69,11 @@ body {
 	text-align: center !important;
 }
 
-.math math mstyle {
+.math mstyle {
+	scriptlevel: 0;
+}
+
+.tab mstyle {
 	scriptlevel: 0;
 }
 
