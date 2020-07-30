@@ -72,8 +72,8 @@ body {
 	text-align: center !important;
 }
 
-.math math {
-	font-size: 15px;
+.math math mstyle {
+	scriptlevel: 0;
 }
 
 /* My picture */
@@ -173,6 +173,9 @@ main {
 	text-align: justify;
 }
 
+ul {
+	text-align: left !important;
+}
 /* Style the navbar */
 
 .navbar {
