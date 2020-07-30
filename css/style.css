@@ -70,11 +70,11 @@ body {
 }
 
 .math mstyle {
-	scriptlevel: 0;
+	scriptlevel: +2;
 }
 
 .tab mstyle {
-	scriptlevel: 0;
+	scriptlevel: +2;
 }
 
 /* My picture */
