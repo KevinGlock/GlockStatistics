@@ -13,6 +13,7 @@ body {
 	background-size: cover;
 	background-image: url(../img/orange-and-blue-abstract-painting-1036379.jpg);
 	background-repeat: no-repeat;
+	background-attachment: scroll;
 }
 
 .png {
