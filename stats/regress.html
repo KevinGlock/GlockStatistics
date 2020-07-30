@@ -97,7 +97,7 @@
 		<mo>+</mo>
 			<mi>b</mi>
 		<mo>*</mo>
-			<mn>x</mn>
+			<mi>x</mi>
 		<mo>+</mo>
 			<mi>e</mi>
 			</mstyle>
@@ -229,8 +229,8 @@
 		<mi>b</mi>
 		<mo>*</mo>
 		<mover>
-			<mn>x</mn>
-				<mi>_</mi>
+			<mi>x</mi>
+				<mn>_</mn>
 		</mover>
 		</mstyle>
 		</math>
@@ -242,7 +242,7 @@
 		Der Faktor b bezeichnet die Effektstärke, der Variablen x, oder auch die Steigung.
 		Sie ergibt sich aus der Relation der Kovarianz beider Variablen und der Varianz von x, also gemeinsame Streuung im Verhältnis zur Marginalstreuung der unabhängigen Variablen x.</p>
 		
-		<p>Ein Regressionsmodell kann auch mehr als eine unabhängige Variable (multivariate Regression) umfassen.</p>
+		<p>Ein Regressionsmodell kann auch mehr als eine unabhängige Variable (multivariate Regression) umfassen, was dann zumeist in Matrixnotation abgekürzt wird. Jeweilige Werte der abhängigen Variablen (Y), alle geschätzten Steigungskoeffizenten (<math><mover><mi>ß</mi><mn>^</mn></mover></math>) und geschätzte Residualwerte (<math><mover><mi>e</mi><mn>^</mn></mover></math>) sind dann in einzelnen Spaltenvektoren zusammengefasst und alle unabhängigen Variablen in einer einzelnen Designmatrix (X), wobei dessen erste Spalte Einsen enthält, um auch den geschätzten y-Achsenabschnitt (hier benannt mit a: <math><mover><msub><mi>b</mi><mn>0</mn></msub><mn>^</mn></mover></math>) bestimmen zu können.</p>
 		
 		<table class="tab">
 		 <tr>
@@ -262,8 +262,8 @@
 		</msub>
 		<mo>*</mo>
 		<msub>
-			<mn>x</mn>
-				<mi>1</mi>
+			<mi>x</mi>
+				<mn>1</mn>
 		</msub>
 		<mo>+</mo>
 			<mn>...</mn>
@@ -280,6 +280,34 @@
 		<mo>+</mo>
 		<msub>
 			<mi>e</mi>
+				<mn>i</mn>
+		</msub>
+		</mstyle>
+		</math>
+			</th>
+		  </tr>
+		  
+		  <tr>
+			<th>
+				<math>
+				<mstyle scriptlevel="-1">
+		<msub>
+			<mi><b>Y</b></mi>
+				<mn>i</mn>
+		</msub>
+		<mo>=</mo>
+		<msub>
+		<mi><b>b</b></mi>
+		<mn>i</mn>
+		</msub>
+		<mo>*</mo>
+		<msub>
+			<mi>X</mi>
+				<mn>n&times;p</mn>
+		</msub>
+		<mo>+</mo>
+		<msub>
+			<mi><b>e</b></mi>
 				<mn>i</mn>
 		</msub>
 		</mstyle>
