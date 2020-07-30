@@ -163,11 +163,13 @@ h4 {
 
 main {
 	padding: 50px 150px;
-	margin: 200px 200px;
+	margin:150px 150px;
 	border-radius: 2px;
 	background-color: rgba(20, 20, 30, 0.7);
 	color: #21A1DE;
 	font-family: "Roboto",sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
 	text-align: justify;
 }
 
