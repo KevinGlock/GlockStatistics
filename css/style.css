@@ -70,11 +70,11 @@ body {
 }
 
 .math mstyle {
-	fontsize: 16px;
+	math-style: compact;
 }
 
 .tab mstyle {
-	fontsize: 16px;
+	math-style: compact;
 }
 
 /* My picture */
