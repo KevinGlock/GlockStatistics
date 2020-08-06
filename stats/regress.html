@@ -78,32 +78,31 @@
 	
 	<h4>26.- 30. Juni 2020</h4>
 	
-	<p>Regression meint direkt übersetzt zurückgehen. Also zu seinem Ursprung zurückkommen.
-	Wir haben bereits im Kapitel über Streuung und Parameter gelernt, dass in der Statistik immer das Ziel besteht eine Verteilung zu beschreiben.
-	Dies geschieht mittels der tatsächliche Beobachtungen, der Berechnung von Mittelwerten als Schwerpunkt oder Zentrum einer Verteilung und der Abweichungen von diesem Zentrum.
-	Genau dieses Prinzip wird auch bei der Regression angewandt. Wie betrachten die tatsächlichen Beobachtungen und möchten ermitteln wo der Durchschnitt liegt.
-	Im Kontext der Regression wird aber nicht zur eine Verteilung betrachtet sondern zwei oder mehr. Diese werden miteinander kombiniert, um eine bivariate oder multivariate Verteilung zu ermitteln.</p>
-	<p>Stellen wir uns vor wir betrachten die Körpergröße von Vätern und ihren Söhnen, auf diese Untersuchung geht das Prinzip nähmlich zurück.</p>
-	<p>Sei ein Vater 170 cm groß, so ist sein erstgeborener Sohn meist etwas größer als sein Vater. Sagen wir 175 cm. Sein zweitgeborener Sohn ist auch größer als er, jedoch ist dieser häufig etwas kleiner als sein älterer Bruder. Sagen wir 174 cm.
-	Betrachtet wir jetzt viele Väter mit Söhnen. Wird sich dieses Muster in etwa fortsetzten. In manchen Fällen werden der erstgeborene Sohn kleiner sein als der Vater, aber jeweils sein jüngerer Bruder größer als er und kleiner als der Vater.
-	Manchmal gibt es Fälle von Außreißer wo dieses Charakteristikum nicht regelmäßig ist.</p>
-	
+		<p>Regression meint direkt übersetzt zurückgehen. Also zu seinem Ursprung zurückkommen.</p>
+		<p>Stellen wir uns vor wir betrachten die Körpergröße von Eltern und ihren Kindern, auf diese Untersuchung geht das Prinzip nähmlich zurück. Francis Galton untersuchte zuerst Erbsen und ihre Nachkommen und später die Körpergröße von menschlichen Eltern und ihren Kindern.</p>
+		<p>Sei ein Elternteil 170 cm groß, so ist sein erstgeborenes Kind meist etwas größer als seine Eltern. Sagen wir 175 cm. Das zweitgeborene Kind ist auch größer als die Vorfahren, jedoch ist dieses häufig etwas kleiner als sein älteres Geschwisterkind. Sagen wir 174 cm.
+		Betrachtet wir jetzt viele Eltern mit Kindern wird sich dieses Muster in etwa fortsetzten, so lange der Zufall einen Einfluss hat. In manchen Fällen werden die erstgeborenen Nachkommen kleiner sein als die Eltern, aber jeweils sein jüngeres Geschwisterkind größer als es selbst und kleiner als die Eltern.
+		Manchmal gibt es Fälle von Außreißer wo dieses Charakteristikum nicht regelmäßig ist. Vermisst man nun 100 Eltern und ihre Kinder wird es immer eine Abweichung nach oben und nach unten geben, jedoch alle werden um ein Gesamtmittel streuen.</p>
 	
 		<div class="png"><img src="../img/cm.png" alt="Die Körpergröße von Vätern und Söhnen im Vergleich"></div>
 	
-	<p>Dieses Phänomen, dass die jüngeren Söhne kleiner sind als ihre älteren Brüder, aber größer sind als ihre Väter nennt man regression to the mean, also das zurückgehen auf ein ursprüngliches Gesamtmittel.</p>
+		<p>Dieses Phänomen, dass die jüngeren Kinder kleiner sind als ihre älteren Geschwister, aber größer sind als ihre Eltern nennt man regression to the mean, also das zurückgehen auf ein ursprüngliches Gesamtmittel.</p>
 	
 	<h2>Wie kann man dieses Konzept mathematisch nutzen?</h2>
-		
-	<p>In der Regressionsanalyse wird dieses Prinzip genutzt um mittels tatsächlich vorliegender Werte (empirische Daten) Prognosen über zukünftige Ereignisse über die Zeit treffen zu können.
-	Tatsächliche Werte und erwartete Werte werden also kombiniert betrachtet, um die unerklärte Streuung (Residuum) mittels der kleinsten Fehlerquadrate (Ordinary Least Squares) abschätzen zu können.
-	So lässt sich die Genauigkeit der Schätzung bzw. der Schätzfehler für Effekte ermitteln. Dieser ergibt sich,
-	wenn man die Abweichung tatsächlicher Beobachtungen von ihrem Mittelwert, also die erklärte Streuung (Varianz) für die kombiniert betrachten Variablen ermittelt und in Relation setzt.
-	Dabei hat jedoch insgesamt auch die unerklärte Reststreuung (Residuum) einen Einfluss auf die Genauigkeit der Vorhersage des Modells.</p>
-	<p>Die Regression nutzt also tatsächliche Beobachtungen, die auf ein Gesamtmittel regressiert werden, um mittels empirischer Datengrundlage durchschnittlich Werte zu prognostizieren.</p>
-			
+	
+		<p>Wir haben bereits im Kapitel über Streuung und Parameter gelernt, dass in der Statistik immer das Ziel besteht eine Verteilung zu beschreiben.
+		Dies geschieht mittels der tatsächliche Beobachtungen, der Berechnung von Mittelwerten als Schwerpunkt oder Zentrum einer Verteilung und der Abweichungen von diesem Zentrum.
+		Genau dieses Prinzip wird auch bei der Regression angewandt. Wir betrachten die tatsächlichen Beobachtungen und möchten ermitteln wo der Durchschnitt liegt.
+		Im Kontext der Regression wird aber nicht nur eine Verteilung betrachtet, sondern zwei oder mehr. Diese werden miteinander kombiniert, um eine bivariate oder multivariate Verteilung zu ermitteln. Ebenso ist es üblich die Zeit als weitere Dimension mit einzubeziehen, um Vorhersagen machen zu können.</p>	
 	
 	<h2>Was ist eine Regression?</h2>
+		
+		<p>In der Regressionsanalyse werden mittels tatsächlich vorliegender Werte (empirische Daten) Prognosen über zukünftige Ereignisse über die Zeit getroffen oder Einflussstärken zu einem Zeitpunkt vorhergesagt.
+		Tatsächliche Werte und erwartete Werte werden also kombiniert betrachtet, um die unerklärte Streuung (Residuum) mittels der kleinsten Fehlerquadrate (Ordinary Least Squares) abschätzen zu können.
+		So lässt sich die Genauigkeit der Schätzung bzw. der Schätzfehler für Effekte ermitteln. Dieser ergibt sich,
+		wenn man die Abweichung tatsächlicher Beobachtungen von ihrem Mittelwert, also die erklärte Streuung (Varianz) für die kombiniert betrachten Variablen ermittelt und in Relation setzt.
+		Dabei hat jedoch insgesamt auch die unerklärte Reststreuung (Residuum) einen Einfluss auf die Genauigkeit der Vorhersage des Modells.</p>
+		<p>Die Regression nutzt also tatsächliche Beobachtungen, die auf ein Gesamtmittel regressiert werden, um mittels empirischer Datengrundlage durchschnittlich Werte zu prognostizieren.</p>
 		
 		<p>Eine Regression ist ein mathematisch nichts anderes als ein additives Modell (lineare Gleichung) oder ein n-dimensionales Polynom.</p>
 		
@@ -174,19 +173,19 @@
 		  </tr>
 		</table>
 		
-		<p> Lineare Gleichungsmodelle werden in der Statistik sehr häufig genutzt, da sie sehr konfortable Eigenschften besitzen.
-		Eine Seite der Gleichung ist eine abhängige Variable als Funktion und die zweite ein Term,
-		der verschiedene unabhängigen Variablen oder Komponenten mittels Addition (und Subtraktion) kombiniert,
-		so dass sie einen positiven oder negativen Effekt der unabhängigen Variablen auf die abhängige Variable erklären können.</p>
+			<p>Dieses Konzept ist sehr mächtig und wird in jeglichen Forschungsdisziplinen ausgiebig genutzt, um verschiedenste Fragen zu beantworten.</p>
 		
-		<p>Dieses Konzept ist sehr mächtig und wird in jeglichen Forschungsdisziplinen ausgiebig genutzt, um verschiedenste Fragen zu beantworten.</p>
-		
-		<p>Wenn man sich die verschiedenen Methoden genauer anschaut, stellt man fest,
-		dass eigentlich <b>fast ausschließlich Regressionsmodelle in der quantitativen empirischen Forschung</b> genutzt werden,
-		da das Konzept eines linearen Modells immer sehr einfach als Gerüst genutzt werden kann, um es mit verschiedensten Konzepten zu füllen.
-		Dabei geschehen natürlich Anpassungen in den Variablen und Koeffizienten. Mal werden als Terme tatsächliche Zufallsvariablen eingefügt, mal sind es Komponenten, latente Faktoren oder Zufallsvektoren oder andere spezielle Anpassungen.
-		Ebenso stellen die Koeffizienten mal Effektstärken bzw. die Steigung dar, mal Gewichtungen, Eigenwerte, Ladungen oder Cosinus- und Sinus-Schwingung.
-		Man kann zwischen</p>
+			<p> Lineare Gleichungsmodelle werden auch in der Statistik sehr häufig genutzt, da sie sehr konfortable Eigenschften besitzen.
+			Eine Seite der Gleichung ist eine abhängige Variable als Funktion und die zweite ein Term,
+			der verschiedene unabhängigen Variablen oder Komponenten mittels Addition (und Subtraktion) kombiniert,
+			so dass sie einen positiven oder negativen Effekt der unabhängigen Variablen auf die abhängige Variable erklären können.</p>
+			
+			<p>Wenn man sich die verschiedenen Methoden genauer anschaut, stellt man fest,
+			dass eigentlich <b>fast ausschließlich Regressionsmodelle in der quantitativen empirischen Forschung</b> genutzt werden,
+			da das Konzept eines linearen Modells immer sehr einfach als Gerüst genutzt werden kann, um es mit verschiedensten Konzepten zu füllen.
+			Dabei geschehen natürlich Anpassungen in den Variablen und Koeffizienten. Mal werden als Terme tatsächliche Zufallsvariablen eingefügt, mal sind es Komponenten, latente Faktoren oder Zufallsvektoren oder andere spezielle Anpassungen.
+			Ebenso stellen die Koeffizienten mal Effektstärken bzw. die Steigung dar, mal Gewichtungen, Eigenwerte, Ladungen oder Cosinus- und Sinus-Schwingung.
+			Man kann zwischen</p>
 		<ul>
 		<li>einfachen (univariate)<sup>
 		<a id="fn30" title="Fahrmeir et al. 2003. S. 473f." href="../sites/footnotes.html#fn30">[30]</a>
