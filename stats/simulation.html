@@ -549,7 +549,7 @@ wie man eine simple Simulation durchführt und wie man Korrelations- und Regress
 
 <p>Um in R Zufallszahlen erzeugen zu können gibt es verschiedene Algorithmen, die alle gut dokumentiert sind. In diesem Schritt werden zufällige Werte für das Einkommen, Alter und die Kinderanzahl für 350 Beobachtungen aus Normalverteilungen gezogen. Dabei wird immer ein Mittelwert und eine Standardabweichung mitkodiert. Das Geschlecht wird aus einer Gleichverteilung für 350 Beobachtungen gezogen, da es hier binär mit Null und Eins kodiert wird (auch wenn es mehr gender Auspägungen gibt).</p>
 
-<pre class="r"><code>set.seed(54321) # Zufallszahlengenerator
+<pre><code>set.seed(54321) # Zufallszahlengenerator
 
 inc &lt;- round(rnorm(350, mean=2800, sd=850)) #sample aus einer Normalverteilung
 # ein zufälliges Einkommen zwischen 450 und 8500 Euro, runde auf 2 Dezimalstellen
@@ -573,15 +573,15 @@ benötigen wir einen eignen data.frame.</code></pre>
 
 <h2>Korrelation</h2>
 
-<pre class="r"><code># Forschungsfrage: Korreliert das Einkommen mit den möglichen Einflussfaktoren?</code></pre> 
+<pre><code># Forschungsfrage: Korreliert das Einkommen mit den möglichen Einflussfaktoren?</code></pre> 
 
 <p>Um diese Frage zu beantworten wird im nächsten Schritt wird eine Korrelationsanalyse durchgeführt. Einkommen, und Alter ist metrisch, Kinderanzahl ordinal und das Geschlecht binär kodiert.</p>
 
-<pre class="r"><code># Hypothese: Das monatliche Einkommen ist mit höheren Werten des Alters im Schnitt höher.</code></pre>
+<pre><code># Hypothese: Das monatliche Einkommen ist mit höheren Werten des Alters im Schnitt höher.</code>
 
-<pre class="r"><code>cor.test(inc, age, alternative = &quot;greater&quot;, conf.level = 0.95) # Pearson´s r Korrelation</code></pre>
+<code>cor.test(inc, age, alternative = &quot;greater&quot;, conf.level = 0.95) # Pearson´s r Korrelation</code>
 
-<pre><code>## 
+<code>
 ##  Pearson&#39;s product-moment correlation
 ## 
 ## data:  inc and age
@@ -599,12 +599,12 @@ Der P-Wert testet die Signifikanz der Effektgröße. Die Signifikanz gibt an wie
 wenn man unendlich viele Stichproben zöge.
 Im vorliegenden Beispiel ist der Wert auf 94 prozentigen Konfidenzniveau signifikant. Um diese Aussage zu vereinfachen könnte man sagen, dass von von 100 gezognen Stichproben nur in 6 Stichproben der Wert nicht wie vorliegend auffindbar wäre. In 94 Stichproben wäre es der wahre Wert (zur Logik der klassischen Inferenz siehe das Kapitel zu Wahrscheinlichkeit).</p>
 
-<pre class="r"><code># Hypothese: Das Einkommen sinkt mit der Anzahl der Kinder im Schnitt.</code></pre>
+<pre><code># Hypothese: Das Einkommen sinkt mit der Anzahl der Kinder im Schnitt.</code>
 
-<pre class="r"><code>cor.test(inc, child, alternative = &quot;less&quot;, conf.level = 0.95, method = &quot;kendall&quot;)
-# Kendalls´tau-b Korrelation</code></pre>
+<code>cor.test(inc, child, alternative = &quot;less&quot;, conf.level = 0.95, method = &quot;kendall&quot;)
+# Kendalls´tau-b Korrelation</code>
 
-<pre><code>## 
+<code>
 ##  Kendall&#39;s rank correlation tau
 ## 
 ## data:  inc and child
@@ -620,13 +620,13 @@ Er liegt zwischen -1 und 1. Steigt also das Einkommen, steigt die Kinderanzahl u
 Der p-Wert gibt an, dass dieser Effekt bei einem Konfidenzniveau von 95 Prozent und einer Irrtumswahrscheinlichkeit von 5 Prozent insifnifikant ist.
 Der Effekt liegt also nicht so vor, wie angenommen.</p>
 
-<pre class="r"><code># Hypothese: Das Einkommen von weiblich kodierten Beobachtungen ist im Schnitt geringer.</code></pre>
+<pre><code># Hypothese: Das Einkommen von weiblich kodierten Beobachtungen ist im Schnitt geringer.</code>
 
-<pre class="r"><code>library(&quot;lsr&quot;)   # install.packages(&quot;lsr&quot;) # Um Cramer´s V zu berechnen
+<code>library(&quot;lsr&quot;)   # install.packages(&quot;lsr&quot;) # Um Cramer´s V zu berechnen
 benötigen wir das Paket lsr
-cramersV(X) # Effektgröße von Geschlecht auf Einkommen</code></pre>
+cramersV(X) # Effektgröße von Geschlecht auf Einkommen</code>
 
-<pre><code>## [1] -0.01469437</code></pre>
+<code>## [1] -0.01469437</code></pre>
 
 <p>Wir können feststellen, dass die binär geschlechtlichen Kategorien lediglich einen vernachlässigbar kleinen Effekt auf das monatliche Einkommen aufweisen.
 Wenn das Geschlecht weiblich ausgeprägt ist, ist das Einkommen marginal geringer.</p>
@@ -638,13 +638,13 @@ Wenn das Geschlecht weiblich ausgeprägt ist, ist das Einkommen marginal geringe
 
 <h2>Regression</h2>
 
-	<pre class="r"><code># Forschungsfrage: Haben das Geschlecht, die Kinderanzahl und das Alter von Befragten
+	<pre><code># Forschungsfrage: Haben das Geschlecht, die Kinderanzahl und das Alter von Befragten
 	einen Effekt auf das monatliche Einkommen?</code></pre>
 	
 	<p>Berechnen wir ein Regressionsmodell mit den simulierten Daten und lassen uns direkt die gesamte Zusammenfassung des Modells anzeigen.</p>
-	<pre class="r"><code>summary(lm(inc ~ sex + child + age, data)) # Fasse das Regressionsmodell in der Ausgabe zusammen</code></pre>
+	<pre><code>summary(lm(inc ~ sex + child + age, data)) # Fasse das Regressionsmodell in der Ausgabe zusammen</code>
 	
-	<pre><code>## 
+	<code>
 	## Call:
 	## lm(formula = inc ~ sex + child + age, data = data)
 	## 
