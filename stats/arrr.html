@@ -526,37 +526,121 @@ X &lt;- matrix(c(x0,x2,x3,x4), nrow=33, ncol=4)</code></pre>
 <p>Nun haben wir einen Datensatz in unserer Umgebung (Global Environment) und können die uns die Daten anschauen und erste deskriptive Auswertungen vornehmen, um uns mit ihnen vertraut zu machen.</p>
 <pre class="r"><code>data &lt;- read.csv(&quot;../data/data.csv&quot;, sep=&quot;;&quot;, header=T)
 
-data
+attributes(data) # Zeigt alle Attribute (unterliegende Struktur) eines Objektes
 
-View(data)
+$names
+[1] &quot;Preis&quot;     &quot;Kilometer&quot; &quot;Alter&quot;     &quot;Art&quot;      
 
-head(data)
+$class
+[1] &quot;data.frame&quot;
 
-tail(data)
+$row.names
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33
+ 
+data # Gibt das gesamte Objekt &quot;data&quot; aus, etwas umständlich, besonders bei großen Datansätzen mit vielen Zeilen und Spalten
 
-show(data[, &quot;Preis&quot;])
+  Preis Kilometer Alter Art
+1  21800        15     2   1
+2  18800        66     2   2
+3  20500        29     2   3
+4  18900        40     3   2
+5  21200        68     3   3
+6  16800        37     3   3
+7  17500        60     3   1
+8  23800        26     3   1
+9  16800        58     3   2
+10 14500        96     4   3
+11 19900        60     4   2
+12 15900        69     4   3
+13 17900        44     4   1
+14 19500        37     4   1
+15 16000        46     4   1
+16 16500        70     5   2
+17 15800        90     5   1
+18 15900        78     5   3
+19 16900        55     5   2
+20 14800       106     5   3
+21 15500        30     5   2
+22 16500        27     5   1
+23 14900        83     5   2
+24 12400        75     5   3
+25 12800        53     6   1
+26 14900        70     6   1
+27 12900        94     6   1
+28 12800        86     6   3
+29 13500        70     6   3
+30 10950       121     7   1
+31 12900        78     7   3
+32 10800       104     7   2
+33 11600        95     7   3
 
-View(data[, &quot;Kilometer&quot;])
+View(data) # Zeigt das Objekt "data" in einem neuen Tab
 
-class(data)
+head(data, n=5) # Zeigt die ersten 5 Zeilen (numeriert) plus Variablennamen des Objektes "data"
 
-class(data[, &quot;Preis&quot;])
+  Preis Kilometer Alter Art
+1 21800        15     2   1
+2 18800        66     2   2
+3 20500        29     2   3
+4 18900        40     3   2
+5 21200        68     3   3
 
-print(data[, &quot;Preis&quot;])
+tail(data, n=10)# Zeigt die letzten 10 Zeilen (numeriert) plus Variablennamen des Objektes "data"
 
-cat(data[, &quot;Kilometer&quot;])
+   Preis Kilometer Alter Art
+24 12400        75     5   3
+25 12800        53     6   1
+26 14900        70     6   1
+27 12900        94     6   1
+28 12800        86     6   3
+29 13500        70     6   3
+30 10950       121     7   1
+31 12900        78     7   3
+32 10800       104     7   2
+33 11600        95     7   3
 
-table(data[, &quot;Preis&quot;])
+show(data[, &quot;Preis&quot;]) # Zeigt in der Ausgabe die Varable mit dem Namen &quot;Preis&quot; des Objektes &quot;data&quot;
 
-attributes(data)
+[1] 21800 18800 20500 18900 21200 16800 17500 23800 16800 14500 19900 15900 17900 19500 16000 16500 15800 15900 16900 14800 15500 16500 14900
+[24] 12400 12800 14900 12900 12800 13500 10950 12900 10800 11600
 
-names(data)
+View(data[, &quot;Kilometer&quot;]) # Zeigt die Varable mit dem Namen &quot;Kilometer&quot; des Objektes &quot;data&quot; in einem neuen Tab
 
-names(cars)
+class(data) # Gibt an welche Klasse von Objekten das Objekt &quot;data&quot; zugehörig ist
 
-pairs(cars)
+[1] &quot;data.frame&quot;
 
-pairs(data)</code></pre>
+class(data[, &quot;Preis&quot;]) # Gibt an welche Klasse von Varablentypen &quot;Preis&quot; zugehörig ist
+
+[1] &quot;integer&quot;
+
+print(data[, &quot;Preis&quot;]) # Zeigt in der Ausgabe die Varable mit dem Namen &quot;Preis&quot; des Objektes &quot;data&quot;, ähnlich zu show
+
+[1] 21800 18800 20500 18900 21200 16800 17500 23800 16800 14500 19900 15900 17900 19500 16000 16500 15800 15900 16900 14800 15500 16500 14900
+[24] 12400 12800 14900 12900 12800 13500 10950 12900 10800 11600
+
+cat(data[, &quot;Alter&quot;]) # Zeigt alle Kategorien für jeden Wert im Datensatz für die Variable, ist etwas umständlich, da man meist nicht alle 
+
+2 2 2 3 3 3 3 3 3 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 6 6 6 6 6 7 7 7 7
+
+table(data[, &quot;Preis&quot;]) # Gibt die absoluten Häufigkeiten als Tabelle in der Ausgabe aus. Meist etwas unübersichtlich,
+hier empfiehlt sich die Kombination mit View() oder das Paket &quot;tibble&quot;, das die Möglichkeit die Daten ordentlicher darzustellen
+
+10800 10950 11600 12400 12800 12900 13500 14500 14800 14900 15500 15800 15900 16000 16500 16800 16900 17500 17900 18800 18900 19500 19900 20500 
+    1     1     1     1     2     2     1     1     1     2     1     1     2     1     2     2     1     1     1     1     1     1     1     1 
+21200 21800 23800 
+    1     1     1 
+
+names(data) # Gibt die Variablennamen des Objektes aus
+
+[1] &quot;Preis&quot;     &quot;Kilometer&quot; &quot;Alter&quot;     &quot;Art&quot;
+
+pairs(data)# Erzeugt eine simple Korrelationsmatrix aller Variablenkombinationen des Objektes,
+um Zusammenhänge schnell übersichtlich darzustellen. Dieser Plot muss allerdings nicht immer sinnvoll sein,
+wie die Ausgabe zeigt eignet sich dies strenggenommen nur für quantitative Variablen</code></pre>
+
+<div class="png"><img src="../img/pairs.png" alt="Korrelationsmatrix des Objektes &quot;data&quot; in R"></div>
+
 </div>
 </div>
 </div>
