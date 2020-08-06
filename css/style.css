@@ -63,7 +63,7 @@ body {
 	-webkit-overflow-scrolling: touch !important; /* Let it scroll lazy */
 }
 
-.r code{
+pre {
 	margin-left: auto !important;
 	margin-right: auto !important;
 	background-color: #f5f5f5 !important;
