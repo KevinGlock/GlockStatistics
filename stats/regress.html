@@ -76,6 +76,20 @@
 	
 	<h1>Was bedeutet Regression (to the mean)?</h1>
 	
+	<p>Regression meint direkt übersetzt zurückgehen. Also zu seinem Ursprung zurückkommen.
+	Wir haben bereits im Kapitel über Streuung und Parameter gelernt, dass in der Statistik immer das Ziel besteht eine Verteilung zu beschreiben.
+	Dies geschieht mittels der tatsächliche Beobachtungen, der Berechnung von Mittelwerten als Schwerpunkt oder Zentrum einer Verteilung und der Abweichungen von diesem Zentrum.
+	Genau dieses Prinzip wird auch bei der Regression angewandt. Wie betrachten die tatsächlichen Beobachtungen und möchten ermitteln wo der Durchschnitt liegt.
+	Im Kontext der Regression wird aber nicht zur eine Verteilung betrachtet sondern zwei oder mehr. Diese werden miteinander kombiniert, um eine bivariate oder multivariate Verteilung zu ermitteln.</p>
+	<p>Stellen wir uns vor wir betrachten die Körpergröße von Vätern und ihren Söhnen, auf diese Untersuchung geht das Prinzip nähmlich zurück.</p>
+	<p>Sei ein Vater 170 cm groß, so ist sein erstgeborener Sohn meist etwas größer als sein Vater. Sagen wir 175 cm. Sein zweitgeborener Sohn ist auch größer als er, jedoch ist dieser häufig etwas kleiner als sein älterer Bruder. Sagen wir 174 cm.
+	Betrachtet wir jetzt viele Väter mit Söhnen. Wird sich dieses Muster in etwa fortsetzten. In manchen Fällen werden der erstgeborene Sohn kleiner sein als der Vater, aber jeweils sein jüngerer Bruder größer als er und kleiner als der Vater.
+	Manchmal gibt es Fälle von Außreißer wo dieses Charakteristikum nicht regelmäßig ist.</p>
+	
+	
+		<div class="png"><img src="../img/cm.png" alt="Die Körpergröße von Vätern und Söhnen im Vergleich"></div>
+	
+	
 	<h4>26. Juni 2020</h4>
 			
 	<h2>Wie kann man dieses Konzept mathematisch nutzen?</h2>
@@ -161,7 +175,8 @@
 		
 		<p>Wenn man sich die verschiedenen Methoden genauer anschaut, stellt man fest,
 		dass eigentlich <b>fast ausschließlich Regressionsmodelle in der quantitativen empirischen Forschung</b> genutzt werden,
-		da das Konzept eines linearen Modells immer sehr einfach als Gerüst genutzt werden kann, um es mit verschiedensten Konzepten zu füllen Dabei geschehen natürlich Anpassungen der einfachsten Form.
+		da das Konzept eines linearen Modells immer sehr einfach als Gerüst genutzt werden kann, um es mit verschiedensten Konzepten zu füllen.
+		Dabei geschehen natürlich Anpassungen in den Koeffizienten und den Effektstärken.
 		Man kann zwischen</p>
 		<ul>
 		<li>einfachen (univariate)<sup>
@@ -170,7 +185,7 @@
 		<li>mehrdimensionalen (multivariate)<sup>
 		<a id="fn31" title="Field. 2014. S.294f." href="../sites/footnotes.html#fn31">[31]</a>
 		</sup>,</li>
-		<li>Effekterklärungen (OLS-, Logit-, Probitmodellieren)<sup>
+		<li>Effekterklärungen (OLS-, Logit-, Probitmodellieren und weiteren Spezialisierungen)<sup>
 		<a id="fn32" title="Liao. 1994." href="../sites/footnotes.html#fn32">[32]</a>
 		</sup>,</li>
 		<li>Gruppenvarianzeffekt- (ANOVA, MANOVA)<sup>
@@ -187,11 +202,12 @@
 		</sup> unterscheiden.</li>
 		<li>Aber auch Vektorregression<sup>
 		<a id="fn37" title="Stock/Watson. 2007. S. 638f." href="../sites/footnotes.html#fn37">[37]</a>
-		</sup>, im Kontext von Zeitreihenanalysen,</li>
+		</sup> (und weitere Spezialformen wie autoregressive Modellle, Taylorregressionen und Regressionen mit Fourierbasis), im Kontext von Zeitreihenanalysen,</li>
 		<li>oder Neuronale Netze<sup>
 		<a id="fn38" title="Grus. 2016. Kap. 18." href="../sites/footnotes.html#fn38">[38]</a>
 		</sup> im Kontext von Machine Learning basieren auf einem additiven Modell als Gerüst.</li>
 		</ul>
+		
 	<h2>Was ist also eine OLS-Regression?</h2>
 	
 		<p>Die OLS-Regression (Ordinary Least Squares) kombiniert das Prinzip der Regression mit dem Prinzip der kleinsten Fehlerquadrate.
