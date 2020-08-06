@@ -273,7 +273,7 @@ wie man eine simple Simulation durchführt und wie man Korrelations- und Regress
 
 <pre class="r"><code>set.seed(54321) # Zufallszahlengenerator
 
-inc &lt;- round(rnorm(350, mean=2800, sd=850)) #sample aus einer Normalverteilung
+inc &lt;- round(rnorm(350, mean=2800, sd=850)) # sample aus einer Normalverteilung
 # ein zufälliges Einkommen zwischen 450 und 8500 Euro, runde auf 2 Dezimalstellen
 
 sex &lt;- round(runif(350, min=0, max=1)) # sample aus einer Gleichverteilung
@@ -285,10 +285,10 @@ child &lt;- round(rnorm(350, mean=0.8, sd=0.47)) # sample aus einer Normalvertei
 age &lt;- round(rnorm(350, mean = 47.7, sd=12.4)) # sample aus einer Normalverteilung
 # das zufällige Alter, runde auf integre Werte
 
-data &lt;- data.frame(inc, sex, child, age) #Erzeuge einen data.frame mit allen Variablen
+data &lt;- data.frame(inc, sex, child, age) # Erzeuge einen data.frame mit allen Variablen
 
 X &lt;- data.frame(sex, inc) # Um Cramer´s V Kontingenzkoeffizent zu berechnen
-benötigen wir einen eignen data.frame.</code></pre>
+# benötigen wir einen eignen data.frame.</code></pre>
 </div>
 
 <div id="Korrelation" class="section level2">
@@ -343,7 +343,8 @@ Der Effekt liegt also nicht so vor, wie angenommen.</p>
 <pre class="r"><code># Hypothese: Das Einkommen von weiblich kodierten Beobachtungen ist im Schnitt geringer.
 
 library(&quot;lsr&quot;)   # install.packages(&quot;lsr&quot;) # Um Cramer´s V zu berechnen
-benötigen wir das Paket lsr
+# benötigen wir das Paket lsr
+
 cramersV(X) # Effektgröße von Geschlecht auf Einkommen
 
 ## [1] -0.01469437</code></pre>

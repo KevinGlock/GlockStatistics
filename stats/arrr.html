@@ -283,6 +283,8 @@ library(&quot;foreign&quot;)
 
 library(&quot;openxlsx&quot;)
 
+</code></pre>
+<pre class="r"><code> 
 
 # ?read.xlsx
 
@@ -339,9 +341,11 @@ $class
 
 $row.names
  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33
- 
-data # Gibt das gesamte Objekt &quot;data&quot; aus, etwas umständlich,
-besonders bei großen Datansätzen mit vielen Zeilen und Spalten
+</code></pre>
+<pre class="r"><code> 
+data
+# Gibt das gesamte Objekt &quot;data&quot; aus, etwas umständlich,
+# besonders bei großen Datansätzen mit vielen Zeilen und Spalten
 
   Preis Kilometer Alter Art
 1  21800        15     2   1
@@ -380,6 +384,8 @@ besonders bei großen Datansätzen mit vielen Zeilen und Spalten
 
 View(data) # Zeigt das Objekt "data" in einem neuen Tab
 
+</code></pre>
+<pre class="r"><code> 
 head(data, n=5) # Zeigt die ersten 5 Zeilen (numeriert) plus Variablennamen des Objektes "data"
 
   Preis Kilometer Alter Art
@@ -403,16 +409,22 @@ tail(data, n=10)# Zeigt die letzten 10 Zeilen (numeriert) plus Variablennamen de
 32 10800       104     7   2
 33 11600        95     7   3
 
-show(data[, &quot;Preis&quot;]) # Zeigt in der Ausgabe die Varable mit dem Namen &quot;Preis&quot;
-des Objektes &quot;data&quot;
+</code></pre>
+<pre class="r"><code> 
+show(data[, &quot;Preis&quot;])
+# Zeigt in der Ausgabe die Varable mit dem Namen &quot;Preis&quot;
+# des Objektes &quot;data&quot;
 
 [1] 21800 18800 20500 18900 21200 16800 17500 23800 16800 14500 19900 15900 17900 19500 16000 16500
 [17] 15800 15900 16900 14800 15500 16500 14900 12400 12800 14900 12900 12800 13500 10950 12900 10800
 [33] 11600
 
-View(data[, &quot;Kilometer&quot;]) # Zeigt die Varable mit dem Namen &quot;Kilometer&quot;
-des Objektes &quot;data&quot; in einem neuen Tab
+View(data[, &quot;Kilometer&quot;])
+# Zeigt die Varable mit dem Namen &quot;Kilometer&quot;
+# des Objektes &quot;data&quot; in einem neuen Tab
 
+</code></pre>
+<pre class="r"><code> 
 class(data) # Gibt an welche Klasse von Objekten das Objekt &quot;data&quot; zugehörig ist
 
 [1] &quot;data.frame&quot;
@@ -421,15 +433,19 @@ class(data[, &quot;Preis&quot;]) # Gibt an welche Klasse von Varablentypen &quot
 
 [1] &quot;integer&quot;
 
-print(data[, &quot;Preis&quot;]) # Zeigt in der Ausgabe die Varable mit dem Namen &quot;Preis&quot;
-des Objektes &quot;data&quot;, ähnlich zu show
+</code></pre>
+<pre class="r"><code> 
+print(data[, &quot;Preis&quot;])
+# Zeigt in der Ausgabe die Varable mit dem Namen &quot;Preis&quot;
+# des Objektes &quot;data&quot;, ähnlich zu show
 
 [1] 21800 18800 20500 18900 21200 16800 17500 23800 16800 14500 19900 15900 17900 19500 16000 16500
 [17] 15800 15900 16900 14800 15500 16500 14900 12400 12800 14900 12900 12800 13500 10950 12900 10800
 [33] 11600
 
-cat(data[, &quot;Alter&quot;]) # Zeigt alle Kategorien für jeden Wert im Datensatz für die Variable,
-ist etwas umständlich, da man meist nicht alle Variablen ausgeben möchte
+cat(data[, &quot;Alter&quot;])
+# Zeigt alle Kategorien für jeden Wert im Datensatz für die Variable,
+# ist etwas umständlich, da man meist nicht alle Variablen ausgeben möchte
 
 2 2 2 3 3 3 3 3 3 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 6 6 6 6 6 7 7 7 7
 
@@ -440,10 +456,12 @@ unique(data[, &quot;Alter&quot;]) # Gibt nur die einzeln unterschiedlichen Werte
 range(data[, &quot;Alter&quot;]) # Gibt das Minimum und das Maximum aus
 
 [1] 2 7
-
-table(data[, &quot;Preis&quot;]) # Gibt die absoluten Häufigkeiten als Tabelle in der Ausgabe aus.
-Meist etwas unübersichtlich, hier empfiehlt sich die Kombination mit View() oder
-das Paket &quot;tibble&quot;, das die Möglichkeit die Daten ordentlicher darzustellen
+</code></pre>
+<pre class="r"><code> 
+table(data[, &quot;Preis&quot;])
+# Gibt die absoluten Häufigkeiten als Tabelle in der Ausgabe aus.
+# Meist etwas unübersichtlich, hier empfiehlt sich die Kombination mit View() oder
+# das Paket &quot;tibble&quot;, das die Möglichkeit die Daten ordentlicher darzustellen
 
 10800 10950 11600 12400 12800 12900 13500 14500 14800 14900 15500 15800 15900 16000
     1     1     1     1     2     2     1     1     1     2     1     1     2     1
@@ -451,14 +469,15 @@ das Paket &quot;tibble&quot;, das die Möglichkeit die Daten ordentlicher darzus
     2     2     1     1     1     1     1     1     1     1     1     1     1
  
  
-
 names(data) # Gibt die Variablennamen des Objektes aus
 
 [1] &quot;Preis&quot;     &quot;Kilometer&quot; &quot;Alter&quot;     &quot;Art&quot;
 
-pairs(data)# Erzeugt eine simple Korrelationsmatrix aller Variablenkombinationen des Objektes,
-um Zusammenhänge schnell übersichtlich darzustellen. Dieser Plot muss allerdings nicht immer sinnvoll sein,
-wie die Ausgabe zeigt eignet sich dies strenggenommen nur für quantitative Variablen</code></pre>
+
+pairs(data)
+# Erzeugt eine simple Korrelationsmatrix aller Variablenkombinationen des Objektes,
+# um Zusammenhänge schnell übersichtlich darzustellen. Dieser Plot muss allerdings nicht immer sinnvoll sein,
+# wie die Ausgabe zeigt eignet sich dies strenggenommen nur für quantitative Variablen</code></pre>
 
 <div class="png"><img src="../img/pairs.png" alt="Korrelationsmatrix des Objektes &quot;data&quot; in R"></div>
 
