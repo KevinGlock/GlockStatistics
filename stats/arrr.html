@@ -537,7 +537,8 @@ $class
 $row.names
  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33
  
-data # Gibt das gesamte Objekt &quot;data&quot; aus, etwas umständlich, besonders bei großen Datansätzen mit vielen Zeilen und Spalten
+data # Gibt das gesamte Objekt &quot;data&quot; aus, etwas umständlich,
+besonders bei großen Datansätzen mit vielen Zeilen und Spalten
 
   Preis Kilometer Alter Art
 1  21800        15     2   1
@@ -599,12 +600,15 @@ tail(data, n=10)# Zeigt die letzten 10 Zeilen (numeriert) plus Variablennamen de
 32 10800       104     7   2
 33 11600        95     7   3
 
-show(data[, &quot;Preis&quot;]) # Zeigt in der Ausgabe die Varable mit dem Namen &quot;Preis&quot; des Objektes &quot;data&quot;
+show(data[, &quot;Preis&quot;]) # Zeigt in der Ausgabe die Varable mit dem Namen &quot;Preis&quot;
+des Objektes &quot;data&quot;
 
-[1] 21800 18800 20500 18900 21200 16800 17500 23800 16800 14500 19900 15900 17900 19500 16000 16500 15800 15900 16900 14800 15500 16500 14900
-[24] 12400 12800 14900 12900 12800 13500 10950 12900 10800 11600
+[1] 21800 18800 20500 18900 21200 16800 17500 23800 16800 14500 19900 15900 17900 19500 16000 16500
+[17] 15800 15900 16900 14800 15500 16500 14900 12400 12800 14900 12900 12800 13500 10950 12900 10800
+[33] 11600
 
-View(data[, &quot;Kilometer&quot;]) # Zeigt die Varable mit dem Namen &quot;Kilometer&quot; des Objektes &quot;data&quot; in einem neuen Tab
+View(data[, &quot;Kilometer&quot;]) # Zeigt die Varable mit dem Namen &quot;Kilometer&quot;
+des Objektes &quot;data&quot; in einem neuen Tab
 
 class(data) # Gibt an welche Klasse von Objekten das Objekt &quot;data&quot; zugehörig ist
 
@@ -614,14 +618,25 @@ class(data[, &quot;Preis&quot;]) # Gibt an welche Klasse von Varablentypen &quot
 
 [1] &quot;integer&quot;
 
-print(data[, &quot;Preis&quot;]) # Zeigt in der Ausgabe die Varable mit dem Namen &quot;Preis&quot; des Objektes &quot;data&quot;, ähnlich zu show
+print(data[, &quot;Preis&quot;]) # Zeigt in der Ausgabe die Varable mit dem Namen &quot;Preis&quot;
+des Objektes &quot;data&quot;, ähnlich zu show
 
-[1] 21800 18800 20500 18900 21200 16800 17500 23800 16800 14500 19900 15900 17900 19500 16000 16500 15800 15900 16900 14800 15500 16500 14900
-[24] 12400 12800 14900 12900 12800 13500 10950 12900 10800 11600
+[1] 21800 18800 20500 18900 21200 16800 17500 23800 16800 14500 19900 15900 17900 19500 16000 16500
+[17] 15800 15900 16900 14800 15500 16500 14900 12400 12800 14900 12900 12800 13500 10950 12900 10800
+[33] 11600
 
-cat(data[, &quot;Alter&quot;]) # Zeigt alle Kategorien für jeden Wert im Datensatz für die Variable, ist etwas umständlich, da man meist nicht alle 
+cat(data[, &quot;Alter&quot;]) # Zeigt alle Kategorien für jeden Wert im Datensatz für die Variable,
+ist etwas umständlich, da man meist nicht alle Variablen ausgeben möchte
 
 2 2 2 3 3 3 3 3 3 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 6 6 6 6 6 7 7 7 7
+
+unique(data[, &quot;Alter&quot;]) # Gibt nur die einzeln unterschiedlichen Werte aus
+
+[1] 2 3 4 5 6 7
+
+range(data[, &quot;Alter&quot;]) # Gibt das Minimum und das Maximum aus
+
+[1] 2 7
 
 table(data[, &quot;Preis&quot;]) # Gibt die absoluten Häufigkeiten als Tabelle in der Ausgabe aus. Meist etwas unübersichtlich,
 hier empfiehlt sich die Kombination mit View() oder das Paket &quot;tibble&quot;, das die Möglichkeit die Daten ordentlicher darzustellen
