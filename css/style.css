@@ -60,7 +60,7 @@ body {
 	overflow-x: auto;
 	scrollbar-width: thin;
 	scrollbar-color: #ddd;
-	-webkit-overflow-scrolling: touch; /* Let it scroll lazy */
+	-webkit-overflow-scrolling: touch !important; /* Let it scroll lazy */
 }
 
 .math {
