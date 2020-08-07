@@ -164,6 +164,11 @@ main {
 	font-size: 16px;
 	line-height: 1.5;
 	text-align: justify;
+	-moz-hyphens: auto;
+    -o-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 ul {
