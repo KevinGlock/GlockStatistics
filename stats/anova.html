@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<!--Discription-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GlockStatistics. Statistical Consulting and Tutoring</title>
+	<meta name="description" content="Website of GlockStatistics. Statistical Consulting and Tutoring">
+	<meta name="author" content="Kevin Glock">
+	<meta name="copyright" content="© Kevin Glock 2020">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<!--End Discription-->
+<body>
+	<button onclick="topFunction()" id="myBtn" title="GoUp!">^</button> 
+	
+<!--Add Icons for light and dark modes-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--header>
+</header-->
+<!--Navbar-->
+<div class="navbar">
+  <a class="active" href="../index.html">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn">Person
+		<i class="fa fa-caret-down"></i>
+		</button>
+    <div class="dropdown-content">
+  <a href="../sites/person.html">About</a>
+  <a href="../sites/edu.html">Education</a>
+  <a href="../sites/work.html">Work</a>
+    </div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Services
+		<i class="fa fa-caret-down"></i>
+		</button>
+    <div class="dropdown-content">
+  <a href="../sites/tutoring.html">Tutoring</a>
+  <a href="../sites/analyses.html">Analyses</a>
+  <a href="../sites/consulting.html">Consulting</a>
+    </div>
+	</div>
+  <a href="../sites/examples.html">Examples</a>
+<!--End website links-->
+<!--Light Mode Select-->
+<div class="mode" style="margin-right: 50px;">
+	<div class="light" style="float: right; position:relative; display:inline;">
+		<a class="light-link" href="parameters.html"><i class="fa fa-circle-o"></i></a> <!--light-->
+	</div>
+		<a style="float: right; position: relative; display: inline;">|</a>
+			<div class="dark" style="float: right; position: relative;">
+				<a class="dark-link" href="../dark_stats/parameters.html"><i class="fa fa-circle"></i></a> <!--dark-->
+			</div>
+</div>
+<!--End Light Mode Select-->
+<!--Language Select-->
+<div class="languageSelect col-xs-3 col-sm-7 col-md-8" style="margin-right: 20px;">
+	<div class="tx-srlanguagemenu tx-srlanguagemenu-links">
+		<div class="CUR" style="float: right; position: relative; display: inline;">
+			<a class="linked-language" href="parameters.html">DE</a>
+		</div>
+		<a style="float: right; position: inherit; display: inline;">|</a>
+			<div class="NO SPC" style="float: right;">
+				<a class="linked-language" href="../stats_en/parameters.html">EN</a>
+			</div>
+	</div>
+</div>
+<!--End Language Select-->
+</div>
+<!--End Navbar-->
+<main style="margin-top: 120px;">		
+	<div class="content">
+
+	<h1>Was ist eine ANOVA?</h1>
+
+	<h4>DATUM</h4>
+
+		<p>		</p>
+		
+	<h2>Einwanderungsdynamik und Wahrnehmung von Abstammung und Nationalismus im europäischen Vergleich</h2>
+	<h3>Eine statistische Analyse des Zusammenhangs von Fremdenfeindlichkeit, 
+	politischer Einstellung und ethnischem Nationalismus mit der Ablehnung von Einwanderung im europäischen Süden, 
+	Norden und Osten im Jahr 2017/18 auf der Grundlage der European Values Study</h3>
+	<h3>Anwendungsbeispiel (Auszüge aus einer meiner Seminararbeiten, Note: 1,3)</h3>
+		
+	
+		<p>Die folgende Analyse befasst sich mit Unterschieden in der Wahrnehmung von Einwanderung als Bedrohung und ihren potenziellen Erklärungsfaktoren in europäischen Regionen. 
+		In einem ersten Schritt wurden alle relevanten Indikatoren für die theoretischen Konstrukte korreliert,	um festzustellen, ob die Messungen für eine Vorhersage geeignet sind. 
+		Darüber hinaus wurde eine Reliabilitätsanalyse mit Crohnbachs Alpha durchgeführt (Hier nicht abgebildet).
+		Die Grundbedingungen normalverteilter Variablen sind für die meisten unabhängigen Variablen, aber insbesondere für die abhängige Variable gegeben.
+		In einem zweiten Schritt wurde eine ANOVA durchgeführt, um zu überprüfen, ob die Wahrnehmung der Einwanderung als Bedrohung zwischen drei 
+		der aggregierten europäischen Regionen (Süden, Mitte, Osten) signifikant variiert. Die Region Nordeuropa wurde ausgeschlossen, da es nur ein Land (Island) im pre-release Datensatz 2017/18 enthielt. 
+		</p>
+		
+		<h2>Hypothesen</h2>
+		<ul>
+		<li>H1: Mittlwertunterschiede in der Wahrnehmung von Einwanderung als Bedrohung variieren signifikant zwischen Süd-, Mittel- und Osteuropa im Jahr 2017/18.</li>
+		<li>H2: Die Konzepte des europäischen ethnisch-religiösen Nationalismus, der Fremdenfeindlichkeit und des Vertrauens sind mäßig korreliert (korr. ≥ .2) mit der Wahrnehmung von Einwanderung als Bedrohung für die Gesellschaft.</li>
+		<li>H3: Faktoren des europäischen ethnisch-religiösen Nationalismus, des Misstrauens gegenüber Ausländern und der Fremdenfeindlichkeit korrelieren signifikant auf einem moderaten Niveau (korr. ≥ .2) mit der Wahrnehmung von Einwanderung als Bedrohung für die Gesellschaft.<li>
+		</ul>
+		
+		<h1>Unterschiede zwischen Regionen</h1>
+		
+		<p>Als erster Schritt zur Aufdeckung der Unterschiede zwischen den Regionen wurde eine Varianzanalyse modelliert. 
+		Der F-Test ergab hochsignifikante jedoch sehr geringe Unterschiede der Mittelwerte zwischen den süd-, mittel- und osteuropäischen Regionen (F=306.628, df=2; sig=.000). 
+		Da der Süden nur zwei Länder als Beobachtungen enthält, wurde auch der robuste Brown-Forsythe-Test durchgeführt. 
+		Dieser bestätigt das erste Ergebnis hochsignifikanter geringer Mittelwertdifferenzen zwischen den drei europäischen Regionen (F=292.929, df1=2 df2=8858.351; sig=.000) trotz unterschiedlicher Varianzen aufgrund der Gruppengrößen. 
+		Aufgrund der ungeleichen Gruppenvarianzen und um zu überprüfen, welche Gruppen einen signifikanten Einfluss auf das Gesamtmodell haben wurde der Games-Howell-post-hoc-Test angewandt, der die ersten beiden Testergebnisse mit hochsignifikanten geringen Mittelwertunterschieden 
+		zwischen allen der drei europäischen Regionen bestätigte. Die südlichen Staaten weisen mit 5,5 den geringsten mittleren Wert auf und weichen nach unten vom Gesamtmittel ab. 
+		Mitteleuropäische Staaten weisen einen mitteleren Wert von 6,07 auf (ebenfalls geringer als das Gesamtmittel) und osteuropäische Staaten den höchsten Wert mit 6,67 (höher als das Gesamtmittel).
+		Alle drei Regionen weisen jedoch nur eine geringe Abweichung vom Gesamtmittel 6,33 auf der Bewertungsskala auf und besitzen jeweils eine durchschnittliche Abweichung von 2,35 Skaleneinheiten.</p>
+		
+		<p>TABELLE</p>
+		
+		<p>Die Unterschiede zwischen den europäischen Regionen hinsichtlich der Wahrnehmung von Einwanderung als Bedrohung sind demnach nicht bedeutend groß. 
+		In allen drei Regionen sehen Befragte Einwanderung nur mäßig als Bedrohung an, wobei die Streuung innerhalb der Gruppen erheblich groß um etwa 2 Skaleneinheiten schwankt.
+		Schlussfolgernd lässt sich festhalten, dass Befragte in allen drei evaluierten Europäischen Regionen 2017 Einwanderer tendenziell mäßig als Belastung für den Wohlfahrtsstaat wahrnahmen. 
+		Ebenso wurde mäßig davon ausgegangen, dass Einwanderer die Kriminalitätsrate im Land erhöhen würden sowie den Bürgern die Arbeitsplätze wegnähmen. 
+		Obwohl die mittleren Differenzen zwischen den europäischen Regionen signifikant vorhergesagt werden können und Unterschiede bestehen, 
+		sind diese nur wenig vorhanden und werden tendenziell überbewertet, geht man davon aus, es bestehen Unterschiede zwischen den Regionen.</p>
+		
+		<p>GRAFIK</p>
+		
+		<p>Untersucht man die Korrelationen zwischen den verwendeten erklärenden Variablen und der abhängigen Variable (Tabelle 1), 
+		so zeigt sich, dass Faktoren des ethnisch-religiösen Nationalismus und des Vertrauens in Ausländer sowie Fremdenfeindlichkeit und politische Präferenz am stärksten 
+		mit der Wahrnehmung von Einwanderung als Bedrohung signifikant korrelieren. Allerdings ist die Korrelation in allen Fällen schwach bis mäßig.</p>
+		
+		<p>KORRELATIONEN</p>
+		
+		<h1>Beantwortung der Hypothesen zur regionalen Variation der Wahrnehmung von Einwanderung als Bedrohung</h1>
+		
+		<p>Was die ersten beiden Hypothesen betrifft, so kann die Annahme akzeptiert werden, dass die Wahrnehmung der Einwanderung als Bedrohung unterschiedlich ist, 
+		wobei die negative Wahrnehmung von Süd- nach Mittel- und von Mittel- nach Osteuropa zunimmt. 
+		Die Annahme mittlerer Unterschiede zwischen den europäischen Regionen hinsichtlich der negativen Wahrnehmung kann jedoch nur teilweise bestätigt werden, 
+		da nur geringe Unterschiede bestanden. Korrelationstests ergaben, dass die ersten beiden Variablen des ersten Blocks 
+		auf einem signifikant moderaten Niveau mit der Wahrnehmung von Einwanderung als Bedrohung verknüpft sind. In Tabelle eins kann man sehen, 
+		dass sowohl ethnisch-religiöser Nationalismus als auch Misstrauen gegenüber Ausländern signifikante negative Auswirkungen auf die Wahrnehmung als Bedrohung haben. 
+		Wenn die Befragten Einstellungen von ethnisch-religiösem Nationalismus und/oder Misstrauen gegenüber Ausländern angaben, 
+		dann erhöht dies die ´Angabe einer negativen Wahrnehmung von Einwanderung. Fremdenfeindlichkeit hat jedoch nur schwache negative Auswirkungen auf die Einwanderungswahrnehmung. 
+		Wenn europäische Befragte fremdenfeindliche Einstellungen gegenüber Einwanderern, Muslimen, Juden oder Menschen anderer ethnischer Herkunft angeben, 
+		nehmen sie Einwanderung häufiger als Bedrohung für die gesellschaftlichen Verhältnisse in Bezug auf Wohlfahrt, Kriminalitätsrate und Arbeitsmarkt wahr. 
+		Der Chi²-Test nach Pearson wurde angewandt, um die stochastische Unabhängigkeit zu testen, um festzustellen, wie gut das Modell und die Beobachtung wirklich passen. 
+		Der Chi²-Test ist hochsignifikant (.000), so dass die Nullhypothesen aller drei Fälle, dass Einwanderung als Bedrohungswahrnehmung und 
+		ethnisch-religiöse Einstellungsfaktoren des Nationalismus in Europa stochastisch unabhängig sind, zurückgewiesen werden können, 
+		und als wichtige Erklärungsfaktoren angesehen werden.</p>
+		
+		<p><b>Fraglich bleibt:</b>Wie führe ich eine ANOVA selbstständig durch? Worauf muss ich genau achten? Wann muss ich welchen Post hoc Test durchführen und wie interpretiere ich die Ergebnisse? Wann und wofür führe ich eine Analyse mit Crohnbachs Alpha durch?</p>
+		
+		<p>Gemeinsam können wir diese Fragen und weitere gerne beantworten. Schreibe mir einfach eine Mail.</p>
+		
+		</div>
+
+	</main>
+	
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+
+</body>
+
+</html>
