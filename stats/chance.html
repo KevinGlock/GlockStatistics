@@ -194,7 +194,7 @@
 	</mfrac>
 	</math> ein. Bei einer Münze haben ebenso beide Seiten die gleiche Wahrscheinlichkeit des Eintritts mit 0,5 oder 50 Prozent, also ein Chancenverhältnis von 50:50.</p>
 	
-	<p>Nach Kolmogorow bedeutet das axiomatisch, dass wir Wahrscheinlichkeit als eine Funktion reellen Zahlen zuordnen können: P: P(&Omega;) &rarr; &#8477; und Wahrscheinlichkeiten einzelner Ereignisse summieren können, wobei die Wahrscheinlichkeitssumme immer 1 also 100% ergibt.</p>
+	<p>Nach Kolmogorow bedeutet das axiomatisch, dass wir Wahrscheinlichkeit als eine Funktion reellen Zahlen zuordnen können: P: P(&Omega;) &rarr; &#8477; und Wahrscheinlichkeiten einzelner Ereignisse summieren können, wobei die Wahrscheinlichkeitssumme immer 1 also 100% ergibt. Dies gilt für diskrete Wahrscheinlichkeiten ebenso wie für Wahrscheinlichkeitsräume mit abzählbaren oder überabzählbaren unendlichen Teilmengen. Dabei gibt es keine negativen Wahrscheinlichkeiten für einzelne Teilmengen A.</p>
 	
 	<table class="tab">
 		  <tr>
@@ -257,8 +257,10 @@
 		<mn>i</mn>
 		</msub>		
 		<mn>)</mn>
-		<mo>=</mo>
+		<mo>+</mo>
+		<mn>...</mn>
 		</mstyle>
+		&wedgeq;
 		</math>
 		</th>
 		  </tr>
@@ -267,6 +269,18 @@
 			<th>
 			<math>
 			<mstyle scriptlevel="-1">
+		<munderover>
+		<mo>&sum;</mo>
+		<mn>i=1</mn>
+		<mn>n</mn>
+		</munderover>
+		</mstyle>
+		<msub>
+		<mi>P(A</mi>
+		<mn>i</mn>
+		</msub> 
+		<mn>)</mn>
+		<mo>=</mo>		
 		<mn>n</mn>
 		<mo>*</mo>
 		<msub>
@@ -274,7 +288,6 @@
 		<mn>i</mn>
 		</msub> 
 		<mn>)</mn>
-		&wedgeq;
 		</mstyle>
 		</math>
 		</th>
@@ -288,6 +301,19 @@
 		<mn>)</mn>
 		<mo>=</mo>
 		<mn>1</mn>
+		</mstyle>
+	</math>
+	</th>
+		  </tr>
+		  
+		<th>
+			<math>
+			<mstyle scriptlevel="-1">
+		<mi>P(A)</mi>
+		<mo>&ge;</mo>
+		<mn>0</mn>
+	 	<mo>&forall;</mo>
+		<mi>A mit i=1,...,n</mi>
 		</mstyle>
 	</math>
 	</th>
